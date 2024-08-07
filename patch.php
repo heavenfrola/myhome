@@ -1,5 +1,5 @@
 <?PHP
-
+/*패치 파일 */
 include '_config/set.php';
 include_once $engine_dir.'/_engine/include/common.lib.php';
 
