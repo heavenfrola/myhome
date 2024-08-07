@@ -1,0 +1,26 @@
+<fieldset class="biz">
+	<legend>사업자 정보 입력</legend>
+	<div class="box">
+		<div class="fld">
+			<label for="licensee_name">담당자명</label>
+			<input type="text" name="dam" value="{{$담당자명}}" id="licensee_name" class="form_input block" placeholder="담당자명">
+		</div>
+		<div class="fld">
+			<label for="licensee_ceo">대표자명</label>
+			<input type="text" name="owner" value="{{$대표자명}}" id="licensee_ceo" class="form_input block" placeholder="대표자명">
+		</div>
+		<div class="fld licensee_num">
+			<label for="licensee_num">사업자등록번호</label>
+			<input type="text" name="biz_num[]" value="{{$사업자등록번호1}}" maxlength="3" id="licensee_num" class="form_input" onKeyUp="nextTab(this,this.form.licensee_num2,3)" placeholder="사업자등록번호"><input type="text" name="biz_num[]" value="{{$사업자등록번호2}}" maxlength="2" id="licensee_num2" class="form_input second" onKeyUp="nextTab(this,this.form.licensee_num3,2)"><input type="text" name="biz_num[]" value="{{$사업자등록번호3}}" maxlength="5" id="licensee_num3" class="form_input" onKeyUp="nextTab(this,this.form.licensee_cate,5)">
+			<span class="box_btn w67 white radius">{{$사업자번호체크버튼}}</span>
+		</div>
+		<div class="fld">
+			<label for="licensee_cate">업태</label>
+			<input type="text" name="biz_type1" id="licensee_cate" value="{{$사업자업태}}" class="form_input block" placeholder="업태(ex 서비스)">
+		</div>
+		<div class="fld">
+			<label for="licensee_status">종목</label>
+			<input type="text" name="biz_type2" id="licensee_status" value="{{$사업자종목}}" class="form_input block" placeholder="종목(ex 통신,판매업)">
+		</div>
+	</div>
+</fieldset>

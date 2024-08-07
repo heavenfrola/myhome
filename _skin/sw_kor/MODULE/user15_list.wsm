@@ -1,0 +1,14 @@
+<!-- 반복문시작 -->
+<div class="bestitem">
+	<div class="wrap_inner">
+		<h2 class="subtitle">best item</h2>
+		<ul class="prd_basic col4">
+<!-- 반복구문시작 -->
+			<li>{{$기본상품박스}}</li>
+<!-- 반복구문끝 -->
+		</ul>
+	</div>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

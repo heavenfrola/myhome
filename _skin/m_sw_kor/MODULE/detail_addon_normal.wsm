@@ -1,0 +1,10 @@
+<tr>
+	<th scope="row">수량</th>
+	<td>
+		<div class="box_qty">
+			<a href="javascript:eaChg(1);" class="plus"></a>
+			<input type="number" name="buy_ea" value="{{$최소주문수량}}" class="form_input block tac">
+			<a href="javascript:eaChg(2);" class="minus"></a>
+		</div>
+	</td>
+</tr>

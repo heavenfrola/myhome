@@ -1,0 +1,34 @@
+<div id="counsel_write" class="wrap_inner">
+	{{$폼시작}}
+		<div class="write">
+			{{$고객상담구분}}
+			{{$비회원상담연락처}}
+			{{$주문관련상담}}
+			{{if(취소대상상품리스트)}}{{$취소대상상품리스트}}{{endif(취소대상상품리스트)}}
+			{{$취소사유리스트}}
+			<div>
+				<label for="counsel_title">제목</label>
+				<input type="text" name="title" id="counsel_title" class="form_input block" placeholder="제목">
+			</div>
+			<div>
+				<label for="counsel_cnt">문의내용</label>
+				<textarea name="content" id="counsel_cnt" class="form_input block" rows="10" placeholder="문의내용"></textarea>
+			</div>
+			<div>
+				<label for="counsel_file1">첨부파일 1</label>
+				<input type="file" name="upfile1" id="counsel_file1" class="form_input block">
+			</div>
+			<div>
+				<label for="counsel_file2">첨부파일 2</label>
+				<input type="file" name="upfile2" id="counsel_file2" class="form_input block">
+			</div>
+			{{if(자동생성방지)}}
+			{{$자동생성방지}}
+			{{endif(자동생성방지)}}
+		</div>
+		<div class="btn btn_col">
+			<span class="box_btn block large"><input type="submit" value="확인"></span>
+			<span class="box_btn block large white"><a href="{{$이전페이지주소}}">취소</a></span>
+		</div>
+	{{$폼끝}}
+</div>

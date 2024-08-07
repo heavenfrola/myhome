@@ -1,0 +1,33 @@
+<h2 class="subtitle">{{$카테고리명}}</h2>
+<div id="big_section">
+	{{if(사용자리스트6)}}
+	<!-- 카테고리 추천 -->
+	<div class="wrap_inner best_area">
+		{{$사용자리스트6}}
+	</div>
+	<!-- //카테고리 추천 -->
+	{{endif(사용자리스트6)}}
+	{{$사용자리스트7}}
+	<div class="wrap_inner prd_normal">
+		<div class="sort_line">
+			<div class="sort">
+				{{$상품정렬선택}}
+				{{$상품정렬선택리스트}}
+			</div>
+			<div class="type">
+				<a id="btn_line" class="type2" onclick="chgListSkin('prd_normal', 3, this); return false;">리스트 타입</a>
+			</div>
+		</div>
+		{{$상품리스트}}
+	</div>
+</div>
+<script type="text/javascript">
+	var skin_img_url = '{{$이미지경로}}';
+	$(document).ready(function() {
+		if(getCookie('prd_normal_config')){
+			var skinType = getCookie('prd_normal_config');
+			var skinNo = skinType.substr(skinType.lastIndexOf('s')+1);
+			chgListSkin('prd_normal', skinNo);
+		}
+	});
+</script>

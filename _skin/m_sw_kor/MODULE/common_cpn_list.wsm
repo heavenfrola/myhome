@@ -1,0 +1,19 @@
+<!-- 반복문시작 -->
+<div class="list_cpn_down">
+	<h3 class="title">쿠폰 다운로드</h3>
+	<div class="box">
+		<ul class="list">
+<!-- 반복구문시작 -->
+			<li>
+				<p class="sale">{{$할인혜택}}</p>
+				<p class="name">{{$쿠폰명}}</p>
+				{{if(쿠폰다운전)}}<span class="box_btn small"><a onclick="location.href='{{$쿠폰주소링크}}';">쿠폰다운</a></span>{{endif(쿠폰다운전)}}
+				{{if(쿠폰다운후)}}<span class="fin">다운완료</span>{{endif(쿠폰다운후)}} 
+			</li>
+<!-- 반복구문끝 -->
+		</ul>
+	</div>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

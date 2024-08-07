@@ -1,0 +1,7 @@
+<div class="birth {{$생년월일필수여부}}">
+	<label>생년월일</label>
+	<div class="input_area">{{$생년월일년선택}}{{$생년월일월선택}}{{$생년월일일선택}}</div>
+	<div class="msg">
+		<p class="form_result form_result_birth warning"></p>
+	</div>
+</div>

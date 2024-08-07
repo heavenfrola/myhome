@@ -1,0 +1,4 @@
+<div id="restock" class="wrap_inner">
+	{{$재입고알림내역}}
+	{{$재입고알림내역페이징}}
+</div>

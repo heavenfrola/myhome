@@ -1,0 +1,6 @@
+<div id="mypage_review_list" class="crema-hide">
+	{{$상품평리스트}}
+	{{$하단스크립트}}
+</div>
+<!-- crema.me / PC 내 게시글 / 스크립트를 수정할 경우 연락주세요(support@crema.me) -->
+<div class="crema-reviews" data-type="my-reviews"></div>

@@ -1,0 +1,11 @@
+<div id="price_search">
+	<div class="total_sort">
+		<p class="total">상품이 모두 <strong>{{$총상품개수}}</strong>개 있습니다.</p>
+		<div class="sort">
+			{{$상품정렬선택}}
+			{{$상품정렬선택리스트}}
+		</div>
+	</div>
+	{{$상품리스트}}
+	{{$페이지선택}}
+</div>

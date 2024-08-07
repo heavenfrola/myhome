@@ -1,0 +1,8 @@
+<div id="draw_finish" class="withdraw wrap_inner">
+	<div class="box">
+		<p class="msg"><strong>회원 탈퇴 처리가 완료되었습니다.</strong><br>그 동안 저희 {{$쇼핑몰명}}을(를) 이용해 주셔서 감사합니다.<br>앞으로 더욱 발전하는 모습, 노력하는 모습으로<br>고객님께서 다시 찾아주시는 {{$쇼핑몰명}}가(이) 되겠습니다.</p>
+	</div>
+	<div class="btn">
+		<span class="box_btn large w150"><a href="/">확인</a></span>
+	</div>
+</div>

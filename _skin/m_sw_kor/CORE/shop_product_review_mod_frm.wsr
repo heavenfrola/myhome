@@ -1,0 +1,53 @@
+<div id="qnarevmod">
+	<div id="review_pwd{{$상품번호}}" class="modi_pwd">
+		{{$비밀번호폼시작}}
+		<div id="pwbox">
+			<h3>비밀번호 입력</h3>
+			<p>작성자와 관리자만 볼 수 있는 글입니다.<br>글 작성시 입력했던 비밀번호를 입력하세요.</p>
+			<input type="password" name="pwd" class="form_input">
+			<div class="btn_col">
+				<span class="box_btn block"><input type="submit" value="확인"></span>
+				<span class="box_btn block white"><a href="javascript:history.back();">취소</a></span>
+			</div>
+		</div>
+		{{$비밀번호폼끝}}
+	</div>
+	<div id="review_modi{{$상품번호}}" class="modi_cnt">
+		<div class="qnarev_write">
+			{{$수정폼시작}}
+				<fieldset>
+					<legend class="hidden">상품후기 수정</legend>
+					<div>
+						<label>분류</label>
+						{{$카테고리}}
+					</div>
+					<div>
+						<label for="b_category">제목</label>
+						{{$제한제목목록}}
+					</div>
+					<div>
+						<label for="b_grade">평점</label>
+						{{$평점}}
+					</div>
+					<div class="contents">
+						<label for="review_content">글내용</label>
+						<textarea name="content" rows="20" id="review_content" class="form_input block">{{$내용}}</textarea>
+					</div>
+					<div>
+						<label for="review_file1">첨부파일 1</label>
+						<input type="file" name="upfile1" id="review_file1" class="form_input block" accept="image/*">
+						{{if(상품후기첨부파일1)}}<p class="file_del">첨부파일1 : {{$상품후기첨부파일1}} {{$상품후기첨부파일1삭제}} 삭제</p>{{endif(상품후기첨부파일1)}}
+					</div>
+					<div>
+						<label for="review_file2">첨부파일 2</label>
+						<input type="file" name="upfile2" id="review_file2" class="form_input block" accept="image/*">
+						{{if(상품후기첨부파일2)}}<p class="file_del">첨부파일2 : {{$상품후기첨부파일2}} {{$상품후기첨부파일2삭제}} 삭제</p>{{endif(상품후기첨부파일2)}}
+					</div>
+				</fieldset>
+				<div class="btn">
+					<span class="box_btn block"><input type="submit" value="확인"></span>
+				</div>
+			{{$수정폼끝}}
+		</div>
+	</div>
+</div>

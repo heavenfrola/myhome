@@ -1,0 +1,26 @@
+<div id="search_result">
+	{{$폼시작}}
+		<div class="research">
+			<input type="text" name="search_str" value="{{$검색어2}}" class="form_input block search"><input type="image" src="{{$이미지경로}}/button/search.png" alt="검색" class="btn">
+		</div>
+		<label for="old_search_str" class="check p_cursor"><input type="checkbox" name="old_search_str" id="old_search_str" value="{{$검색어2}}">결과 내 재검색</label>
+	{{$폼끝}}
+	<div class="rank">
+		<h3>검색어 순위</h3>
+		{{$검색어순위리스트}}
+	</div>
+	<div class="category">
+		{{$카테고리리스트}}
+		{{$이차분류리스트}}
+		{{$삼차분류리스트}}
+	</div>
+	<div class="total_sort">
+		<p class="total">상품이 모두 <strong>{{$총상품개수}}</strong>개 있습니다</p>
+		<div class="sort">
+			{{$상품정렬선택}}
+			{{$상품정렬선택리스트}}
+		</div>
+	</div>
+	{{$상품리스트}}
+	{{$페이지선택}}
+</div>

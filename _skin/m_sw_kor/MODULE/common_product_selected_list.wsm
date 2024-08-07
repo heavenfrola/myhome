@@ -1,0 +1,37 @@
+<!-- 반복문시작 -->
+<div class="swiper-container swiper_related_selected">
+	<div class="swiper-wrapper">
+<!-- 반복구문시작 -->
+		<div class="swiper-slide prd_basic">
+			<div class="box">
+				<div class="img">
+					<div class="prdimg"><a href="{{$상품링크}}" target="_blank">{{$상품이미지}}</a></div>
+				</div>
+				<div class="info">
+					<p class="name"><a href="{{$상품링크}}" target="_blank">{{$상품명}}</a></p>
+					<div class="price">
+						<p class="sell"><strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</strong></p>
+					</div>
+					<span class="box_btn">{{$관련상품제거링크}}삭제</a></span>
+				</div>
+			</div>
+		</div>
+<!-- 반복구문끝 -->
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<script>
+	var swiper_related_selected = new Swiper('.swiper_related_selected', {
+		slidesPerView: 3,
+		spaceBetween: 10,
+		slidesPerGroup: 3,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">선택된 관련상품이 없습니다.</p>
+<!-- 데이터없음끝 -->

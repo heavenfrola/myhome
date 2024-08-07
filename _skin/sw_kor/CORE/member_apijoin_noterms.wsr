@@ -1,0 +1,38 @@
+<div id="join_input">
+	{{$api가입폼시작}}
+		<input type="hidden" name="setOpenSSL" value="Y" checked>
+		<fieldset>
+			<legend>기본정보입력 <span><strong>*</strong> 필수 입력 항목</span></legend>
+			<div class="box">
+				<div class="required">
+					<label for="join_email">통합 Email</label>
+					<div class="input_area email_area">
+						{{$SNS가입이메일}}
+					</div>
+				</div>
+				<div class="sns_pwd required">
+					<label for="pw1">비밀번호</label>
+					<div class="input_area">
+						<input type="password" name="pwd[]" id="pw1" class="form_input block" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} autocomplete="new-password">
+						<div class="msg">
+							<p>계정의 비밀번호를 입력해주세요.</p>
+						</div>
+					</div>
+				</div>
+				<div class="sns_pwd required">
+					<label for="pw2">비밀번호 확인</label>
+					<div class="input_area">
+						<input type="password" name="pwd[]" id="pw2" class="form_input block" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} autocomplete="new-password">
+						<div class="msg">
+							<p>비밀번호를 한번 더 입력해주세요.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+		<div class="btn">
+			<span class="box_btn w150 large strong"><input type="submit" value="확인"></span>
+			<span class="box_btn w150 large white strong"><a href="/">취소</a></span>
+		</div>
+	{{$api가입폼끝}}
+</div>

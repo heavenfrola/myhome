@@ -1,0 +1,53 @@
+<!-- 반복문시작 -->
+<table class="tbl_col prd">
+	<caption class="hidden">주문상품</caption>
+	<colgroup>
+		<col style="width:100px;">
+		<col>
+		<col style="width:18%;">
+		<col style="width:8%;">
+		<col style="width:8%;">
+		<col style="width:20%;">
+		{{if(개별배송비사용여부)}}<col style="width:8%;">{{endif(개별배송비사용여부)}}
+		<col style="width:8%;">
+		<col style="width:8%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">상품명</th>
+			<th scope="col">옵션</th>
+			<th scope="col">가격</th>
+			<th scope="col">수량</th>
+			<th scope="col">배송정보</th>
+			{{if(개별배송비사용여부)}}<th scope="col">개별배송비</th>{{endif(개별배송비사용여부)}}
+			<th scope="col">총 금액</th>
+			<th scope="col">적립금</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td class="img">{{$상품이미지(링크포함)}}</td>
+			<td class="tal">
+				{{if(단독배송여부)}}[단독배송] {{endif(단독배송여부)}}
+				{{$상품명(링크포함)}}
+				<!-- 정기배송 시에는 '오늘출발' 제외 -->
+			</td>
+			<td class="tal">{{$상품옵션정보(추가가격포함)}}</td>
+			<td>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</td>
+			<td>{{$구매수량}}</td>
+			<td class="tal">
+				<p>기간 {{$배송기간}}</p>
+				<p>요일 {{$배송요일}}</p>
+				<p>주기/횟수 {{$배송주기}}</p>
+			</td>
+			{{if(개별배송비사용여부)}}<td>{{if(개별배송상품여부)}}{{$화폐단위전}}{{$개별배송비}}{{$화폐단위후}}{{endif(개별배송상품여부)}}</td>{{endif(개별배송비사용여부)}}
+			<td>{{$화폐단위전}}{{$상품총가격}}{{$화폐단위후}}</td>
+			<td>{{$화폐단위전}}{{$상품총적립금}}{{$화폐단위후}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

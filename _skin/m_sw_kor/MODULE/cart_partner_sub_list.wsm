@@ -1,0 +1,184 @@
+<!-- 반복문시작 -->
+<ul class="list_cart">
+<!-- 반복구문시작 -->
+	<li>
+		<input type="checkbox" name="cno[]" id="cno" value="{{$장바구니번호}}" class="con_{{$장바구니번호}} partner_check_{{$입점사코드}} check">
+		<div class="box">
+			<div class="img">{{$상품이미지(링크포함)}}</div>
+			<div class="info">
+				<p>{{if(단독배송여부)}}[단독배송] {{endif(단독배송여부)}}{{$상품명(링크포함)}}</p>
+				{{if(상품옵션정보)}}
+				<div>{{$상품옵션정보(추가가격포함)}} {{if(총옵션가격)}}: {{$화폐단위전}}{{$총옵션가격}}{{$화폐단위후}}{{endif(총옵션가격)}} {{$옵션변경링크}}변경</a></div>
+				{{endif(상품옵션정보)}}
+				<p>
+					<strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</strong>
+					{{if(상품총적립금)}}
+					<span>(적립금 : {{$상품총적립금}})</span>
+					{{endif(상품총적립금)}}
+				</p>
+				{{if(개별배송상품여부)}}<div>개별배송비 : {{$화폐단위전}}{{$개별배송비}}{{$화폐단위후}}</div>{{endif(개별배송상품여부)}}
+				<div>
+					<div class="box_qty">
+						<a onclick="cartEaChg(this, 2, {{$장바구니번호}}); return false;" class="minus"></a>
+						<input type="number" name="buy_ea[]" value="{{$구매수량}}" id="buy_ea{{$장바구니번호}}" class="form_input block tac">
+						<a onclick="cartEaChg(this, 1, {{$장바구니번호}}); return false;" class="plus"></a>
+					</div>
+					<a href="{{$다시계산}}">변경</a>
+				</div>
+			</div>
+		</div>
+		{{if(오늘출발)}}
+		<p class="today"><strong>오늘출발</strong><span>평일 {{$오늘출발주문마감시간}} 주문마감</span></p>
+		{{endif(오늘출발)}}
+		<div class="total cart_prc {{if(총할인금액)}}is_sale{{endif(총할인금액)}}">
+			총금액 
+			<strong class="after">{{$화폐단위전}}{{$상품판매가격}}{{$화폐단위후}}</strong>
+			<strong class="before">{{$화폐단위전}}{{$상품총가격}}{{$화폐단위후}}</strong>
+			{{if(개별상품쿠폰보유여부)}}
+			<br><span class="box_btn small" style="display:none;"><input type="button" value="쿠폰적용" onclick="showPrdCpnList(2, {{$장바구니번호}}); return false;"></span>
+			{{endif(개별상품쿠폰보유여부)}}
+		</div>
+		<div class="btn btn_col2">
+			<span class="box_btn block white del">{{$상품삭제}}삭제하기</a></span>
+			<span class="box_btn block white wish">{{$위시담기}}관심상품</a></span>
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+{{$오프라인쿠폰}}
+<div class="wrap_inner sum">
+	<table class="tbl_order">
+		<caption class="hidden">총 주문 가격</caption>
+		<colgroup>
+			<col style="width:50%;">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">주문금액</th>
+				<td>{{$화폐단위전}}<span class="prd_prc_cart_{{$입점사코드}} {{$본사여부}}">{{$장바구니합계금액}}</span>{{$화폐단위후}}</td>
+			</tr>
+			<tr>
+				<th scope="row">배송비</th>
+				<td>
+					{{$화폐단위전}}<span id="dlv_prc_cart" class="dlv_prc_cart_{{$입점사코드}}">{{$장바구니배송비(단위없음)}}</span>{{$화폐단위후}}
+					{{if(개별배송비사용여부)}}
+					<p>일반배송비 : {{$화폐단위전}}<span class="dlv_prc_basic_{{$입점사코드}}">{{$일반배송비(단위없음)}}</span>{{$화폐단위후}}</p>
+					<p>개별배송비 : {{$화폐단위전}}<span class="dlv_prc_prd_{{$입점사코드}}">{{$개별배송비(단위없음)}}</span>{{$화폐단위후}}</p>
+					{{endif(개별배송비사용여부)}}
+				</td>
+			</tr>
+			{{if(세트할인금액)}}
+			<tr>
+				<th scope="row">세트할인금액</th>
+				<td>- {{$화폐단위전}}<span class="total_sale1_prc">{{$세트할인금액}}</span>{{$화폐단위후}}</td>
+			</tr>
+			{{endif(세트할인금액)}}
+			{{if(장바구니쿠폰사용)}}
+			<tr>
+				<th scope="row">쿠폰할인금액</th>
+				<td>- {{$화폐단위전}}{{$장바구니쿠폰금액}}{{$화폐단위후}}</td>
+			</tr>
+			{{endif(장바구니쿠폰사용)}}
+			{{if(상품별쿠폰금액)}}
+			<tr>
+				<th scope="row">상품별쿠폰 할인금액</th>
+				<td>- {{$화폐단위전}}<span class="sale7_prc_{{$입점사코드}}">{{$상품별쿠폰할인금액}}</span>{{$화폐단위후}}</td>
+			</tr>
+			{{endif(상품별쿠폰금액)}}
+			{{if(이벤트할인금액)}}
+			<tr>
+				<th scope="row">이벤트 할인금액</th>
+				<td>- {{$화폐단위전}}<span class="sale2_prc_{{$입점사코드}}">{{$이벤트할인금액}}</span>{{$화폐단위후}}</td>
+			</tr>
+			{{endif(이벤트할인금액)}}
+			{{if(회원할인금액)}}
+			<tr>
+				<th scope="row">회원 할인금액</th>
+				<td>- {{$화폐단위전}}<span class="sale4_prc_{{$입점사코드}}">{{$회원할인금액}}</span>{{$화폐단위후}}</td>
+			</tr>
+			{{endif(회원할인금액)}}
+			{{if(구매금액별할인금액)}}
+			<tr>
+				<th scope="row">구매금액 별 할인금액</th>
+				<td>- {{$화폐단위전}}<span class="sale6_prc_{{$입점사코드}}">{{$구매금액별할인금액}}</span>{{$화폐단위후}}</td>
+			</tr>
+			{{endif(구매금액별할인금액)}}
+			{{if(적립금)}}
+			<tr>
+				<th scope="row">적립금</th>
+				<td>{{$화폐단위전}}<span class="milage_cart_{{$입점사코드}}">{{$적립금}}</span>{{$화폐단위후}}</td>
+			</tr>
+			{{endif(적립금)}}
+			{{if(이벤트적립금)}}
+			<tr>
+				<th scope="row">이벤트 추가 적립금</th>
+				<td>{{$화폐단위전}}{{$이벤트적립금}}{{$화폐단위후}}</td>
+			</tr>
+			{{endif(이벤트적립금)}}
+			<tr>
+				<th scope="row">결제금액</th>
+				<td><strong>{{$화폐단위전}}<span id="total_order_price_cartlist" class="price total_order_price_cartlist_{{$입점사코드}}">{{$장바구니결제금액}}</span>{{$화폐단위후}} {{if(참조장바구니결제금액)}}({{$참조화폐단위전}}<span class="total_order_price_r_cartlist_{{$입점사코드}}">{{$참조장바구니결제금액}}</span>{{$참조화폐단위후}}){{endif(참조장바구니결제금액)}}</strong></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- 반복문끝 -->
+<!-- 반복구문2시작 -->
+	<li>
+		<input type="checkbox" name="cno[]" id="cno" value="{{$장바구니번호}}" class="con_{{$장바구니번호}} check">
+		<div class="box">
+			<div class="img">{{$상품이미지(링크포함)}}</div>
+			<div class="info">
+				<p>{{$상품명(링크포함)}}</p>
+				{{if(상품총적립금)}}<p>적립금 : {{$상품총적립금}}</p>{{endif(상품총적립금)}}
+			</div>
+		</div>
+		<div class="total cart_prc {{if(총할인금액)}}is_sale{{endif(총할인금액)}}">
+			총금액 
+			<strong class="after">{{$화폐단위전}}{{$상품판매가격}}{{$화폐단위후}}</strong>
+			<strong class="before">{{$화폐단위전}}{{$상품총가격}}{{$화폐단위후}}</strong>
+			{{if(개별상품쿠폰보유여부)}}
+			<br><span class="box_btn small" style="display:none;"><input type="button" value="쿠폰적용" onclick="showPrdCpnList(2, {{$장바구니번호}}); return false;"></span>
+			{{endif(개별상품쿠폰보유여부)}}
+		</div>
+		<div class="btn btn_col2">
+			<span class="box_btn block white del">{{$상품삭제}}삭제하기</a></span>
+			<span class="box_btn block white wish">{{$위시담기}}관심상품</a></span>
+		</div>
+	</li>
+<!-- 반복구문2끝 -->
+<!-- 반복구문3시작 -->
+	<li class="set">
+		<div class="box">
+			<div class="img">{{$상품이미지(링크포함)}}</div>
+			<div class="info">
+				<p>{{if(단독배송여부)}}[단독배송] {{endif(단독배송여부)}}{{$상품명(링크포함)}}</p>
+				<div class="opt">{{$상품옵션정보(추가가격포함)}}{{if(상품옵션정보)}}<span class="btn_edit">{{$옵션변경링크}}변경</a></span>{{endif(상품옵션정보)}}</div>
+				<p>
+					<strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</strong>
+					{{if(상품총적립금)}}
+					<span>(적립금 : {{$상품총적립금}})</span>
+					{{endif(상품총적립금)}}
+				</p>
+				{{if(개별배송상품여부)}}<div>개별배송비 : {{$화폐단위전}}{{$개별배송비}}{{$화폐단위후}}</div>{{endif(개별배송상품여부)}}
+			</div>
+		</div>
+		{{if(오늘출발)}}
+		<p class="today"><strong>오늘출발</strong><span>평일 {{$오늘출발주문마감시간}} 주문마감</span></p>
+		{{endif(오늘출발)}}
+		<div class="total cart_prc {{if(총할인금액)}}is_sale{{endif(총할인금액)}}">
+			총금액 
+			<strong class="after">{{$화폐단위전}}{{$상품판매가격}}{{$화폐단위후}}</strong>
+			<strong class="before">{{$화폐단위전}}{{$상품총가격}}{{$화폐단위후}}</strong>
+			{{if(개별상품쿠폰보유여부)}}
+			<br><span class="box_btn small" style="display:none;"><input type="button" value="쿠폰적용" onclick="showPrdCpnList(2, {{$장바구니번호}}); return false;"></span>
+			{{endif(개별상품쿠폰보유여부)}}
+		</div>
+		<div class="btn">
+			<span class="box_btn block white wish">{{$위시담기}}관심상품</a></span>
+		</div>
+	</li>
+<!-- 반복구문3끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

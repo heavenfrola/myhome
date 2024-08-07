@@ -1,0 +1,27 @@
+<style type="text/css">
+#cnt .cntbody {position:relative; width:1600px; padding-left:400px;}
+.fillter {position:absolute; top:0; left:0; width:265px;}
+.fillter h4 {font-size:16px; line-height:60px; text-transform:uppercase;}
+.fillter ul {margin-bottom:21px; font-size:0;}
+.fillter ul li {display:inline-block; margin-bottom:7px;}
+.fillter .box {padding:18px 0 20px; border-bottom:1px solid #bebebe;}
+.fillter .small ul li {margin-right:7px;}
+.fillter .small ul li:nth-child(4n) {margin-right:0;}
+.fillter input {display:none;}
+.fillter input + label {display:inline-block; background:#F3F3F3; font-weight:500; font-size:14px; line-height:40px; text-align:center;}
+.fillter .size_n label {width:61px; height:40px; cursor:pointer;}
+.fillter .big li {width:100%;}
+.fillter .big label {width:100%; height:40px; cursor:pointer;}
+.fillter input:checked + label {background:#000; color:#fff !important;}
+.box_btn {margin-top:41px;}
+.box_btn a {width:265px; height:45px; padding:12px 0; font-size:14px;}
+</style>
+
+<div id="big_section">
+	<!-- 상품정렬 -->
+	<div id="product_ajax">
+		<!--// 상품정렬 -->
+		{{$상품리스트}}
+		{{$페이지선택}}
+	</div>
+</div>

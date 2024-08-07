@@ -1,0 +1,55 @@
+<div id="qnarevmod">
+	<div id="qna_pwd{{$상품번호}}" class="modi_pwd">
+		{{$비밀번호폼시작}}
+		<div id="pwbox">
+			<h3>비밀번호 입력</h3>
+			<p>작성자와 관리자만 볼 수 있는 글입니다.<br>글 작성시 입력했던 비밀번호를 입력하세요.</p>
+			<input type="password" name="pwd" class="form_input">
+			<div>
+				<span class="box_btn w100"><input type="submit" value="확인"></span>
+				<span class="box_btn w100 white"><a href="javascript:history.back();">취소</a></span>
+			</div>
+		</div>
+		{{$비밀번호폼끝}}
+	</div>
+	<div id="qna_modi{{$상품번호}}" class="modi_cnt">
+		<div class="qnarev_write">
+			{{$수정폼시작}}
+				<fieldset>
+					<legend class="hidden">상품문의 수정</legend>
+					<div class="fld name">
+						<label for="b_name">비밀글</label>
+						<span class="check">
+							<input type="checkbox" name="secret" value="Y"{{$비공개체크}}>비밀글
+						</span>
+					</div>
+					<div class="fld">
+						<label>분류</label>
+						{{$카테고리}}
+					</div>
+					<div class="fld">
+						<label for="b_category">제목</label>
+						{{$제한제목목록}}
+					</div>
+					<div class="fld contents">
+						<label for="qna_content">글내용</label>
+						<textarea name="content" rows="20" id="qna_content" class="form_input block">{{$내용}}</textarea>
+					</div>
+					<div class="fld">
+						<label for="qna_file1">첨부파일 1</label>
+						<input type="file" name="upfile1" id="qna_file1" class="form_input block">
+						{{if(상품문의첨부파일1)}}<p class="file_del">첨부파일1 : {{$상품문의첨부파일1}} {{$상품문의첨부파일1삭제}} 삭제</p>{{endif(상품문의첨부파일1)}}
+					</div>
+					<div class="fld">
+						<label for="qna_file2">첨부파일 2</label>
+						<input type="file" name="upfile2" id="qna_file2" class="form_input block">
+						{{if(상품문의첨부파일2)}}<p class="file_del">첨부파일2 : {{$상품문의첨부파일2}} {{$상품문의첨부파일2삭제}} 삭제</p>{{endif(상품문의첨부파일2)}}
+					</div>
+				</fieldset>
+				<div class="btn">
+					<span class="box_btn w100"><input type="submit" value="확인"></span>
+				</div>
+			{{$수정폼끝}}
+		</div>
+	</div>
+</div>

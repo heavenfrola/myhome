@@ -1,0 +1,31 @@
+<!-- 반복문시작 -->
+<div class="new5p">
+	<h2 class="subtitle">new 5%</h2>
+	<div class="frame_swiper">
+		<div class="swiper-container swiper_new5p">
+			<div class="swiper-wrapper">
+<!-- 반복구문시작 -->
+				<div class="swiper-slide prd_basic">
+				{{$기본상품박스}}
+				</div>
+<!-- 반복구문끝 -->
+			</div>
+		</div>
+		<div class="swiper-button-next swiper-button-gray swiper_new5p_next"></div>
+		<div class="swiper-button-prev swiper-button-gray swiper_new5p_prev"></div>
+	</div>
+</div>
+<script>
+	var swiper_new5p = new Swiper('.swiper_new5p', {
+		slidesPerView: 3,	// 한 페이지 노출 상품 갯수
+		slidesPerGroup: 3,	// 스와이프 되는 상품 갯수
+		spaceBetween: 10,	// 상품 사이 간격
+		navigation: {		// 이동 버튼
+			nextEl: '.swiper_new5p_next',
+			prevEl: '.swiper_new5p_prev',
+		},
+	});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

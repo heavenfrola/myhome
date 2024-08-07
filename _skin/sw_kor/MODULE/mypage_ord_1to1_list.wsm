@@ -1,0 +1,72 @@
+<!-- 반복문시작 -->
+<table class="tbl_col">
+	<caption class="hidden">1:1문의내역</caption>
+	<colgroup>
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col>
+		<col style="width:10%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">번호</th>
+			<th scope="col">답변</th>
+			<th scope="col">분류</th>
+			<th scope="col">제목</th>
+			<th scope="col">작성일</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$글번호}}</td>
+			<td>{{$답변유무}}</td>
+			<td>{{$글분류}}</td>
+			<td class="tal">{{$글제목}} {{$1대1파일아이콘}}</td>
+			<td>{{$등록일}}</td>
+		</tr>
+		<tr>
+			<td colspan="5" class="none_style">
+				<div id="revQna{{$글고유번호}}" class="cnt_hidden">
+					<p class="qna_subject">문의내용</p>
+					<div class="qna_cnt">
+						<div>{{$문의내용}}</div>
+						<div>{{$1대1첨부파일1}}</div>
+						<div>{{$1대1첨부파일2}}</div>
+					</div>
+					<p class="qna_subject">답변내용</p>
+					<div class="qna_cnt">{{$답변내용}}</div>
+				</div>
+			</td>
+		</tr>
+<!-- 반복구문끝 -->
+</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<table class="tbl_col">
+	<caption class="hidden">1:1문의내역</caption>
+	<colgroup>
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col>
+		<col style="width:10%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">번호</th>
+			<th scope="col">답변</th>
+			<th scope="col">분류</th>
+			<th scope="col">제목</th>
+			<th scope="col">작성일</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="5" class="empty">문의하신 사항이 없습니다.</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 데이터없음끝 -->

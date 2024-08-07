@@ -1,0 +1,6 @@
+<div id="counsel_fin" class="wrap_inner">
+	<p class="box">
+		{{if(회원명)}}<strong>{{$회원명}}</strong>님의 {{endif(회원명)}}문의사항이<br>고객센터에 전달되었습니다.
+	</p>
+	<div class="btn"><span class="box_btn w150 large"><a href="/">메인으로</a></span></div>
+</div>

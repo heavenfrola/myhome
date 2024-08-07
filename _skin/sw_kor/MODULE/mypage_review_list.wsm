@@ -1,0 +1,46 @@
+<!-- 반복문시작 -->
+<table class="tbl_col board">
+	<caption>나의 상품후기</caption>
+	<colgroup>
+		<col style="width:8%;">
+		<col>
+		<col style="width:20%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">번호</th>
+			<th scope="col">제목</th>
+			<th scope="col">평점</th>
+			<th scope="col">작성자</th>
+			<th scope="col">작성일</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$상품이미지}}</td>
+			<td class="subject tal">
+				<p class="prd">{{$상품명}}</p>
+				<p class="title">
+					{{$상품평파일아이콘}} {{$새글아이콘}}
+					{{if(상품평베스트)}}<span class="best">BEST</span>{{endif(상품평베스트)}}
+					{{if(상품평카테고리)}}[{{$상품평카테고리}}]{{endif(상품평카테고리)}}
+					<a onclick="{{$상품평보기링크}}">{{$상품평제목(링크없음)}}</a>
+					{{$상품평댓글수}}
+				</p>
+				<div class="content">{{$상품평요약내용}}</div>
+				<a onclick="{{$상품평보기링크}}" class="more">더보기 +</a>
+			</td>
+			<td><span class="gradebox small point{{$상품평점수(텍스트)}}"></span> <span class="grade">{{$상품평점수(텍스트)}}</span></td>
+			<td>{{$상품평작성자}}</td>
+			<td>{{$상품평등록일}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">등록된 후기가 없습니다.</p>
+<!-- 데이터없음끝 -->

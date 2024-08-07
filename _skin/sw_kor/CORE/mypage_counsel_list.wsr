@@ -1,0 +1,6 @@
+<div id="counsel">
+	<h3 class="title first">1:1문의</h3>
+	{{$고객상담리스트}}
+	<div class="btn tar"><span class="box_btn w125 large"><a href="/mypage/counsel_step1.php">글쓰기</a></span></div>
+	{{$페이지선택}}
+</div>

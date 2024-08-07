@@ -1,0 +1,5 @@
+<div id="counsel" class="wrap_inner">
+	<span class="box_btn block"><a href="/mypage/counsel_step1.php">글쓰기</a></span>
+	{{$고객상담리스트}}
+	{{$페이지선택}}
+</div>

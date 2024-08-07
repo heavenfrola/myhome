@@ -1,0 +1,56 @@
+<!-- 반복문시작 -->
+<table class="tbl_col board">
+	<caption class="hidden">상품문의</caption>
+	<colgroup>
+		<col style="width:5%;">
+		<col>
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">번호</th>
+			<th scope="col">제목</th>
+			<th scope="col">답변여부</th>
+			<th scope="col">작성자</th>
+			<th scope="col">작성일</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$글번호}}</td>
+			<td class="subject tal">{{if(카테고리)}}[{{$카테고리}}]{{endif(카테고리)}} {{$글제목}} {{$비밀글아이콘}} {{$파일아이콘}} {{$새글아이콘}}</td>
+			<td>{{$글답변전아이콘}}{{$글답변아이콘}}</td>
+			<td class="name">{{$글작성자}}</td>
+			<td>{{$글등록일}}</td>
+		</tr>
+		<tr>
+			<td colspan="5" class="qnarev_cnt">
+				<div id="revQna{{$글고유번호}}">
+					<div class="question">
+						<span class="icon">Q</span>
+						{{$글내용}}
+						{{$QNA첨부파일1}}
+						{{$QNA첨부파일2}}
+					</div>
+					<div class="answer">
+						<span class="icon">A</span>
+						{{$글답변}}
+						{{$QNA관리자파일첨부1}}
+						{{$QNA관리자파일첨부2}}
+					</div>
+					<div class="btn">
+						<span class="box_btn w100 white">{{$글수정링크태그}}수정</a></span>
+						<span class="box_btn w100 white">{{$글삭제링크태그}}삭제</a></span>
+					</div>
+				</div>
+			</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

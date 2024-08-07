@@ -1,0 +1,5 @@
+#!/bin/csh
+setenv IPGCLIENT_PATH `pwd`
+
+./ipgClient 29991 210.181.28.137 21001 KSPAY
+

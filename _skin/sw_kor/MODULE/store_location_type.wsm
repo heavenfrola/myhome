@@ -1,0 +1,24 @@
+<div id="map_wrap" class="type{{$레이아웃타입}}">
+    <div class="sply_search">
+        {{$폼시작}}
+        <input type="text" name="search_str" id="search_str" value="{{$검색값}}" class="form_input" placeholder="매장명이나 주소를 검색해 보세요">
+        <input type="button" class="button" onclick="gpsKakaoMap({'type':'list'});">
+        {{$폼끝}}
+    </div>
+    <div class="right">
+        <ul class="top_btn add_btn">
+            <li class="plus"><a href="javascript:ZoomIn();"></a></li>
+            <li class="minus"><a href="javascript:ZoomOut();"></a></li>
+            <li class="point"><a href="javascript:gpsKakaoMap({'type':'m'});"></a></li>
+        </ul>
+        <div class="map-canvas" id="map" style="width: 700px; height: 557px; "></div>
+    </div>
+    <div class="left">
+        <p class="total">총 <span id="storeTotal">0</span>개의 매장이 있습니다.</p>
+        <div class="map_list_wrap">
+            <ul class="map_list">
+            </ul>
+        </div>
+        {{$시설안내리스트}}
+    </div>
+</div>

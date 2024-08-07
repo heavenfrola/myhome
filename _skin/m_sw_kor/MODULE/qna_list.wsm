@@ -1,0 +1,30 @@
+<!-- 반복문시작 -->
+<ul class="list_qnarev">
+<!-- 반복구문시작 -->
+	<li>
+		<div class="subject" onClick="{{$링크}}">
+			<p class="title">{{$비밀글아이콘}} {{$파일아이콘}} {{$새글아이콘}} {{if(카테고리)}}[{{$카테고리}}]{{endif(카테고리)}} {{$글제목(링크없음)}}</p>
+			<p class="stat">{{$글작성자}} | {{$글등록일}} | {{$글답변전아이콘}}{{$글답변아이콘}}</p>
+		</div>
+		<div id="revQna{{$글고유번호}}" class="content">
+			<div class="question">
+				{{$글내용}}
+				{{$QNA첨부파일1}}
+				{{$QNA첨부파일2}}
+			</div>
+			<div class="answer">
+				{{$글답변}}
+				{{$QNA관리자파일첨부1}}
+				{{$QNA관리자파일첨부2}}
+			</div>
+			<div class="btn">
+				<span class="box_btn white">{{$글수정링크태그}}수정</a></span>
+				<span class="box_btn white">{{$글삭제링크태그}}삭제</a></span>
+			</div>
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

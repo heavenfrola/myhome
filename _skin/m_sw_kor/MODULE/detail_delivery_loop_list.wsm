@@ -1,0 +1,18 @@
+<!-- 반복문시작 -->
+<table class="tbl_order">
+	<colgroup>
+		<col style="width:60%;">
+		<col>
+	</colgroup>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<th scope="row">{{$반복단위}}</th>
+			<td>{{$화폐단위전}}<strong>{{$적용배송비}}</strong>{{$화폐단위후}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

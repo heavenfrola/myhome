@@ -1,0 +1,20 @@
+<!-- 반복문시작 -->
+<div class="review">
+	<div class="wrap_inner">
+		<h2 class="subtitle">best review</h2>
+		<ul class="list">
+<!-- 반복구문시작 -->
+			<li>
+				<div class="img"><a onclick="{{$글링크(레이어)}}">{{$상품이미지}}</a></div>
+				<p class="grade"><span class="gradebox small point{{$상품평점수}}"></span></p>
+				<p class="prd">{{$상품명(링크포함)}}</p>
+				<p class="contents"><a onclick="{{$글링크(레이어)}}">{{$글내용}}</a></p>
+				<p class="date">{{$글작성자}} | {{$글작성일}}</p>
+			</li>
+<!-- 반복구문끝 -->
+		</ul>
+	</div>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

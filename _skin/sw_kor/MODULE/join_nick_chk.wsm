@@ -1,0 +1,9 @@
+<div class="{{$닉네임필수여부}}">
+	<label for="join_nick">닉네임</label>
+	<div class="input_area">
+		<input type="text" name="nick" value="{{$닉네임}}" maxlength="12" id="join_nick" class="form_input block">
+	</div>
+	<div class="msg">
+		<p class="form_result form_result_nick warning"></p>
+	</div>
+</div>

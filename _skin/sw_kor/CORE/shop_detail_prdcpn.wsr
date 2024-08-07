@@ -1,0 +1,12 @@
+<div id="pop_coupon2">
+	{{$폼시작}}
+		<h2>개별상품 쿠폰적용</h2>
+		<div class="box">
+			{{$쿠폰적용대상상품목록}}
+		</div>
+		<div class="btn">
+			<span class="box_btn large w275"><input type="submit" value="확인"></span>
+		</div>
+	{{$폼끝}}
+	<a onclick="showPrdCpnList('close');" class="close">닫기</a>
+</div>

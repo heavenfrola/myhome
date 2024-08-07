@@ -1,0 +1,38 @@
+<div id="attend">
+	<h3 class="title first">출석체크</h3>
+	<div class="date">
+		<a href="{{$이전연도보기}}" class="prev"></a> <strong>{{$현재연도}}</strong> <a href="{{$다음연도보기}}" class="next"></a>
+		<a href="{{$이전달보기}}" class="prev"></a> <strong>{{$현재월}}</strong> <a href="{{$다음달보기}}" class="next"></a>
+	</div>
+	{{$출석체크폼시작}}
+		<div id="calendar">
+			<table>
+				<caption class="hidden">출석체크</caption>
+				<colgroup>
+					<col style="width:15%;">
+					<col style="width:14%;">
+					<col style="width:14%;">
+					<col style="width:14%;">
+					<col style="width:14%;">
+					<col style="width:14%;">
+					<col style="width:15%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="sun">SUN</th>
+						<th scope="col">MON</th>
+						<th scope="col">TUE</th>
+						<th scope="col">WED</th>
+						<th scope="col">THU</th>
+						<th scope="col">FRI</th>
+						<th scope="col" class="sat">SAT</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{$출석현황달력}}
+				</tbody>
+			</table>
+		</div>
+	{{$출석체크폼끝}}
+	{{$출석체크적립안내}}
+</div>

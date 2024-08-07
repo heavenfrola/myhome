@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="{{$이미지경로}}/../swiper-bundle.css">
+<script src="{{$이미지경로}}/../swiper-bundle.min.js"></script>
+<!-- crema.me / 로그인 회원 정보 / 스크립트를 수정할 경우 연락주세요 (support@crema.me) -->
+<i id="crema-login-username" style="display:none;">{{$회원아이디}}</i>
+<i id="crema-login-name" style="display:none;">{{$회원명}}</i>
+<header>
+	<div class="fix">
+		<h1><a href="/"><img src="https://ux2team.mywisa.com/_skin/sw_kor/img/logo/logo.png" alt="{{$쇼핑몰명}}"></a></h1>
+		<ul class="gnb">
+			<li class="category"><a href="#" onclick="toggle_nav('lnb'); return false;">카테고리</a></li>
+			<li class="search"><a onclick="toggle_view('box_search',this)">검색</a></li>
+			<li class="cart"><a href="/shop/cart.php">장바구니<span class="front_cart_rows">{{$장바구니개수}}</span></a></li>
+			<li class="my"><a href="#" onclick="toggle_nav('mypage'); return false;">마이페이지</a></li>
+		</ul>
+		<div id="box_search" class="box_search">
+			{{$상품검색폼시작}}
+			<div class="box">
+				<input type="search" name="search_str" value="" class="form_input block basic_search" autocorrect="off" autocomplete="off" autocapitalize="off" placeholder="검색어를 입력해주세요">
+				<input type="image" src="{{$이미지경로}}/common/icon_search.png" alt="검색" class="btn">
+			</div>
+			{{$상품검색폼끝}}
+		</div>
+	</div>
+
+	
+
+
+	<nav class="lnb">
+		<ul class="category">
+			<li class="promotion"><a href="/shop/promotion.php">프로모션</a></li>
+			<li><a href="/shop/big_section.php?cno1=1009">NEW 5%</a></li>
+			<li><a href="/shop/big_section.php?cno1=1010">BEST</a></li>
+			{{$사용자리스트5}}
+		</ul>
+		<ul class="board">
+			<li><a href="/board?db=basic_1">NOTICE</a></li>
+			<li><a href="/board?db=basic_2">FAQ</a></li>
+			<li><a href="/shop/product_qna_list.php">Q&A</a></li>
+			<li><a href="/shop/product_review_list.php">REVIEW</a></li>
+			<li><a href="/board?db=gallery_1">EVENT</a></li>
+		</ul>
+		<ul class="share">
+			<li><a href="https://www.instagram.com/wisa.co.kr" target="_blank"><img src="{{$이미지경로}}/common/icon_instagram.png" alt="instagram"></a></li>
+			<li><a href="https://www.facebook.com/wisapr" target="_blank"><img src="{{$이미지경로}}/common/icon_facebook.png" alt="facebook"></a></li>
+			<li><a href="http://twitter.com" target="_blank"><img src="{{$이미지경로}}/common/icon_twitter.png" alt="twitter"></a></li>
+			<li><a href="http://blog.naver.com/wisacorp/" target="_blank"><img src="{{$이미지경로}}/common/icon_blog.png" alt="blog"></a></li>
+		</ul>
+		<a class="close" onclick="toggle_nav('lnb'); return false;">닫기</a>
+	</nav>
+	<nav class="mypage">
+		<ul class="login">
+			{{$로그인전1}}
+			{{$로그인후1}}
+		</ul>
+		<ul class="list">
+			<li><a href="/mypage/order_list.php">주문내역</a></li>
+			<li class="dn{{$정기배송적용여부}}"><a href="/mypage/order_list.php?sbscr=Y">정기주문내역</a></li>
+			<li><a href="/mypage/wish_list.php">관심상품</a></li>
+			<li><a href="/shop/click_prd.php">최근 본 상품</a></li>
+			<li class="dn{{$적립금사용유무}}"><a href="/mypage/milage.php">적립금</a></li>
+			<li class="dn{{$예치금사용유무}}"><a href="/mypage/emoney.php">예치금</a></li>
+			<li><a href="/mypage/coupon_down_list.php">쿠폰</a></li>
+			<li><a href="/mypage/sccoupon.php">소셜 쿠폰</a></li>
+			<li><a href="/mypage/counsel_list.php">1:1문의</a></li>
+			<li><a href="/mypage/qna_list.php">나의 상품문의</a></li>
+			<li><a href="/mypage/review_list.php">나의 상품후기</a></li>
+			<li><a href="/mypage/attend_list.php">출석체크</a></li>
+			<li class="dn{{$재입고알림사용유무}}"><a href="/mypage/notify_restock.php">재입고 알림 신청 내역</a></li>
+			<li><a href="/member/edit_step1.php">나의 정보수정</a></li>
+			<li><a href="/mypage/withdraw_step1.php">회원 탈퇴</a></li>
+		</ul>
+		<a class="close" onclick="toggle_nav('mypage'); return false;">닫기</a>
+	</nav>
+</header>
+<section id="cnt">
+	<!-- 서브 타이틀 텍스트(일반페이지) 사용자코드 -->
+	{{$사용자HTML1}}
+	<!-- //서브 타이틀 텍스트(일반페이지) 사용자코드 -->
+	<!-- 서브 타이틀 텍스트(게시판) 사용자코드 -->
+	{{$사용자HTML3}}
+	<!-- //서브 타이틀 텍스트(게시판) 사용자코드 -->
+	<!-- 마이페이지 메뉴 -->
+	{{$사용자HTML4}}
+	<!-- //마이페이지 메뉴 -->

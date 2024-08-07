@@ -1,0 +1,4 @@
+<div id="sccoupon_list" class="wrap_inner">
+	{{$소셜쿠폰리스트}}
+	{{$페이지선택}}
+</div>

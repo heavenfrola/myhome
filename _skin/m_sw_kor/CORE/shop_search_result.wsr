@@ -1,0 +1,41 @@
+<div id="search_result">
+	{{$폼시작}}
+		<div class="research">
+			<input type="search" name="search_str" value="{{$검색어2}}" class="form_input block search" autocorrect="off" autocomplete="off" autocapitalize="off" placeholder="검색어를 입력해주세요"><input type="image" src="{{$이미지경로}}/common/icon_search.png" alt="검색" class="btn">
+		</div>
+		<label for="old_search_str" class="check"><input type="checkbox" name="old_search_str" id="old_search_str" value="{{$검색어2}}"> 결과 내 재검색</label>
+	{{$폼끝}}
+	<div class="wrap_inner">
+		<div id="rank_search" class="rank">
+			<h3 onclick="searchrank()">검색어 순위</h3>
+			{{$검색어순위리스트}}
+		</div>
+		<div class="category">
+			{{$카테고리리스트}}
+			{{$이차분류리스트}}
+			{{$삼차분류리스트}}
+		</div>
+		<div class="prd_normal">
+			<div class="sort_line">
+				<div class="sort">
+					{{$상품정렬선택}}
+					{{$상품정렬선택리스트}}
+				</div>
+				<div class="type">
+					<a id="btn_line" class="type2" onclick="chgListSkin('prd_normal', 3, this); return false;">리스트 타입</a>
+				</div>
+			</div>
+			{{$상품리스트}}
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var skin_img_url = '{{$이미지경로}}';
+	$(document).ready(function() {
+		if(getCookie('prd_normal_config')) {
+			var skinType = getCookie('prd_normal_config');
+			var skinNo = skinType.substr(skinType.lastIndexOf('s')+1);
+			chgListSkin('prd_normal', skinNo);
+		}
+	});
+</script>

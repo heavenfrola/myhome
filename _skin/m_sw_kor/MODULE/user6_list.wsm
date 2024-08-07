@@ -1,0 +1,25 @@
+<!-- 반복문시작 -->
+<div class="swiper-container swiper_best">
+	<div class="swiper-wrapper">
+<!-- 반복구문시작 -->
+		<div class="swiper-slide prd_basic">
+		{{$기본상품박스}}
+		</div>
+<!-- 반복구문끝 -->
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<script>
+	var swiper_best = new Swiper('.swiper_best', {
+		slidesPerView: 3,	// 한 페이지 노출 상품 갯수
+		slidesPerGroup: 1,	// 스와이프 되는 상품 갯수
+		spaceBetween: 10,	// 상품 사이 간격
+		pagination: {		// 페이징 노출
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

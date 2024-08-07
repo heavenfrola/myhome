@@ -1,0 +1,261 @@
+<div class="layer_sbs">
+	{{$폼시작}}
+		<input type="hidden" id="sbscr_date_list" name="sbscr_date_list" value="{{$정기배송배송리스트}}">
+		<div class="delivery_info frame">
+			<h2 class="title">정기배송 받는 날 선택하기</h2>
+			<table class="tbl_row">
+				<caption class="hidden">정기배송 받는 날 선택</caption>
+				<tbody>
+					<tr>
+						<th scope="row">배송 주기</th>
+						<td id="sbscr_period">
+							<label><input type="radio" name="sbscr_period" value="1" {{$정기배송주기선택1}} {{$정기배송주기최소선택1}}> 매주</label>
+							<label><input type="radio" name="sbscr_period" value="2" {{$정기배송주기선택2}} {{$정기배송주기최소선택2}}> 2주마다</label>
+							<label><input type="radio" name="sbscr_period" value="3" {{$정기배송주기선택3}} {{$정기배송주기최소선택3}}> 3주마다</label>
+							<label><input type="radio" name="sbscr_period" value="4" {{$정기배송주기선택4}} {{$정기배송주기최소선택4}}> 4주마다</label>
+							<label><input type="radio" name="sbscr_period" value="5" {{$정기배송주기선택5}} {{$정기배송주기최소선택5}}> 1개월</label>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">배송 요일</th>
+						<td id="sbscr_week">
+							<label class="{{!$정기배송요일선택클래스1}}"><input type="checkbox" name="sbscr_week[]" value="1" {{$정기배송요일선택1}} {{$정기배송요일최소선택1}}> 월</label>
+							<label class="{{!$정기배송요일선택클래스2}}"><input type="checkbox" name="sbscr_week[]" value="2" {{$정기배송요일선택2}} {{$정기배송요일최소선택2}}> 화</label>
+							<label class="{{!$정기배송요일선택클래스3}}"><input type="checkbox" name="sbscr_week[]" value="3" {{$정기배송요일선택3}} {{$정기배송요일최소선택3}}> 수</label>
+							<label class="{{!$정기배송요일선택클래스4}}"><input type="checkbox" name="sbscr_week[]" value="4" {{$정기배송요일선택4}} {{$정기배송요일최소선택4}}> 목</label>
+							<label class="{{!$정기배송요일선택클래스5}}"><input type="checkbox" name="sbscr_week[]" value="5" {{$정기배송요일선택5}} {{$정기배송요일최소선택5}}> 금</label>
+							<label class="{{!$정기배송요일선택클래스6}}"><input type="checkbox" name="sbscr_week[]" value="6" {{$정기배송요일선택6}} {{$정기배송요일최소선택6}}> 토</label>
+							<label class="{{!$정기배송요일선택클래스7}}"><input type="checkbox" name="sbscr_week[]" value="7" {{$정기배송요일선택7}} {{$정기배송요일최소선택7}}> 일</label>
+						</td>
+					</tr>
+					{{if(정기배송배송횟수)}}
+					<tr>
+						<th scope="row">배송 횟수</th>
+						<td><span class="sbscr_dlv_cnt">{{$정기배송배송횟수}}</span>회</td>
+					</tr>
+					{{endif(정기배송배송횟수)}}
+					<tr>
+						<th>배송 기간</th>
+						<td>
+							<input type="hidden" id="sbscr_start_date" name="sbscr_start_date" value="{{$정기배송첫배송일}}">
+							<input type="hidden" id="sbscr_end_date" name="sbscr_end_date" value="{{$정기배송마지막배송일}}">
+							<div class="calendar">
+								첫 배송일
+								<strong><span id="start_date_text">{{$정기배송첫배송일}}</span> <span id="start_yoil_text">{{$정기배송시작요일}}</span>요일</strong>
+								<div id="sbscr_start_box"></div>
+							</div>
+							{{if(정기배송기간여부)}}
+							<div class="calendar">
+								마지막 배송일
+								<strong><span id="end_date_text">{{$정기배송마지막배송일}}</span> <span id="end_yoil_text">{{$정기배송종료요일}}</span>요일</strong>
+								<div id="sbscr_end_box"></div>
+							</div>
+							{{end(정기배송기간여부)}}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="prd_info frame">
+			<h2 class="title">상품 가격정보</h2>
+			<div class="prd">
+				<div class="img">{{$상품이미지}}</div>
+				<div class="info">
+					<p><strong>{{$상품명}}</strong></p>
+					<p class="sbscr_info_option opt">{{$정기배송선택옵션}}</p>
+				</div>
+			</div>
+			<ul class="list">
+				<li>
+					수량
+					<p>{{$정기배송수량}}개</p>
+				</li>
+				<li>
+					상품 금액
+					<p>{{$화폐단위전}}<span class="sbscr_sell_prc">{{$정기배송판매가격}}</span>{{$화폐단위후}}</p>
+				</li>
+				<li>
+					배송비
+					<p>{{$화폐단위전}}<span class="sbscr_dlv_prc">{{$정기배송배송비가격}}</span>{{$화폐단위후}}</p>
+				</li>
+				<li class="ea_prc">
+					회당 결제금액
+					<p>{{$화폐단위전}}<span class="sbscr_ea_sell_prc">{{$정기배송회당결제금액}}</span>{{$화폐단위후}}</p>
+				</li>
+				{{if(정기배송배송횟수)}}
+				<li>
+					배송 횟수
+					<p><span class="sbscr_dlv_cnt">{{$정기배송배송횟수}}</span>회</p>
+				</li>
+				{{endif(정기배송배송횟수)}}
+				<li class="total_prc">
+					<strong>총 주문 금액</strong>{{if(정기배송배송횟수)}}<span><br>(회당 결제금액 X 배송 횟수)</span>{{endif(정기배송배송횟수)}}
+					<p>{{$화폐단위전}}<span class="sbscr_total_prc">{{$정기배송총주문금액}}</span>{{$화폐단위후}}</p>
+				</li>
+			</ul>
+			<div class="btn">
+				<span class="box_btn block large"><a href="javascript:addcartSbscr(1);">장바구니</a></span>
+				<span class="box_btn block large gray"><a href="javascript:addcartSbscr(2);">바로구매</a></span>
+			</div>
+		</div>
+	{{$폼끝}}
+	<a class="close" onclick="sbs_close(this); return false;">닫기</a>
+</div>
+
+<script>
+	var dlv_type = '{{$정기배송기간여부}}';
+	var _selectedDays = new Array();
+	
+	$(function(){
+		setDatepicker();
+		_selectedDays.push({{$정기배송요일값}});
+		$("#sbscr_start_box").datepicker("option", datechecking);
+		$("#sbscr_end_box").datepicker("option", datechecking);
+		var option_chk2 = $('#no_option_buyea').val();
+		if(option_chk2) {
+			var oprc = $('#old_detail_sell_prc').val().toNumber();
+			var n = f.buy_ea.value.toNumber();
+			var tprc = oprc*n;
+			$('#detail_multi_option_prc').html(setComma(tprc.toFixed(currency_decimal)));
+		}
+	});
+	function setDatepicker() {
+		var first_date = "{{$정기배송첫배송일}}";
+		var finish_date = "{{$정기배송마지막배송일}}";
+		var end_default_date = "{{$정기배송마지막배송일기본선택값}}";
+		var first_default_date = "{{$정기배송시작배송일기본값}}";
+
+		$('#sbscr_start_box').datepicker({
+			minDate: first_default_date,
+			maxDate: end_default_date,
+			monthNames: ['01','02','03','04','05','06','07','08','09','10','11','12'],
+			monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+			dayNamesMin: ['일','월','화','수','목','금','토'],
+			weekHeader: 'Wk',
+			dateFormat: 'yy-mm-dd',
+			autoSize: false,
+			showMonthAfterYear: true,
+			yearSuffix: '.',
+			beforeShowDay: datechecking,
+			defaultDate: new Date (first_date),
+			onSelect: function( selectedDate ) {
+				var date = new Date($("#sbscr_start_box").datepicker({dateFormat:"yy-mm-dd"}).val());
+				week = new Array('일요일','월요일','화요일','수요일','목요일','금요일','토요일');
+				$('#start_date_text').html(selectedDate+' '+week[date.getDay()]);
+				$('#sbscr_start_date').val(selectedDate);
+				liveCal(document.sbscrFrm);
+			}
+		});
+
+		if(dlv_type=='Y') {
+			$('#sbscr_end_box').datepicker({
+				minDate: first_date,
+				maxDate: end_default_date,
+				monthNames: ['01','02','03','04','05','06','07','08','09','10','11','12'],
+				monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+				dayNamesMin: ['일','월','화','수','목','금','토'],
+				weekHeader: 'Wk',
+				dateFormat: 'yy-mm-dd',
+				autoSize: false,
+				showMonthAfterYear: true,
+				yearSuffix: '.',
+				beforeShowDay: datechecking,
+				defaultDate: new Date (finish_date),
+				onSelect: function( selectedDate ) {
+					var date = new Date($("#sbscr_end_box").datepicker({dateFormat:"yy-mm-dd"}).val());
+					week = new Array('일요일','월요일','화요일','수요일','목요일','금요일','토요일');
+					$('#end_date_text').html(selectedDate+' '+week[date.getDay()]);
+					$('#sbscr_end_date').val(selectedDate);
+					liveCal(document.sbscrFrm);
+				}
+			});
+		}
+	}
+
+	$("#sbscr_week input:checkbox").change(function(){
+		var v = $(this).attr("value")*1;
+		if($(this).is(":checked")) {
+			if($.inArray(v,_selectedDays)<0) {
+				_selectedDays.push(v);
+			}
+		}else{
+			var f = $.inArray(parseInt(v),_selectedDays);
+			if(f>=0) {
+				_selectedDays.splice(f,1);
+			}
+		}
+		$("#sbscr_start_box").datepicker("destroy");
+		$("#sbscr_end_box").datepicker("destroy");
+		setDatepicker();
+		liveCal(document.sbscrFrm);
+	});
+
+	$("#sbscr_period label").click(function(t){
+		liveCal(document.sbscrFrm);
+	});
+
+	function datechecking(date) {
+		if(typeof holyday_input != 'undefined') {
+			var timestamp = date.getTime().toString().substr(0, 10);
+			for(var key in holyday_input) {
+				temp = holyday_input[key];
+				if(temp == timestamp) {
+					return [false, ""];
+				}
+			}
+		}
+		var day = date.getDay();
+		for(var i=0; i<_selectedDays.length; i++) {
+			if(day==_selectedDays[i]) {
+				return [true,""];
+			}
+		}
+		return [false, ""];
+	}
+
+	function liveCal(f) {
+		var sbscr_week = "";
+		var sbscr_period = $(':checked[name=sbscr_period]').val();
+
+		var chk_week = $(":checked[name='sbscr_week[]']");
+		if(chk_week.length == 0) {
+			alert('배송요일을 선택해주세요.');
+			return;
+		}else {
+			$("#sbscr_week input[type='checkbox']:checked").each(function(){
+				sbscr_week += (sbscr_week == "") ? this.value : ","+this.value;
+			});
+		}
+
+		$.ajax({
+			type: 'post',
+			url: root_url+'/main/exec.php?exec_file=shop/sbscr.exe.php',
+			data: 'sbscr_period='+sbscr_period+'&sbscr_week='+sbscr_week+'&buy_ea='+f.sbscr_ea.value+'&pno='+f.sbscr_pno.value+'&option_val='+f.sbscr_option.value+'&sell_prc='+f.sbscr_sell_prc.value+'&start_date='+f.sbscr_start_date.value+'&end_date='+f.sbscr_end_date.value+'&sale_use='+f.sbscr_sale_yn.value+'&sale_ea='+f.sbscr_sale_ea.value+'&sale_percent='+f.sbscr_sale_percent.value,
+			dataType : 'html',
+			success: function(r) {
+				var json = $.parseJSON(r);
+
+				$(".sbscr_sell_prc").html(json.detail_sbscr_sell_prc);
+				$(".sbscr_dlv_prc").html(json.detail_sbscr_dlv_prc);
+				$(".sbscr_ea_sell_prc").html(json.detail_sbscr_ea_prc);
+				$(".sbscr_dlv_cnt").html(json.detail_sbscr_dlv_cnt);
+				$(".sbscr_total_prc").html(json.detail_sbscr_pay_prc);
+				$(".sbscr_info_option").html(json.detail_sbscr_option_text);
+				$("#sbscr_date_list").val(json.date_list);
+				$("#sbscr_start_date").val(json.detail_start_date);
+				$("#sbscr_end_date").val(json.detail_end_date);
+				$("#start_date_text").html(json.detail_start_date);
+				$("#end_date_text").html(json.detail_end_date);
+				$("#start_yoil_text").html(json.detail_sbscr_start_yoil);
+				$("#end_yoil_text").html(json.detail_sbscr_end_yoil);
+				$('#sbscr_start_box').datepicker('setDate', json.detail_start_date);
+				$('#sbscr_end_box').datepicker('setDate', json.detail_end_date);
+			}
+		});
+	}
+
+	function sbs_close(obj){
+		removeDimmed();
+		$(obj).parent('div').remove();
+	}
+</script>

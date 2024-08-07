@@ -1,0 +1,20 @@
+<!-- 반복문시작 -->
+<ul id="mypage_sscoupon" class="list_common">
+<!-- 반복구문시작 -->
+	<li>
+		<div class="left_area tal">
+			{{if(적립금)}}<span class="point">{{$화폐단위전}}{{$적립금}}{{$화폐단위후}}</span>{{endif(적립금)}}
+			<a href="/mypage/coupon_down_list.php" class="point">{{$적립쿠폰}}</a>
+		</div>
+		<div class="right_area">
+			<p>{{$쿠폰명}}</p>
+			<p>{{$쿠폰코드}}</p>
+			<p>{{$교환일}}</p>
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">소셜쿠폰이 존재하지 않습니다.</p>
+<!-- 데이터없음끝 -->

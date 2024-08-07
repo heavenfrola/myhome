@@ -1,0 +1,63 @@
+<script src="{{$이미지경로}}/../slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{$이미지경로}}/../slick.css">
+<div class="layer_review_list upfile_cnt{{$첨부이미지개수}}">
+	<div class="prd">
+		<h2><a href="{{$관련상품링크}}">{{$관련상품명}}</a></h2>
+		<div class="img"><a href="{{$관련상품링크}}"><img src="{{$관련상품이미지}}" alt="{{$관련상품명}}"></a></div>
+	</div>
+	<div class="img">
+		<div class="add_slide">
+			{{$상품평첨부이미지목록}}
+		</div>
+	</div>
+	<div class="info">
+		<div class="board">
+			<div class="grade">
+				<span class="gradebox small point{{$상품평점수(텍스트)}}"></span>
+				<span class="score">{{$상품평점수(텍스트)}}</span>
+			</div>
+			<p class="name">{{$작성자명}} | {{$작성일시}}</p>
+			<p class="subject">{{$글제목}}</p>
+			<div class="content">
+				{{$글내용}}
+			</div>
+			<div class="recommend">
+				해당 상품후기가 도움이 되었나요?
+				<span>
+					<a onclick="{{$상품평추천하기링크}}" class="yes">{{$상품평추천수}}</a>
+					<a onclick="{{$상품평비추천링크}}" class="no">{{$상품평비추천수}}</a>
+				</span>
+			</div>
+			<div class="btn">
+				{{$상품평수정링크태그(레이어)}}수정</a>
+				{{$상품평삭제링크태그}}삭제</a>
+			</div>
+		</div>
+		<div class="comment">
+			{{if(비로그인상태)}}
+			<div class="guest">
+				'로그인'후 이용하실 수 있습니다.<a href="/member/login.php">로그인</a>
+			</div>
+			{{endif(비로그인상태)}}
+			{{if(회원로그인상태)}}
+			{{if(댓글작성권한)}}
+			{{$댓글작성폼시작}}
+			<div class="write">
+				<textarea name="content" class="form_input block" placeholder="댓글을 작성해 주세요."></textarea>
+				<input type="submit" value="확인" class="btn_comment">
+			</div>
+			{{$댓글작성폼끝}}
+			{{endif(댓글작성권한)}}
+			{{endif(회원로그인상태)}}
+			<!-- //로그인 후 -->
+			{{$상품평댓글리스트}}
+		</div>
+	</div>
+	<a onclick="{{$상품후기닫기링크}}" class="close">닫기</a>
+</div>
+<script type="text/javascript">
+	$('.layer_review_list .add_slide').slick({
+		dots: true,
+		infinite: true
+	});
+</script>

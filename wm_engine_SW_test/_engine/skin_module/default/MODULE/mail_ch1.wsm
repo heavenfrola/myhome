@@ -1,0 +1,580 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{br_title}</title>
+</head>
+<body style="margin:0; padding:0;">
+
+<table cellspacing="0" cellpadding="0" style="width:100%; background-color:#efefef;" align="center">
+	<tr>
+		<td style="padding:30px; text-align:center;">
+			<table cellspacing="0" cellpadding="0" style="width:640px; margin:0 auto;" align="center">
+				<tr>
+					<td style="padding:40px; background-color:#fff; text-align:left;">
+						<h1 style="margin:0; padding:0; font-weight:normal;"><a href="{쇼핑몰주소}" target="_blank" style="margin:0; padding:0; border:0;"><img src="{로고URL}" alt="" style="margin:0; padding:0; border:0;"></a></h1>
+{case_1_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">注册</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好<br>恭喜您加入{쇼핑몰이름}的会员</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">我们 {쇼핑몰이름} 尽力而为，让您方便享受各种服务</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%;">会员信息</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">账号</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{아이디}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">注册日期</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{가입일시}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+{case_1_finish}
+
+{case_2_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">确认订单信息</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好<br>{회원이름}，您订购的明细</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">在 “我的页面 > 订单查询” 也能查询订购的内容</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">订单查询</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">订单编号</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문번호}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">订单日期</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문일시}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">订单商品</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문상품}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">结算方式</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{결제방법}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总支付金额</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{결제금액}元</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">商品信息</h3>
+						{스킨주문상품목록}
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">商品合计金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{주문금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">运费</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(+) {배송비}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总折扣金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(-) {총할인금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总支付金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">配送地址信息</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">收件人</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인명}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">地址</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인주소}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">手机号码</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인휴대번호}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 非会员在订单填写页面内同意接收邮件时发送</p>
+{case_2_finish}
+
+{case_3_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">商品配送</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好<br>{회원이름}，您订购的商品已发货</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">在 “我的页面 > 订单查询” 也能查询订购的内容</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">配送信息</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">订单编号</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문번호}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">订单商品</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문상품}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">快递公司</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{택배사}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">快递编号</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;"><a href="{배송추적링크}" target="_blank" style="margin:0; padding:0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{송장번호}</a> <span style="margin:0; padding:10px 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:12px; font-weight:normal; text-align:left; line-height:160%;">*点击快递编号时，可以快递跟踪查询</span></td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">商品信息</h3>
+						{스킨주문상품목록}
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">商品合计金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{주문금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">运费</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(+) {배송비}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总折扣金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(-) {총할인금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总支付金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">配送地址信息</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">收件人</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인명}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">地址</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인주소}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">手机号码</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인휴대번호}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 非会员在订单填写页面内同意接收邮件时发送</p>
+{case_3_finish}
+
+{case_4_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">完成配送</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好<br>{회원이름}，您订购的商品已配送</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">在 “我的页面 > 订单查询” 也能查询订购的内容</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">商品信息</h3>
+						{스킨주문상품목록}
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">商品合计金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{주문금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">运费</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(+) {배송비}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总折扣金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(-) {총할인금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总支付金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 非会员在订单填写页面内同意接收邮件时发送</p>
+{case_4_finish}
+
+{case_5_start}
+ 						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">临时密码</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>, 请您确认临时密码。</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%;">临时密码</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">临时密码</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{비밀번호}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">咨询时间</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{문의시간}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">IP</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{아이피}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>				
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 密码采用加密式管理，由此给您发送新的临时密码。请您通过.<br>修改会员信息重新更改密码</p>
+{case_5_finish}
+
+{case_6_start}
+						<div style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{메일내용}</div>
+{case_6_finish}
+
+{case_7_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">推荐商品邮件</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">我们 <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{쇼핑몰이름}</strong> 为您推荐的商品</p>
+						<div style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{메일내용}</div>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">推荐商品信息</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;"><a href="{상품주소}" target="_blank">{상품사진}</a></th>
+								<td style="margin:0; padding:10px; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%; vertical-align:middle;"><a href="{상품주소}" style="margin:0; padding:0; border:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-decoration:none; line-height:160%;"><strong>{상품명}</strong><br>{상품가격}</a></td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+{case_7_finish}	
+
+{case_8_start}
+						<div style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{메일내용}</div>
+{case_8_finish}
+
+{case_9_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">询问服务</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好<br>{회원이름}，您提问的问题回答如下</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%;">答辩通知</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">咨询题目</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{문의제목}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">咨询内容</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{문의내용}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">回复</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{답변내용}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+{case_9_finish}
+
+{case_12_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">休眠会员事先通知</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">为保护1年内没有登录记录的会员个人信息，打算通过转换休眠会员而分离保管个人信息</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%;">休眠通知</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">转换日期</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{휴면처리일}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">账号</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{아이디}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<a href="{쇼핑몰주소}/member/login.php" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">登录</a>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 休眠会员转换后重新登录即可转换为一般会员</p>
+						<p style="margin:0; padding:0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 本邮件无论是否同意接收邮件都发送</p>
+{case_12_finish}
+
+{case_13_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">注册验证</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好<br>感谢您访问 {쇼핑몰이름}</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">请通过本邮件中所包含的"完成注册许可",完成会员注册认证</p>
+						<a href="{쇼핑몰주소}/main/exec.php?exec_file=member/join_finish.exe.php&amp;key={인증키}" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">完成注册许可</a>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 注册许可是申请后1小时内有效</p>
+{case_13_finish}
+
+{case_14_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">修改信息认证</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好<br>{회원이름}，您需要进行电邮信息修改认证</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">请通过本邮件中所包含的"完成修改信息"，完成电邮信息修改认证</p>
+						<a href="{쇼핑몰주소}/main/exec.php?exec_file=member/join_finish.exe.php&amp;key={인증키}&amp;type=re" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">完成修改信息</a>
+{case_14_finish}
+
+{case_15_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">介绍同意接收广告信息</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">我们 {쇼핑몰이름} 每两年确认一次是否接收广告信息</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">同意信息接收现状</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">短信</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{SMS수신허용일}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">电邮</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{이메일수신허용일}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">更改设定接收信息同意</h3>
+						<p style="margin:0; padding:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">短信 / 电邮 : {쇼핑몰이름} 登录 > 我的页面 > 修改信息页面</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 本邮件无论是否同意接收邮件都发送</p>
+{case_15_finish}
+
+{case_16_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">修改密码</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好<br>{회원이름}的密码修改URL发送给您</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">请通过本邮件中所包含的"修改密码"，完成修改密码</p>
+						<a href="{쇼핑몰주소}/main/exec.php?exec_file=member/modify_pwd.php&amp;key={비밀번호변경인증키}" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">修改密码</a>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 密码修改URL为一次性，不能再次使用</p>
+{case_16_finish}
+
+{case_17_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">积分消失</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">将于 <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{소멸예정일}</strong>，您的积分 <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{소멸적립금}</strong> 元消失<br>请察看网站公告事项里的主要内容</p>
+{case_17_finish}
+
+{case_18_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">积分消失</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">将于 <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{소멸예정일}</strong>，您的积分 <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{소멸적립금}</strong> 元消失<br>消失的积分不能恢复，请有效期内使用</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- 本邮件由于同意了接收广告性邮件而发送，<a href="{수신거부링크}" target="_blank" style="margin:0; padding:0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">如不愿接收请点击这里</a></p>
+{case_18_finish}
+
+{case_19_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">发送验证码</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">您好，这里是 <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{쇼핑몰이름}</strong></p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">验证码为  <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{인증번호}</strong><br>谢谢</p>
+{case_19_finish}
+
+{case_21_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">介绍边陲接收广告信息</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>，您好</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{광고성정보변경일자} {SMS이메일수신동의여부}<br>谢谢</p>
+{case_21_finish}
+{case_22_start}
+<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">个人信息使用明细指南</h2>
+                        <p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>您好?</p>
+                        <p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">亲爱的{회원이름}，根据信息通信网使用促进或信息保护等相关法律第30条2(个人信息使用明细的通知),介绍每年一次的个人信息使用明细。 详情请确认{쇼핑몰이름}个人信息处理方针。<br>谢谢。</p>
+						<a href="{쇼핑몰주소}/content/content.php?cont=privacy" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">个人信息处理方针</a>
+{case_22_finish}
+
+{case_23_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">确认订单信息</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{입점사명}</strong>，您好<br>{회원이름}，您订购的明细</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">在 “我的页面 > 订单查询” 也能查询订购的内容</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">订单查询</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">订单编号</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문번호}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">订单日期</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문일시}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">订单商品</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문상품}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">结算方式</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{결제방법}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总支付金额</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{결제금액}元</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">商品信息</h3>
+						{스킨주문상품목록}
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">商品合计金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{주문금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">运费</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(+) {배송비}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总折扣金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(-) {총할인금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">总支付金额</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">配送地址信息</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">收件人</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인명}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">地址</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인주소}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">手机号码</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인휴대번호}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+{case_23_finish}
+					</td>
+				</tr>
+				<tr>
+					<td style="padding:40px; background-color:#e4e4e4; text-align:left;">
+						<p style="margin:0; padding:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%; letter-spacing:-1px;">本邮件为发信专用，不能回复。其他咨询，请联系<strong style="margin:0; padding:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; line-height:160%; letter-spacing:-1px;">[客服中心]</strong>。</p>
+						<address style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; font-style:normal; line-height:160%;">
+						{bottom}
+						</address>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<div id="milage" class="wrap_inner">
+	<div class="box_mp">
+		<p class="have">총 적립금<span>{{$회원보유적립금액}}</span></p>
+	</div>
+	{{$적립금리스트}}
+	{{$페이지선택}}
+</div>

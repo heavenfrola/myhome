@@ -1,0 +1,17 @@
+<div class="prd">
+	<div class="img"><a href="/shop/detail.php?pno={{$상품번호}}" alt="상품이미지">{{$상품이미지}}</a></div>
+	<div class="info">
+		<p class="name">{{$상품명}} {{if(상품아이콘)}}{{$상품아이콘}}{{endif(상품아이콘)}}</p>
+		<ul>
+			{{if(상품코드)}}<li>상품코드 : <span>{{$상품코드}}</span></li>{{endif(상품코드)}}
+			{{if(적립금)}}<li>적립금 : <span>{{$화폐단위전}}{{$적립금}}{{$화폐단위후}}</span></li>{{endif(적립금)}}
+			{{if(소비자가)}}<li>소비자가 : {{$화폐단위전}}<span class="nprice">{{$소비자가}}</span>{{$화폐단위후}}</li>{{endif(소비자가)}}
+			<li>판매가 : {{$화폐단위전}}<strong>{{$판매가}}</strong>{{$화폐단위후}}</li>
+		</ul>
+	</div>
+	<div class="btn_related btn_col col3">
+		<span class="box_btn block white"><a href="/shop/detail.php?pno={{$상품번호}}">상품상세보기</a></span>
+		<span class="box_btn block white"><a href="/shop/product_qna.php?pno={{$상품번호}}">해당상품문의</a></span>
+		<span class="box_btn block white"><a href="/shop/product_review.php?pno={{$상품번호}}">해당상품후기</a></span>
+	</div>
+</div>

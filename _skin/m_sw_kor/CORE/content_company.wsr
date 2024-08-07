@@ -1,0 +1,24 @@
+<div id="company" class="wrap_inner">
+	<dl>
+		<dt>Vision</dt>
+		<dd>‘꿈을 짓습니다.’<br>시를 짓고, 이름을 짓고, 미소를 짓고, 집을 짓듯 마음과 생각 속에 있는 것을 이제는 ‘꿈으로 지어보는’ 것은 어떨까요?<br>그 꿈의 시작과 완성에 위사가 함께 할테니까요.</dd>
+	</dl>
+	<dl>
+		<dt>Mission</dt>
+		<dd>우리는 최고의 쇼핑몰을 만든다.<br>그리고 그 쇼핑몰을 최고로 만든다.<br>오직 E-커머스만이 위사의 탄생과 존재 이유입니다.<br>저희의 손을 잡은 고객의 꿈을 이루어드리기 위해 반드시 최고의 것을 만들고, 또 최고가 되게 만드는 일,<br>그것은 위사가 품은 불변의 소명입니다.</dd>
+	</dl>
+	<dl>
+		<dt>Info</dt>
+		<dd>
+			회사명 : {{$회사명}}<br>
+			대표이사 : {{$대표자성명}}<br>
+			사업자등록번호 : {{$사업자등록번호}} <br>
+			통신판매업신고 : {{$통신판매신고번호}}<br>
+			전화 : {{$회사전화번호}}<br>
+		</dd>
+	</dl>
+	<dl class="location">
+		<dt>Location</dt>
+		<dd><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.2175365056473!2d127.0426795259902!3d37.51098070843082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca40bd324eeb5%3A0xa3288fca6a3e0dca!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrhbztmIQy64-ZIDI2OC0xNw!5e0!3m2!1sko!2skr!4v1442378117487" width="100%" height="300" frameborder="0" allowfullscreen></iframe></dd>
+	</dl>
+</div>

@@ -1,0 +1,582 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{br_title}</title>
+</head>
+<body style="margin:0; padding:0;">
+
+<table cellspacing="0" cellpadding="0" style="width:100%; background-color:#efefef;" align="center">
+	<tr>
+		<td style="padding:30px; text-align:center;">
+			<table cellspacing="0" cellpadding="0" style="width:640px; margin:0 auto;" align="center">
+				<tr>
+					<td style="padding:40px; background-color:#fff; text-align:left;">
+						<h1 style="margin:0; padding:0; font-weight:normal;"><a href="{쇼핑몰주소}" target="_blank" style="margin:0; padding:0; border:0;"><img src="{로고URL}" alt="" style="margin:0; padding:0; border:0;"></a></h1>
+{case_1_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">Sign up</h2>
+                        <p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">Congratulation for signing up with {쇼핑몰이름}.</p>
+                        <p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{쇼핑몰이름} will be doing our best to make sure you always have a satisfying shopping experience with a variety of product information.</p>
+                        <h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%;">Sign up information</h3>
+                        <table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+                            <colgroup>
+                                <col style="width:50%">
+                                <col style="width:50%">
+                            </colgroup>
+                            <tbody><tr>
+                                <td colspan="2" style="margin:0; padding:10px 0;"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">ID</th>
+                                <td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{아이디}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Registration date</th>
+                                <td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{가입일시}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+                            </tr>
+                        </tbody>
+					</table>
+{case_1_finish}
+
+{case_2_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">Order History</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.)  <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong><br>The order of {회원이름} has been received as below.</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Order history and shipping information can also be found in My Page > Order List.</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Order History</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Order number</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문번호}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Order date</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문일시}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Ordered items</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문상품}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Payment method</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{결제방법}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Payment amount</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Product Details</h3>
+						{스킨주문상품목록}
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Product total price</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{주문금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Shipping fee</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(+) {배송비}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Total discount amount</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(-) {총할인금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Total payment amount</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Shipping Address Information</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Receiver name</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인명}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Address</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인주소}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Phone number</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인휴대번호}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- This email will be sent to non-member who agreed while processing order.</p>
+{case_2_finish}
+
+{case_3_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">Delivery</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.)  <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong><br>The order of {회원이름} has been shipped as below.</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Order history and shipping information can also be found in My Page > Order List.</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Product Shipping Information</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Order number</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문번호}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Ordered items</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문상품}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Shipping company/carrier</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{택배사}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Tracking number</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;"><a href="{배송추적링크}" target="_blank" style="margin:0; padding:0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{송장번호}</a> <span style="margin:0; padding:10px 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:12px; font-weight:normal; text-align:left; line-height:160%;">*You can track your package by clicking on tracking no.</span></td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Product Details</h3>
+						{스킨주문상품목록}
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Product total price</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{주문금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Shipping fee</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(+) {배송비}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Total discount amount</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(-) {총할인금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Total payment amount</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Shipping Address Information</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Receiver name</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인명}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Address</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인주소}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Phone number</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인휴대번호}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- This email will be sent to non-member who agreed while processing order.</p>
+{case_3_finish}
+
+{case_4_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">Delivery completed</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong><br>This is to let you know that we've shipped your order.</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Order history and shipping information can also be found in My Page > Order List.</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Product Details</h3>
+						{스킨주문상품목록}
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Product total price</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{주문금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Shipping fee</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(+) {배송비}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Total discount amount</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(-) {총할인금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Total payment amount</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- This email will be sent to non-member who agreed while processing order.</p>
+{case_4_finish}
+
+{case_5_start}
+ 						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">Temporary password</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;"><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong>, this is your temporary password.</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%;">Information</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Temporary password</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{비밀번호}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Time</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{문의시간}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">IP</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{아이피}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>				
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- Since passwords are encrypted, we will issue a new temporary passoword.<br>Click here Edit Profile to set your new password.</p>
+{case_5_finish}
+
+{case_6_start}
+						<div style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{메일내용}</div>
+{case_6_finish}
+
+{case_7_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">Recommended product email</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Your personalized recommendations from <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{쇼핑몰이름}</strong> has arrived.</p>
+						<div style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{메일내용}</div>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Recommended Product</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;"><a href="{상품주소}" target="_blank">{상품사진}</a></th>
+								<td style="margin:0; padding:10px; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%; vertical-align:middle;"><a href="{상품주소}" style="margin:0; padding:0; border:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-decoration:none; line-height:160%;"><strong>{상품명}</strong><br>{상품가격}</a></td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+{case_7_finish}	
+
+{case_8_start}
+						<div style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{메일내용}</div>
+{case_8_finish}
+
+{case_9_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">Reply message information</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong><br>This is a reply message to your inquiry.</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%;">Reply message information</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Title</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{문의제목}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Content</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{문의내용}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Reply</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{답변내용}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+{case_9_finish}
+
+{case_12_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">Dormant member</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong></p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">In order to protect the personal information of members who have not accessed the shopping mall for more than one year, <br>we will convert you to dormant member and securely separate and save the personal information.</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%;">Scheduled processing details</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Dormant member expected processing date</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{휴면처리일}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Target ID</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{아이디}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<a href="{쇼핑몰주소}/member/login.php" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">Login</a>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- You may recover your ID and reactivate your account at any time simply by logging into your account.</p>
+						<p style="margin:0; padding:0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- This email notification is sent to you regardless of receipt of notifications you opt in or out of as it is required by the applicable laws</p>
+{case_12_finish}
+
+{case_13_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">Complete your registration</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong><br>Thank you for signing up!</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Please click on the link below for verifying your email and use our service.</p>
+						<a href="{쇼핑몰주소}/main/exec.php?exec_file=member/join_finish.exe.php&amp;key={인증키}" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">Complete your registration</a>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- Verification should be completed within 1 hours after signing up.</p>
+{case_13_finish}
+
+{case_14_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">Complete your profile</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong><br>your E-mail has been changed.</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Please click on the link below to complete your profile editting process.</p>
+						<a href="{쇼핑몰주소}/main/exec.php?exec_file=member/join_finish.exe.php&amp;key={인증키}&amp;type=re" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">Complete your profile</a>
+{case_14_finish}
+
+{case_15_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">To notify receiving Information for marketing purpose</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong></p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Every two years, {쇼핑몰이름} check whether or not we accept marketing purpose</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Report the present condition</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">SMS</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{SMS수신허용일}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Mail</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{이메일수신허용일}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Change SMS/MAIL</h3>
+						<p style="margin:0; padding:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">SMS/Mail : Login > My Page > Edit Profile</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- This email notification is sent to you regardless of receipt of notifications you opt in or out of as it is required by the applicable laws.</p>
+{case_15_finish}
+
+{case_16_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">Change password</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong><br>We will send you a password reset link.</p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Please click the link below to set a new password.</p>
+						<a href="{쇼핑몰주소}/main/exec.php?exec_file=member/modify_pwd.php&amp;key={비밀번호변경인증키}" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">Go to change password</a>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">- Please note, this is one-time link. If you fail to complete, you have to start again from the beginning.</p>
+{case_16_finish}
+
+{case_17_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">The extinction of mileage</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong></p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">all remaining mileage <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{소멸적립금}</strong> that hve been redeemed prior to <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{소멸예정일}</strong> is about to expire.<br>For more information, please visit our website and check our notice boards.</p>
+{case_17_finish}
+
+{case_18_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">The extinction of mileage</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong></p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">all remaining mileage <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{소멸적립금}</strong> that hve been redeemed prior to <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{소멸예정일}</strong> is about to expire.<br>Please use it within the validity period.</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">-  If you don’t want to receive this mail anymore, <a href="{수신거부링크}" target="_blank" style="margin:0; padding:0; color:#888888; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%;">please click here.</a></p>
+{case_18_finish}
+
+{case_19_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%;">Verification number</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, this is <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{쇼핑몰이름}</strong></p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Following is a verification number.<br><strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{인증번호}</strong><br>Thank you.</p>
+{case_19_finish}
+
+{case_21_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">To notify changing Information for marketing purpose</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong></p>
+						<p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">{광고성정보변경일자} {SMS이메일수신동의여부}<br>Thank you.</p>
+{case_21_finish}
+{case_22_start}
+ <h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">Report on personal information usage</h2>
+                        <p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.) <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{회원이름}</strong></p>
+                        <p style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Mrs.(Mr. Dr.) {회원이름},We imform you of personal information usage once a year in accordance with Article 30-2 (Notification of Personal Information Usage Details) of the Information and Communication Network Utilization Promotion and Information Protection Act.
+						For more information, please check the privacy policy of {쇼핑몰이름}.<br>Thank you.</p>
+						<a href="{쇼핑몰주소}/content/content.php?cont=privacy" target="_blank" style="display:block; width:100%; margin:30px 0 0 0; padding:10px 0; border:1px solid #c6c6c6; background-color:#fff; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:normal; text-align:center; text-decoration:none; line-height:160%;">Personal Data Processing Policy</a>
+{case_22_finish}
+
+{case_23_start}
+						<h2 style="margin:0; padding:30px 0 0 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:24px; font-weight:bold; line-height:160%">Order History</h2>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Hello, Mrs.(Mr. Dr.)  <strong style="color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; line-height:160%;">{입점사명}</strong><br>The order of {회원이름} has been received as below.</p>
+						<p style="margin:0; padding:30px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; line-height:160%;">Order history and shipping information can also be found in My Page > Order List.</p>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Order History</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Order number</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문번호}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Order date</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문일시}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Ordered items</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{주문상품}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Payment method</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{결제방법}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Payment amount</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Product Details</h3>
+						{스킨주문상품목록}
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Product total price</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{주문금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Shipping fee</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(+) {배송비}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Total discount amount</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">(-) {총할인금액}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:5px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Total payment amount</th>
+								<td style="margin:0; padding:5px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:right; line-height:160%; vertical-align:middle;">{결제금액}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+						<h3 style="margin:0; padding:30px 0 15px 0; border-bottom:1px solid #888888; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:20px; font-weight:bold; line-height:160%">Shipping Address Information</h3>
+						<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:50%">
+							</colgroup>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0;"></td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Receiver name</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인명}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Address</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인주소}</td>
+							</tr>
+							<tr>
+								<th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">Phone number</th>
+								<td style="margin:0; padding:10px 0; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;">{수취인휴대번호}</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+							</tr>
+						</table>
+{case_23_finish}
+					</td>
+				</tr>
+				<tr>
+					<td style="padding:40px; background-color:#e4e4e4; text-align:left;">
+						<p style="margin:0; padding:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; line-height:160%; letter-spacing:-1px;">This is a Send Only No Reply Email Address. Please use <strong style="margin:0; padding:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; line-height:160%; letter-spacing:-1px;">[Customer Center]</strong> for further inquiries.</p>
+						<address style="margin:0; padding:15px 0 0 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:14px; font-weight:normal; font-style:normal; line-height:160%;">
+						{bottom}
+						</address>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

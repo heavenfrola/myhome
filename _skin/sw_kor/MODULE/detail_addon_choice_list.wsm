@@ -1,0 +1,29 @@
+<!-- 반복문시작 -->
+<div class="list_set select">
+	<h3>골라담기 상품 선택</h3>
+	<div class="box">
+		<ul>
+<!-- 반복구문시작 -->
+			<li>
+				<div class="img"><a href="{{$상품링크}}" target="_blank"><img src="{{$상품이미지}}" alt=""></a></div>
+				<div class="info">
+					<p><a href="{{$상품링크}}" target="_blank">{{$상품명}}</a></p>
+					<p><strong>{{$화폐단위전}}{{$상품판매가}}{{$화폐단위후}}</strong></p>
+				</div>
+				<div class="opt">
+					{{$상품옵션}}
+				</div>
+				<div class="btn">
+					{{if(퀵프리뷰링크)}}<span class="box_btn white quick"><a onclick="quickDetailPopup(this, '{{$상품번호}}');">퀵뷰</a></span>{{endif(퀵프리뷰링크)}}
+					<span class="box_btn w70"><a href="#" onclick="{{$선택하기}}">선택하기</a></span>
+				</div>
+			</li>
+<!-- 반복구문끝 -->
+		</ul>
+	</div>
+</div>
+<!-- 반복문끝 -->
+
+<!-- 데이터없음시작 -->
+
+<!-- 데이터없음끝 -->

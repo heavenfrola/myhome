@@ -1,0 +1,4 @@
+<!-- 주문서 - 비회원주문일때, 로그인,회원가입 링크 -->
+<span class="box_btn"><a href="/member/login.php">로그인</a></span>
+<span class="box_btn"><a href="/member/join_step1.php">회원가입</a></span>
+<!-- //주문서 - 비회원주문일때, 로그인,회원가입 링크 -->

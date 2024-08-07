@@ -1,0 +1,32 @@
+<!-- 반복문시작 -->
+<table class="tbl_col">
+	<caption class="hidden">주문내역</caption>
+	<colgroup>
+		<col style="width:15%;">
+		<col>
+		<col style="width:12%;">
+		<col style="width:12%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">주문번호</th>
+			<th scope="col">상품명</th>
+			<th scope="col">주문금액</th>
+			<th scope="col">상태</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td class="order_number">{{$주문번호}}<br>{{$주문일}}</td>
+			<td class="tal">{{$상품명}}</td>
+			<td>{{$화폐단위전}}{{$결제금액}}{{$화폐단위후}}</td>
+			<td>{{$주문상태}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">주문내역이 존재하지 않습니다.</p>
+<!-- 데이터없음끝 -->

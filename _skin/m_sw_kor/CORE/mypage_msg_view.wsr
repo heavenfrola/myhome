@@ -1,0 +1,28 @@
+<div id="msg">
+	<table class="tbl_row">
+		<caption>쪽지보기</caption>
+		<colgroup>
+			<col style="width:25%;">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">보낸이</th>
+				<td class="left">{{$보낸회원명}}({{$보낸회원아이디}})</td>
+			</tr>
+			<tr>
+				<th scope="row">발송일시</th>
+				<td class="left">{{$발송일시}}</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="left">
+					<div>{{$쪽지내용}}</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="btn_col">
+		<span class="box_btn block"><a href="/mypage/msg_list.php?mode=1">목록</a></span>
+		<span class="box_btn block white"><a href="{{$쪽지삭제}}">삭제</a></span>
+	</div>
+</div>

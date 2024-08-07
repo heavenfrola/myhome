@@ -1,0 +1,45 @@
+<!-- 반복문시작 -->
+<p class="title_count tar">상품이 모두 <strong>{{$위시리스트개수}}</strong>개 있습니다.</p>
+<table class="prd_related">
+	<caption class="hidden">관심상품</caption>
+	<colgroup>
+		<col style="width:120px;">
+		<col>
+		<col style="width:15%;">
+		<col style="width:30%;">
+		<col style="width:20px;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">상품명</th>
+			<th scope="col">가격</th>
+			<th scope="col">옵션</th>
+			<th scope="col">선택</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td class="img">{{$상품이미지}}</td>
+			<td class="tal">
+				{{$상품명}} <span class="soldout {{$상품품절}}">[품절]</span>
+				{{if(상품요약설명)}}
+				<div class="summary">{{$상품요약설명}}</div>
+				{{endif(상품요약설명)}}
+			</td>
+			<td><strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</strong></td>
+			<td class="opt">{{$상품옵션}}</td>
+			<td>{{$체크박스}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<div class="btn">
+	<span class="box_btn large w150 white"><a href="{{$위시리스트비우기}}">전체상품삭제</a></span>
+	<span class="box_btn large w150 white"><a href="{{$체크삭제}}">선택상품삭제</a></span>
+	<span class="box_btn large w150 fr"><a href="{{$체크장바구니}}">선택상품장바구니</a></span>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">관심상품에 등록된 상품이 없습니다.</p>
+<!-- 데이터없음끝 -->

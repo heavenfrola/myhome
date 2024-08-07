@@ -1,0 +1,5 @@
+<div id="sccoupon_list">
+	<h3 class="title first">소셜 쿠폰 내역</h3>
+	{{$소셜쿠폰리스트}}
+	{{$페이지선택}}
+</div>

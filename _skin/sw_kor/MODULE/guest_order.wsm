@@ -1,0 +1,3 @@
+<div class="guest_order">
+	<span class="box_btn block huge strong"><a href="{{$비회원주문하기링크}}">비회원주문하기</a></span>
+</div>

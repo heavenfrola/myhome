@@ -1,0 +1,25 @@
+<!-- 반복문시작 -->
+<div class="new5p">
+	<div class="wrap_inner">
+		<h2 class="subtitle">new 5%</h2>
+		<div class="prd_basic mini slide new">
+<!-- 반복구문시작 -->
+			{{$기본상품박스}}
+<!-- 반복구문끝 -->
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('.prd_basic.slide.new').slick({
+		slidesToShow: 5,	// 한 줄 상품갯수
+		slidesToScroll: 1,	// 슬라이드 되는 갯수
+		swipe: false,		// 스와이프 기능 true, false
+		dots: false,		// 페이지네이션의 노출 true, false
+		arrows:true,		// 좌우슬라이드의 버튼 노출 true, false
+		autoplay: true,		// 자동슬라이드 true, false
+		autoplaySpeed: 2000,// 슬라이드속도
+	});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

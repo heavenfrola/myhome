@@ -1,0 +1,9 @@
+<div id="zoomimg">
+	<h2>{{$상품명}}</h2>
+	<div class="img">{{$상품이미지}}</div>
+	<ul class="list">
+		<li>{{$상품이미지1}}</li>
+		{{$상품이미지리스트}}
+	</ul>
+	<span class="box_btn small white"><a href="javascript:window.close();">닫기</a></span>
+</div>

@@ -1,0 +1,23 @@
+<!-- 반복문시작 -->
+<ul>
+<!-- 반복구문시작 -->
+	<li onclick="faq_toggle(this)">
+		<div class="question">
+			<span class="icon">Q</span>
+			{{$글제목}}
+		</div>
+		<div class="answer">
+			<span class="icon">A</span>
+			{{$글내용}}
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<script type="text/javascript">
+	function faq_toggle(obj){
+		$(obj).find('.answer').toggle();
+	}
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

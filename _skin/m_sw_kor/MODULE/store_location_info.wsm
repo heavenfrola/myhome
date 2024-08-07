@@ -1,0 +1,32 @@
+
+<div class="box">
+	<span class="close" onclick="toggle_view('shop_detail')"></span>
+	<h3>상세정보</h3>
+	<div class="img">{{$매장이미지2}}</div>
+	<h4>매장 정보</h4>
+	<div class="info">
+
+		<div class="text_info">
+			<dl class="">
+				<dt>ㆍ매장명</dt>
+				<dd id="store">{{$매장명}}</dd>
+			</dl>
+			<dl class="">
+				<dt>ㆍ주소</dt>
+				<dd id="area">{{$주소1}} {{$주소2}}</dd>
+			</dl>
+			<dl class="">
+				<dt>ㆍ전화번호</dt>
+				<dd id="tel">{{$전화번호}}</dd>
+			</dl>
+			<dl class="">
+				<dt>ㆍ기타내용</dt>
+				<dd id="fax">{{$기타내용}}</dd>
+			</dl>
+			<dl class="">
+				{{$매장이미지3}}
+			</dl>
+
+		</div>
+	</div>
+</div>

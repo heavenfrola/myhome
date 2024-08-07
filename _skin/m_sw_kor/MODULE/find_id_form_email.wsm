@@ -1,0 +1,4 @@
+<div class="fld find_id_item_2">
+	<label for="find_id_email">이메일</label>
+	<input type="text" name="email" id="find_id_email" class="form_input member block">
+</div>

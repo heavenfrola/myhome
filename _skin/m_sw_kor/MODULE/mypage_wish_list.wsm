@@ -1,0 +1,29 @@
+<!-- 반복문시작 -->
+<p class="count">상품이 모두 <strong>{{$위시리스트개수}}</strong>개 있습니다.</p>
+<ul id="mypage_wishlist" class="list_common prd">
+<!-- 반복구문시작 -->
+	<li>
+		<div class="left_area">
+			<span class="check">{{$체크박스}}</span>
+			{{$상품이미지}}
+		</div>
+		<div class="right_area">
+			<p>{{$상품명}}</p>
+			<p><strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</strong></p>
+			{{if(상품적립금)}}
+			<p>적립금 : {{$상품적립금}}</p>
+			{{endif(상품적립금)}}
+			<div>{{$상품옵션}}</div>
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<span class="btn box_btn block"><a href="{{$체크장바구니}}">선택상품장바구니</a></span>
+<div class="btn_col">
+	<span class="box_btn block white"><a href="{{$위시리스트비우기}}">전체상품삭제</a></span>
+	<span class="box_btn block white"><a href="{{$체크삭제}}">선택상품삭제</a></span>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">관심상품에 등록된 상품이 없습니다.</p>
+<!-- 데이터없음끝 -->

@@ -1,0 +1,5 @@
+<div id="restock">
+	<h3 class="title first">재입고 알림 신청 내역</h3>
+	{{$재입고알림내역}}
+	{{$재입고알림내역페이징}}
+</div>

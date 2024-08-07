@@ -1,0 +1,5 @@
+<!-- 주문서 - 회원주문일때, 회원정보 수정 링크  -->
+<tr>
+	<td colspan="2" class="edit">회원정보가 변경되셨다면 다음 버튼을 누르고 수정해 주세요. <span class="box_btn small"><a href="/member/edit_step1.php">회원정보수정</a></span></td>
+</tr>
+<!-- //주문서 - 회원주문일때, 회원정보 수정 링크  -->

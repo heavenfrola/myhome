@@ -1,0 +1,18 @@
+<!-- 반복문시작 -->
+<div class="prd_basic mini slide best">
+<!-- 반복구문시작 -->
+	{{$기본상품박스}}
+<!-- 반복구문끝 -->
+</div>
+<script type="text/javascript">
+	$('.prd_basic.slide.best').slick({
+		slidesToShow: 5,	// 한페이지의 상품 수
+		slidesToScroll: 1,	// 슬라이드 되는 상품 수
+		swipe: false,		// swipe 기능 (true, false)
+		dots: false,		// 페이징 노출 (true, false)
+		arrows:true			// 이동 버튼 노출 (true, false)
+	});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

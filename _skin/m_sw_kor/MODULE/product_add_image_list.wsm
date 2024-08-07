@@ -1,0 +1,28 @@
+<!-- 반복문시작 -->
+<div class="swiper-container swiper_detail">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="{{$상품중이미지}}" alt="상품중이미지 썸네일"></div>
+<!-- 반복구문시작 -->
+		<div class="swiper-slide"><img src="{{$부가이미지주소}}" alt="부가이미지 썸네일"></div>
+<!-- 반복구문끝 -->
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<script type="text/javascript">
+// 부가이미지
+$(function() {
+	$('#mimg_div').hide();
+	$('#addimg').show();
+	var swiper_detail = new Swiper('.swiper_detail', {
+		slidesPerView: 1,	// 한페이지의 부가이미지 수
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

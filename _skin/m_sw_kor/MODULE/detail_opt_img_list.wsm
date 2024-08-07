@@ -1,0 +1,16 @@
+<!-- 반복문시작 -->
+<ul class="color_option">
+<!-- 반복구문시작 -->
+	<li>
+		<a href="#" onclick="{{$옵션칩선택}}" class="optChipSet{{$옵션순서}} optChipItem{{$옵션번호}}" data="{{$옵션번호}}"><img src="{{$이미지주소}}" alt="{{$옵션값}}"></a>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<!-- 반복문끝 -->
+<!-- 반복구문2시작 -->
+<li>
+	<a href="#" onclick="{{$옵션칩선택}}" class="optChipSet{{$옵션순서}} optChipItem{{$옵션번호}}" data="{{$옵션번호}}" style="background-color:{{$색상코드}}"></a>
+</li>
+<!-- 반복구문2끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

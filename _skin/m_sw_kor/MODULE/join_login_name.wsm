@@ -1,0 +1,6 @@
+<div class="required">
+	<label for="join_name">이름</label>
+	<div class="input_area">
+		<input type="text" name="" value="{{$회원명}}" id="join_name" class="form_input block readonly" readonly>
+	</div>
+</div>

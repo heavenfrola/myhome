@@ -1,0 +1,46 @@
+<style type="text/css">
+    #cnt .cntbody {width:100%;}
+</style>
+<h2 class="subtitle">매장안내</h2>
+<div id="map_wrap" class="type{{$레이아웃타입}}">
+    <div class="sply_search">
+        {{$폼시작}}
+        <!--{{$지역리스트}}-->
+        <!--{{$검색조건}}-->
+        <input type="text" name="search_str" id="search_str" value="{{$검색값}}" class="form_input" placeholder="매장명이나 주소를 검색해 보세요">
+        <input type="button" class="button" onclick="gpsKakaoMap({'type':'list'});">
+		<!--<span class="box_btn"><a href="#" onclick="kakaoMapList();">초기화</a></span>-->
+        {{$폼끝}}
+    </div>
+	<div class="right">
+		<ul class="top_btn add_btn">
+			<li class="plus"><a href="javascript:ZoomIn();"></a></li>
+			<li class="minus"><a href="javascript:ZoomOut();"></a></li>
+			<li class="point"><a href="javascript:gpsKakaoMap({'type':'m'});"></a></li>
+		</ul>
+		<div class="map-canvas" id="map" style="width: 700px; height: 557px; "></div>
+	</div>
+	<div class="left">
+		<p class="total">총 <span id="storeTotal">0</span>개의 매장이 있습니다.</p>
+<!--		<span class="list_tap"><a onclick="gpsKakaoMap({'type':'wishList'})">찜 매장</a></span>-->
+		<div class="map_list_wrap">
+			<ul class="map_list">
+			  <!--{{$매장리스트}}-->
+			</ul>
+		</div>
+		{{$시설안내리스트}}
+	</div>
+</div>
+{{$카카오매장안내실행}}
+<script type="text/javascript">
+	$('.filter_body p').click(function(){
+		if ($('.filter_body').hasClass('on')){
+			$('.filter_body').removeClass('on');
+			$('#map_wrap .left .filter_body').height('55px');
+		} else {
+			$('.filter_body').addClass('on');
+			var box_l = $('#map_wrap .left .filter_body .box').height();
+			$('#map_wrap .left .filter_body.on').height(60 + box_l + 30);
+		}
+	});
+</script>

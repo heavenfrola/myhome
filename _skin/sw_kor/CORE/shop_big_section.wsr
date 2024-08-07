@@ -1,0 +1,103 @@
+<style type="text/css">
+#cnt .cntbody {position:relative; width:1600px; padding-left:400px;}
+.fillter {position:absolute; top:0; left:0; width:265px;}
+.fillter h4 {font-size:16px; line-height:60px; text-transform:uppercase;}
+.fillter ul {margin-bottom:21px; font-size:0;}
+.fillter ul li {display:inline-block; margin-bottom:7px;}
+.fillter .box {padding:18px 0 20px; border-bottom:1px solid #bebebe;}
+.fillter .small ul li {margin-right:7px;}
+.fillter .small ul li:nth-child(4n) {margin-right:0;}
+.fillter input {display:none;}
+.fillter input + label {display:inline-block; background:#F3F3F3; font-weight:500; font-size:14px; line-height:40px; text-align:center;}
+.fillter .size_n label {width:61px; height:40px; cursor:pointer;}
+.fillter .big li {width:100%;}
+.fillter .big label {width:100%; height:40px; cursor:pointer;}
+.fillter input:checked + label {background:#000; color:#fff !important;}
+.box_btn {margin-top:41px;}
+.box_btn a {width:265px; height:45px; padding:12px 0; font-size:14px;}
+</style>
+<h2 class="subtitle">{{$카테고리명}}</h2>
+<div id="big_section">
+	{{if(사용자리스트6)}}
+	<!-- 카테고리 추천 -->
+	<div class="best_area">
+		{{$사용자리스트6}}
+	</div>
+	<!-- //카테고리 추천 -->
+	{{endif(사용자리스트6)}}
+	{{$사용자리스트7}}
+	<!-- 상품정렬 -->
+	<div>
+		<div class="total_sort">
+			<p class="total">상품이 모두 <strong>{{$총상품개수}}</strong>개 있습니다.</p>
+			<div class="sort">
+				{{$상품정렬선택}}
+				{{$상품정렬선택리스트}}
+			</div>
+		</div>
+		<!--// 상품정렬 -->
+		{{$상품리스트}}
+		{{$페이지선택}}
+	</div>
+	</div>
+<div class="fillter">
+	<div class="box size small">
+		<h4>사이즈</h4>
+		<ul class="size_n">
+			<li>
+				<input type="checkbox" id="size_number_0" name="" value="85" onclick="ajaxPrd();">
+				<label for="size_number_0">085</label>
+			</li>
+			<li>
+				<input type="checkbox" id="size_number_1" name="" value="90" onclick="ajaxPrd();">
+				<label for="size_number_1">090</label>
+			</li>
+			<li>
+				<input type="checkbox" id="size_number_2" name="" value="95" onclick="ajaxPrd();">
+				<label for="size_number_2">095</label>
+			</li>
+			<li>
+				<input type="checkbox" id="size_number_3" name="" value="100" onclick="ajaxPrd();">
+				<label for="size_number_3">100</label>
+			</li>
+			<li>
+				<input type="checkbox" id="size_number_4" name="" value="105" onclick="ajaxPrd();">
+				<label for="size_number_4">105</label>
+			</li>
+			<li>
+				<input type="checkbox" id="size_number_5" name="" value="110" onclick="ajaxPrd();">
+				<label for="size_number_5">110</label>
+			</li>
+		</ul>
+	</div>
+
+	<!--		<div class="box size small">-->
+	<!--			<h4>할인여부</h4>-->
+	<!--			<ul class="size_n">-->
+	<!--				<li>-->
+	<!--					<input type="radio" id="event_y" name="event" value="">-->
+	<!--					<label for="event_y">할인</label>-->
+	<!--				</li>-->
+	<!--				<li>-->
+	<!--					<input type="radio" id="event_n" name="event" value="">-->
+	<!--					<label for="event_n">없음</label>-->
+	<!--				</li>-->
+	<!--				-->
+	<!--			</ul>-->
+	<!--		</div>-->
+
+	<!--		<div class="box price big">-->
+	<!--			<h4>가격</h4>-->
+	<!--			<ul class="size_n">-->
+	<!--				<li>-->
+	<!--					<input type="radio" name="price[]" value="" onclick="" id="price1">-->
+	<!--					<label for="price1">10만원 미만</label>-->
+	<!--				</li>-->
+	<!--				<li>-->
+	<!--					<input type="radio" name="price[]" value="" onclick="" id="price2">-->
+	<!--					<label for="price2">10만원 ~ 20만원 미만</label>-->
+	<!--				</li>-->
+	<!--			</ul>-->
+	<!--		</div>-->
+	<!--		<span class="box_btn white"><a href="/">전체 필터 초기화</a></span>-->
+</div>

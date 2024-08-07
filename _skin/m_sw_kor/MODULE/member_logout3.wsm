@@ -1,0 +1,30 @@
+<!-- 주문서 - 비회원 구매동의 약관동의 내용입니다. 삭제시 문제가 발생할 수 있습니다. -->
+<h3 class="title" onclick="toggle_next(this);">비회원 개인정보 수집·이용 동의</h3>
+<div class="part_guest">
+	<table class="tbl_row">
+		<caption class="hidden">비회원 개인정보 수집·이용 동의</caption>
+		<colgroup>
+			<col style="width:30%;">
+			<col>
+		</colgroup>
+		<tr>
+			<th>수집하는 개인정보 항목</th>
+			<td class="tal">이름, 주소, 전화번호, 이메일, 결제 정보</td>
+		</tr>
+		<tr>
+			<th>수집 및 이용목적</th>
+			<td class="tal">비회원 구매서비스 제공</td>
+		</tr>
+		<tr>
+			<th>보유 및 이용기간</th>
+			<td>
+				원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 관계 법령에 따라 개인정보를 보존해야 하는 경우, 회사는 해당 법령에서 정한 기간동안 보관합니다.<br><br>
+				※ 동의를 거부할 수 있으나 거부 시 비회원 구매서비스 이용이 불가능합니다.
+			</td>
+		</tr>
+	</table>
+	<p class="agree_guest">
+		<input type="checkbox" name="agree_guest_order" id="agree_guest_order" value="Y"> <label for="agree_guest_order">위에 대한 내용을 확인하였으며 이에 동의합니다.</label>
+	</p>
+</div>
+<!-- //주문서 - 비회원 구매동의 약관동의 내용입니다. 삭제시 문제가 발생할 수 있습니다. -->

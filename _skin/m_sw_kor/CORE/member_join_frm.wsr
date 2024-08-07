@@ -1,0 +1,93 @@
+<div id="join_input">
+	{{$폼시작}}
+		<input type="hidden" name="setOpenSSL" value="Y" checked>
+		<fieldset>
+			<legend>기본정보입력 <span><strong>*</strong> 필수 입력 항목</span></legend>
+			<div class="box">
+				{{$가입시아이디}}
+				{{$정보수정아이디}}
+				<div class="required">
+					<label for="join_email">이메일</label>
+					<div class="input_area">
+						<input type="email" name="email" value="{{$이메일}}" id="join_email" class="form_input block" autocomplete="off">
+						<div class="auto_complete_email"></div>
+					</div>
+					<div class="msg">
+						<p class="form_result form_result_email warning"></p>
+					</div>
+				</div>
+				<div class="pw1 required">
+					<label for="join_pw">비밀번호</label>
+					<div class="input_area">
+						<input type="password" name="pwd[]" id="join_pw" class="form_input block" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} autocomplete="new-password">
+					</div>
+					<div class="msg">
+						<p class="form_result form_result_pwd1 warning"></p>
+						<div class="password_security_lev password_security_1" style="display:none;">
+							비밀번호 안전도 <strong>낮음</strong> <span></span>
+							<p>안전도가 높은 비밀번호를 권장합니다.</p>
+						</div>
+						<div class="password_security_lev password_security_2" style="display:none;">
+							비밀번호 안전도 <strong>중간</strong> <span></span>
+							<p>안전도가 높은 비밀번호를 권장합니다.</p>
+						</div>
+						<div class="password_security_lev password_security_3" style="display:none;">
+							비밀번호 안전도 <strong>높음</strong> <span></span>
+							<p>안전도가 높은 비밀번호를 권장합니다.</p>
+						</div>
+					</div>
+				</div>
+				<div class="pw2 required">
+					<label for="join_pw2">비밀번호 확인</label>
+					<div class="input_area">
+						<input type="password" name="pwd[]" id="join_pw2" class="form_input block" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} autocomplete="new-password">
+					</div>
+					<div class="msg">
+						<p class="form_result form_result_pwd2 warning"></p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				{{$가입시성명}}
+				{{$정보수정성명}}
+				{{$정보수정닉네임}}
+				<div class="required">
+					<label for="join_cell">휴대전화번호</label>
+					<div class="input_area">
+						<input type="text" name="cell" value="{{$휴대전화}}" id="join_cell" class="form_input block remove_dash" placeholder="(-) 없이 번호만 입력">
+					</div>
+					<div class="msg">
+						<p class="form_result form_result_cell warning"></p>
+					</div>
+				</div>
+				{{$생년월일}}
+				{{$성별}}
+				{{$주소}}
+			</div>
+			<div class="box">
+				<div class="required">
+					<label>이벤트 정보 수신</label>
+					<div class="input_area check_chg">
+						<input type="checkbox" name="sms" value="Y" id="join_sms" {{$SMS동의체크}}><label for="join_sms">SMS 정보 수신</label>
+						<input type="checkbox" name="mailing" value="Y" id="join_mailing" {{$메일동의체크}} autocomplete="off"><label for="join_mailing">이메일 정보 수신</label>
+					</div>
+				</div>
+				{{$평생회원동의}}
+				{{$가입시개인확인방법}}
+			</div>
+			{{$SNS통합인증리스트}}
+		</fieldset>
+		{{$기업회원추가입력}}
+		{{$추가필드리스트}}
+		{{$가입시추천인}}
+		{{$정보수정추천인}}
+		<div class="btn">
+			<span class="box_btn block large strong"><input type="submit" value="확인"></span>
+		</div>
+	{{$폼끝}}
+</div>
+{{$네이버로그인스크립트}}
+{{$페이스북로그인스크립트}}
+{{$카카오톡로그인스크립트}}
+{{$페이코로그인스크립트}}
+{{$위메프로그인스크립트}}

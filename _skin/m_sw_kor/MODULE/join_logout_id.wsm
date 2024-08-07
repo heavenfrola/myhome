@@ -1,0 +1,9 @@
+<div class="required">
+	<label for="join_id">아이디</label>
+	<div class="input_area">
+		<input type="text" name="member_id" value="" maxlength="16" id="join_id" class="form_input block" autocomplete="off">
+	</div>
+	<div class="msg">
+		<p class="form_result form_result_member_id warning"></p>
+	</div>
+</div>

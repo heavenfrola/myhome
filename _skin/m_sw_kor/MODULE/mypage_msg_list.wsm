@@ -1,0 +1,30 @@
+<!-- 반복문시작 -->
+<table class="table_style">
+	<caption>쪽지리스트</caption>
+	<colgroup>
+		<col style="width:100%;">
+	</colgroup>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td class="subject">
+				<p>{{$쪽지제목}}</p>
+				<p>{{$보낸회원명}} | {{$발송일}}</p>
+			</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<table class="table_style">
+	<caption>쪽지리스트</caption>
+	<tbody>
+		<tr>
+			<td>
+				<p class="empty">내용이 존재하지 않습니다</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 데이터없음끝 -->

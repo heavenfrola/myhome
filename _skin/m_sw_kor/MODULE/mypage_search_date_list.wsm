@@ -1,0 +1,15 @@
+<!-- 반복문시작 -->
+<div class="search wrap_inner">
+	<div class="date">
+<!-- 반복구문시작 -->
+		<span class="box_btn gray block {{$선택체크}}"><input type="button" value="{{$기준날짜}}" {{$자동클릭이벤트}}></span>
+<!-- 반복구문끝 -->
+	</div>
+	<div class="date_input">
+		<input type="text" id="start_date" name="start_date" value="{{$주문검색시작날짜}}" class="form_input datepicker" readonly> ~ <input type="text" id="finish_date" name="finish_date" value="{{$주문검색마지막날짜}}" class="form_input datepicker" readonly>
+	</div>
+	<span class="box_btn block"><input type="button" name="date_list" value="주문조회" onclick="ordDatesubmit();"></span>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

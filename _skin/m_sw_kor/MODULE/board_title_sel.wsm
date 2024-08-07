@@ -1,0 +1,1 @@
+<input type="text" name="title" value="{{$글제목}}" class="form_input block">

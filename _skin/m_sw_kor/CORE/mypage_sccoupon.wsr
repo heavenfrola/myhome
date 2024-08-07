@@ -1,0 +1,12 @@
+<div id="sccoupon" class="wrap_inner">
+	{{$폼시작}}
+		<div class="box_mp">
+			<p class="msg">발급받은 쿠폰번호를 입력하세요.</p>
+			<input type="text" name="sccode" class="form_input">
+		</div>
+		<div class="btn btn_col">
+			<span class="box_btn large block"><input type="submit" value="확인"></span>
+			<span class="box_btn large block white"><a href="/mypage/sccoupon_list.php">소셜 쿠폰 리스트</a></span>
+		</div>
+	{{$폼끝}}
+</div>

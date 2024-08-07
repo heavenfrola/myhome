@@ -1,0 +1,16 @@
+<!-- 반복문시작 -->
+<div class="filter_body">
+	<p><span></span>매장필터</p>
+	<div class="box">
+		<ul class="list" data-id="facility_list">
+<!-- 반복구문시작 -->
+			<li><input type="checkbox" id="menu{{$순서}}" value="{{$번호}}"><label for="menu{{$순서}}">{{$이름}}</label></li>
+<!-- 반복구문끝 -->
+		</ul>
+		<div class="btn_col col2">
+			<span class="box_btn ux2 ux2_1 block"><a onclick="filterSearch('C');">초기화</a></span>
+			<span class="box_btn ux2 ux2_2 block"><a onclick="filterSearch();">적용하기</a></span>
+		</div>
+	</div>
+</div>
+<!-- 반복문끝 -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/public_html/wm_engine_SW/_engine/include/classes" isTestSource="false" packagePrefix="Wing" />
+      <sourceFolder url="file://$MODULE_DIR$/public_html/wm_engine_SW_test/_engine/include/classes" isTestSource="false" packagePrefix="Wing" />
+      <sourceFolder url="file://$MODULE_DIR$/wm_engine_SW/_engine/include/classes" isTestSource="false" packagePrefix="Wing" />
+      <sourceFolder url="file://$MODULE_DIR$/wm_engine_SW_test/_engine/include/classes" isTestSource="false" packagePrefix="Wing" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

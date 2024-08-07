@@ -1,0 +1,23 @@
+<!-- 반복문시작 -->
+<!-- 반복구문시작 -->
+<tr>
+	<td>공지</td>
+	<td class="subject tal" colspan="2">
+		<p class="title">{{$글제목}}</p>
+	</td>
+	<td>운영자</td>
+	<td>{{$등록일}}</td>
+</tr>
+<tr>
+	<td colspan="5" class="notice_cnt">
+		<div id="revQna{{$글고유번호}}" class="notice_cnt_frame">
+			{{$글내용}}
+			{{$상품평첨부파일1}}
+			{{$상품평첨부파일2}}
+		</div>
+	</td>
+</tr>
+<!-- 반복구문끝 -->
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

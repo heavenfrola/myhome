@@ -1,0 +1,20 @@
+<div id="search_id_pwd">
+	{{$찾기폼시작}}
+	<div id="pop_find_id" class="pop_find_id">
+		<h1>{{$아이디비밀번호찾기구분}}</h1>
+		<div class="box">
+			<h2>인증번호 입력</h2>
+			<p class="msg">회원정보에 등록한 {{$아이디비밀번호찾기조건}}와 입력한 {{$아이디비밀번호찾기조건}}가 일치해야, 인증번호를 받을 수 있습니다.</p>
+			<div class="input">
+				<input type="text" id="search_val" name="search_val" value="{{$인증내용}}" class="input_number" readOnly>
+				<input type="button" id="btn_confirm" name="btn_confirm" value="인증번호발송" onclick="confirm_send();" class="btn">
+			</div>
+			<input type="text" id="reg_code" name="reg_code" value="{{$인증번호}}" class="form_input block" placeholder="인증번호 입력">
+			<span class="box_btn block large white"><input type="submit" value="확인"></span>
+			<div id="limit_5" style="display:none;">발송된 인증번호의 유효시간은 5분입니다.</div>
+			{{$아이디리스트}}
+			<a onclick="$('#idpwd_layer').hide();" class="close">닫기</a>
+		</div>
+	</div>
+	{{$폼끝}}
+</div>

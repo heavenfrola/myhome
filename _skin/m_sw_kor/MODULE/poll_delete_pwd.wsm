@@ -1,0 +1,4 @@
+<div class="commentdel">
+	<input type="password" name="pwd" class="form_input"> <span class="box_btn"><input type="submit" value="확인"></span>
+	<p class="msg">비밀번호가 일치 할 경우 바로 삭제됩니다.</p>
+</div>

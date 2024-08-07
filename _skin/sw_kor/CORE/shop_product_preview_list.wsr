@@ -1,0 +1,32 @@
+<div id="qnarev_list_all" class="crema-hide">
+	<div class="photo_sort">
+		<p class="check check_chg black">
+			<input type="checkbox" id="photo_chk" checked>
+			<label for="photo_chk" onclick="location.href='/shop/product_review_list.php'">포토후기만</label>
+		</p>
+		<ul class="sort">
+			<li><a href="{{$상품평최신순}}" class="{{$상품평최신순선택}}">최신순</a></li>
+			<li><a href="{{$상품평추천순}}" class="{{$상품평추천순선택}}">추천순</a></li>
+		</ul>
+	</div>
+	{{$상품평리스트}}
+	{{if(상품후기작성가능여부)}}
+	<div class="btn">
+		<div class="box_btn w100"><a onclick="{{$상품평등록(레이어)}}">글쓰기</a></div>
+	</div>
+	{{endif(상품후기작성가능여부)}}
+	{{$페이지선택}}
+	<div class="board_search">
+		<form name="" method="get" action="{{$현재페이지주소}}">
+			<select name="search_column">
+				<option value="1">작성자</option>
+				<option value="2">아이디</option>
+				<option value="3">제목</option>
+			</select>
+			<input type="text" name="rsearch_str" class="form_input search">
+			<input type="submit" value="검색" class="btn_search">
+		</form>
+	</div>
+</div>
+<!-- crema.me / PC 리뷰 목록 / 스크립트를 수정할 경우 연락주세요 (support@crema.me) -->
+<div class="crema-reviews"></div>

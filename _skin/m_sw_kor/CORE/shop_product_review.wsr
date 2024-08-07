@@ -1,0 +1,9 @@
+<div id="review_list" class="qnarev_list wrap_inner">
+	{{$상품게시판상품정보}}
+	{{$상품평리스트}}
+	<div class="btn_col">
+		<span class="box_btn block"><a href="{{$상품평등록}}">글쓰기</a></span>
+		<span class="box_btn block white"><a href="/shop/product_review_list.php">목록</a></span>
+	</div>
+	{{$하단스크립트}}
+</div>

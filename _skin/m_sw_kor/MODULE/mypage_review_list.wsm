@@ -1,0 +1,25 @@
+<!-- 반복문시작 -->
+<ul class="list_qnarev">
+<!-- 반복구문시작 -->
+	<li>
+		{{if(상품이미지)}}
+		<div class="prdimg">{{$상품이미지}}</div>
+		{{endif(상품이미지)}}
+		<div class="subject prd" onclick="{{$상품평보기링크}}">
+			<p class="prdname">{{$상품명}}</p>
+			<p class="title">
+				{{$상품평파일아이콘}} {{$새글아이콘}}
+				{{if(상품평베스트)}}<span class="best">BEST</span>{{endif(상품평베스트)}}
+				{{if(상품평카테고리)}}[{{$상품평카테고리}}]{{endif(상품평카테고리)}}
+				{{$상품평제목(링크없음)}}
+			</p>
+			<p class="stat"><span class="gradebox small point{{$상품평점수(텍스트)}}"></span> <span class="grade">{{$상품평점수(텍스트)}}</span></p>
+			<p class="stat">{{$상품평작성자}} | {{$상품평등록일}} {{if(상품평댓글수)}}| 댓글 : {{$상품평댓글수}}{{endif(상품평댓글수)}}</p>
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">등록된 상품 후기가 없습니다.</p>
+<!-- 데이터없음끝 -->

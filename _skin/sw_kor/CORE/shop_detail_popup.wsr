@@ -1,0 +1,151 @@
+<script src="{{$이미지경로}}/../slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{$이미지경로}}/../slick.css">
+<div id="detail_pop">
+	<div id="detail">
+		<span class="close" onclick="{{$퀵프리뷰닫기}}">닫기</span>
+		<!-- 상단 -->
+		{{$폼시작}}
+		<div class="wrap_prd">
+			<!-- 상품 이미지 -->
+			<div class="prdimg">
+				<div id="mimg_div" class="img">
+					<a href="{{$크게보기}}">{{$상품이미지}}</a>
+				</div>
+				<div class="addimg">
+					{{$상품부가이미지리스트}}
+				</div>
+			</div>
+			<!-- //상품 이미지 -->
+			<!-- 상품정보 & 버튼 -->
+			<div class="info">
+				<h3 class="name">{{$상품명}} {{$상품아이콘}}</h3>
+				<div class="price">
+					{{if(소비자가격)}}
+					<span class="consumer consumer{{$할인적용여부}}">{{$화폐단위전}}{{$소비자가격}}{{$화폐단위후}}</span>
+					{{endif(소비자가격)}}
+					<span class="sell sell{{$할인적용여부}}">
+						{{$화폐단위전}}<strong>{{$판매가격}}</strong>{{$화폐단위후}}
+						{{if(참조화폐사용)}}({{$참조화폐단위전}}<strong>{{$참조판매가격}}</strong>{{$참조화폐단위후}}){{endif(참조화폐사용)}}
+					</span>
+					<span class="discount discount{{$할인적용여부}}">
+						{{$화폐단위전}}<strong>{{$할인후실판매가}}</strong>{{$화폐단위후}}
+						{{if(참조할인후실판매가)}}({{$참조화폐단위전}}<strong>{{$참조할인후실판매가}}</strong>{{$참조화폐단위후}}){{endif(참조할인후실판매가)}}
+					</span>
+					{{if(상품쿠폰리스트)}}
+					<span class="coupon" onclick="toggle_view('pop_coupon');setDimmed();"><strong>쿠폰다운</strong></span>
+					{{$상품쿠폰리스트}}
+					{{endif(상품쿠폰리스트)}}
+				</div>
+				{{if(타임세일타이머)}}
+				<div class="box_timer big"><span class="title">타임세일</span>{{$타임세일타이머}}</div>
+				{{endif(타임세일타이머)}}
+				<p class="summary">{{$상품요약설명}}</p>
+				{{if(정기배송적용여부_상품별)}}
+				<div class="sbs">
+					<label><input type="radio" name="sbscr" value="N" class="form_input" onclick="sbscrCheck('N')" checked>일반배송</label>
+					<label><input type="radio" name="sbscr" value="v2" class="form_input" onclick="sbscrCheck('Y')">정기배송</label>
+				</div>
+				{{end(정기배송적용여부_상품별)}}
+				{{if(오늘출발)}}
+				<p class="today"><strong>오늘출발</strong> <span>해당 상품은 평일 {{$오늘출발주문마감시간}}까지 결제 시 당일 배송이 가능합니다.</span></p>
+				{{endif(오늘출발)}}
+				<table class="list">
+					<colgroup>
+						<col style="width:30%;">
+						<col>
+					</colgroup>
+					<tbody>
+						{{if(총적립금)}}
+						<tr>
+							<th scope="row">적립금</th>
+							<td>
+								{{$화폐단위전}}{{$총적립금}}{{$화폐단위후}}
+								<div class="box_info">
+									<span class="i_info"></span>
+									<div class="info">
+										{{if(상품적립금)}}상품적립금 : {{$화폐단위전}}{{$상품적립금}}{{$화폐단위후}}<br>{{endif(상품적립금)}}
+										{{if(회원적립금)}}회원적립금 : {{$화폐단위전}}{{$회원적립금}}{{$화폐단위후}}<br>{{endif(회원적립금)}}
+										{{if(이벤트적립금)}}이벤트적립금 : {{$화폐단위전}}{{$이벤트적립금}}{{$화폐단위후}}{{endif(이벤트적립금)}}
+									</div>
+								</div>
+							</td>
+						</tr>
+						{{endif(총적립금)}}
+						{{if(상품별배송비)}}
+						<tr>
+							<th scope="row">배송비</th>
+							<td>
+								{{$화폐단위전}}{{$상품별배송비}}{{$화폐단위후}}
+								{{if(개별배송상세리스트)}}
+								<div class="box_info">
+									<span class="i_info"></span>
+									<div class="info delivery">
+										{{$개별배송상세리스트}}
+									</div>
+								</div>
+								{{endif(개별배송상세리스트)}}
+							</td>
+						</tr>
+						{{endif(상품별배송비)}}
+						{{if(상품항목리스트)}}
+						{{$상품항목리스트}}
+						{{endif(상품항목리스트)}}
+						{{$일반상품항목}}
+						{{$상품옵션리스트}}
+					</tbody>
+				</table>
+				{{$세트상품리스트}}
+				{{$골라담기리스트}}
+				{{if(선택된멀티옵션리스트)}}
+				{{$선택된멀티옵션리스트}}
+				{{endif(선택된멀티옵션리스트)}}
+				<!-- 버튼 -->
+				<div class="btn">
+					<span class="box_btn large cart"><a href="javascript:addCart(document.prdFrm,1);">장바구니</a></span>
+					<span class="box_btn large gray buy"><a href="javascript:addCart(document.prdFrm,2);">
+					{{if(정상판매시내용)}}바로구매{{endif(정상판매시내용)}}
+					{{if(품절시내용)}}품절{{endif(품절시내용)}}
+					</a></span>
+					<span class="box_btn large white wish"><a href="javascript:addWish(document.prdFrm);"></a></span>
+					<div class="pay">
+						<div class="npay">{{$네이버체크아웃버튼}}</div>
+						<div class="payco">{{$페이코즉시구매버튼}}</div>
+					</div>
+				</div>
+				<!-- //버튼 -->
+				<div class="count_share">
+					<p class="count">Review <span>{{$상품평개수}}</span>  |  Q&A <span>{{$상품질답개수}}</span></p>
+					<div class="sns">
+						<a href="javascript:;" onclick="window.open('{{$SNS연동주소(페이스북)}}','','width=804,height=504');" class="facebook">페이스북</a>
+						<a href="javascript:;" onclick="window.open('{{$SNS연동주소(트위터)}}','','width=804,height=504');" class="twitter">트위터</a>
+					</div>
+				</div>
+			</div>
+			<!-- //상품정보 & 버튼 -->
+		</div>
+		{{$폼끝}}
+		<!--// 상단 -->
+	</div>
+</div>
+<script language="Javascript">
+	// 상품 수량조절
+	var f=document.prdFrm;
+	function eaChg(pm){
+		if (pm==1) {
+			f.buy_ea.value++;
+		}
+		else {
+			if (f.buy_ea.value<=1) {
+				return;
+			}
+			f.buy_ea.value--;
+		}
+		totalCal(f);
+	}
+
+	// 컬러칩 사용자 정의
+	function selectColorOption(idx, no) {
+		$('.optChipSet'+idx).removeClass('selected');
+		$('.optChipItem'+no).addClass('selected');
+	}
+</script>

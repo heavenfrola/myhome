@@ -1,0 +1,13 @@
+<div class="pwbox_popup">
+	{{$비밀번호폼시작}}
+	<div id="pwbox">
+		<h3>비밀번호 입력</h3>
+		<p>작성자와 관리자만 볼 수 있는 글입니다.<br>글 작성시 입력했던 비밀번호를 입력하세요.</p>
+		<input type="password" name="pwd" class="form_input">
+		<div>
+			<span class="box_btn w100"><input type="submit" value="확인"></span>
+			<span class="box_btn w100 white"><a onclick="{{$비밀번호입력창닫기링크}}">취소</a></span>
+		</div>
+	</div>
+	{{$비밀번호폼끝}}
+</div>

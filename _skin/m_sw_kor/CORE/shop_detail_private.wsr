@@ -1,0 +1,38 @@
+<div id="detail" class="private">
+	{{$폼시작}}
+	<input type="hidden" name="buy_ea" value="1" class="form_input">
+	<!-- 상품 이미지 -->
+	<div class="prdimg">
+		<div id="mimg_div"><img id="mainImg" src="{{$상품중이미지}}" alt="{{$상품명}}"></div>
+	</div>
+	<!-- //상품 이미지 -->
+	<!-- 상품정보 & 버튼 -->
+	<div class="info wrap_inner">
+		{{$상품명}}
+		<div class="price">
+			<span class="sell">
+				{{$화폐단위전}}<strong>{{$판매가격}}</strong>{{$화폐단위후}}
+				{{if(참조화폐사용)}}({{$참조화폐단위전}}<strong>{{$참조판매가격}}</strong>{{$참조화폐단위후}}){{endif(참조화폐사용)}}
+			</span>
+		</div>
+		<!-- 버튼 -->
+		<div class="btn">
+			<div class="btn_col">
+				<span class="box_btn large block"><a href="javascript:addCart(document.prdFrm,1)">장바구니</a></span>
+				<span class="box_btn large block gray"><a href="javascript:addCart(document.prdFrm,2)">{{if(정상판매시내용)}}바로구매{{endif(정상판매시내용)}}{{if(품절시내용)}}품절{{endif(품절시내용)}}</a></span>
+			</div>
+		</div>
+		<!-- //버튼 -->
+	</div>
+	<!-- //상품정보 & 버튼 -->
+	{{$폼끝}}
+	<!-- 상품 상세정보 -->
+	<div class="wrap_info">
+		<!-- 상품상세정보&관련상품 -->
+		<div class="tabcnt_detail tabcnt_detail0">
+			<div class="detail_info">{{$상품상세설명}}</div>
+		</div>
+		<!--// 상품상세정보&관련상품 -->
+	</div>
+	<!-- //상품 상세정보 -->
+</div>

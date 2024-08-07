@@ -1,0 +1,4 @@
+<div class="trace">
+	<span class="box_btn block white"><a href="{{$배송추척주소}}" target="_blank">배송조회</a></span>
+	<p>{{$배송업체}} (송장번호:{{$송장번호}})</p>
+</div>

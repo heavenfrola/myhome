@@ -1,0 +1,23 @@
+<!-- 반복문시작 -->
+<ul class="list">
+<!-- 반복구문시작 -->
+	<li>
+		<div class="no">{{$주문번호}}<span>{{$주문일}}</span></div>
+		<div class="info">
+			<p>{{$상품명}}</p>
+			<p>주문금액 : {{$화폐단위전}}{{$결제금액}}{{$화폐단위후}}</p>
+			<p>실 결제금액 : <strong>{{$화폐단위전}}{{$실결제금액}}{{$화폐단위후}}</strong> |  <span class="p_color">{{$주문상태}}</span></p>
+			{{if(배송조회링크)}}
+			<div class="btn_col2">
+				<span class="box_btn block white">{{$배송조회링크}}배송조회</a></span>
+				<span class="box_btn block white">{{$수취확인}}수취확인</a></span>
+			</div>
+			{{end(배송조회링크)}}
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">주문내역이 존재하지 않습니다.</p>
+<!-- 데이터없음끝 -->

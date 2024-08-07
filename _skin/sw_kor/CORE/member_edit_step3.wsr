@@ -1,0 +1,12 @@
+<div id="edit_fin" class="edit_info">
+	<h3 class="title first">나의정보수정</h3>
+	<div class="box">
+		<p class="msg"><strong>{{$회원명}}</strong>님의 회원정보가 정상적으로 수정되었습니다.</p>
+		{{if(광고성정보변경여부)}}
+		<p class="agree"><span>[{{$회사명}} 광고성정보 변경여부 안내]</span>{{$광고성정보변경일자}} {{$SMS이메일수신동의여부}}</p>
+		{{end(광고성정보변경여부)}}
+	</div>
+	<div class="btn">
+		<span class="box_btn w150 large"><a href="/">메인으로</a></span>
+	</div>
+</div>

@@ -1,0 +1,5 @@
+<h3>{{$게시판명}} SEARCH</h3>
+{{$게시판검색폼시작}}
+	<input type="text" name="search_str" class="form_input block" placeholder="검색어를 입력하세요.">
+	<input type="submit" value="search" class="btn">
+{{$게시판검색폼끝}}

@@ -1,0 +1,30 @@
+{{if(다음우편번호API사용)}}
+<div class="addr {{$주소필수여부}}">
+	<label for="join_address">주소</label>
+	<div class="input_area">
+		<input type="text" name="zip" value="{{$우편번호}}" id="join_address" class="form_input block" readonly placeholder="우편번호" onClick="{{$우편번호찾기}}">
+		<span class="box_btn gray2"><a href="{{$우편번호찾기}}" class="check">우편번호 찾기</a></span>
+		<input type="text" name="addr1" value="{{$주소1}}" maxlength="50" class="form_input block" readonly onClick="{{$우편번호찾기}}">
+		<input type="text" name="addr2" value="{{$주소2}}" maxlength="100" class="form_input block" placeholder="상세주소 입력">
+	</div>
+	<div class="msg">
+		<p class="form_result form_result_addr warning"></p>
+	</div>
+</div>
+{{endif(다음우편번호API사용)}}
+{{if(행안부우편번호API사용)}}
+<div class="addr addr_country {{$주소필수여부}}">
+	<label for="join_address">주소</label>
+	<div class="input_area radio_chg">
+		<input type="radio" name="zip_mode" id="zip_mode0" value="1" checked><label for="zip_mode0">지번주소</label>
+		<input type="radio" name="zip_mode" id="zip_mode1" value="2"><label for="zip_mode1">도로명주소</label>
+	</div>
+	<div class="input_area">
+		<input type="text" name="addressee_dong" id="address_dong" class="form_input block" onchange="zipSearch2('joinFrm', this.value)" placeholder="읍,면,동,도로명 입력">
+		<span class="box_btn gray2"><a href="javascript:;" onClick="zipSearch2('joinFrm', joinFrm.addressee_dong.value)" class="check">우편번호 찾기</a></span>
+		<input type="text" name="zip" value="{{$우편번호}}" class="form_input block" readonly placeholder="우편번호">
+		<input type="text" name="addr1" value="{{$주소1}}" maxlength="50" class="form_input block" readonly>
+		<input type="text" name="addr2" value="{{$주소2}}" maxlength="100" class="form_input block" placeholder="상세주소 입력">
+	</div>
+</div>
+{{endif(행안부우편번호API사용)}}

@@ -1,0 +1,95 @@
+{{$폼시작}}
+<div class="layer_sbs">
+	<div class="delivery_info">
+		<h2 class="title first">정기배송 받는 날 선택하기</h2>
+		<ul class="fld_info">
+			<li>
+				<p class="fld_title">배송 주기</p>
+				{{$정기배송주기리스트}}
+			</li>
+			<li>
+				<p class="fld_title">배송 기간</p>
+				<input type="hidden" id="sbscr_start_date" name="sbscr_start_date" value="{{$정기배송첫배송일}}">
+				<div class="calendar">
+					<span class="text">첫 배송일</span>
+					<p><span id="sbscr_start_date_text" class="date_text"></span> <span id="sbscr_start_yoil_text" class="day"></span><span class="day">요일</span></p>
+					<div id="sbscr_start_box"></div>
+				</div>
+				{{if(정기배송기간여부)}}
+				<div class="calendar">
+					<span class="text">마지막 배송일</span>
+					<p>
+						<input type="text" id="sbscr_end_date" name="sbscr_end_date" class="form_input date_text" size="10" value="{{$정기배송마지막배송일}}">
+						<span id="sbscr_end_yoil_text" class="day"></span><span class="day">요일</span>
+					</p>
+					<div id="sbscr_end_box"></div>
+				</div>
+				{{end(정기배송기간여부)}}
+			</li>
+			{{if(정기배송배송횟수)}}
+			<li>
+				<p class="fld_title">배송 횟수</p>
+				<span class="sbscr_dlv_cnt">{{$정기배송배송횟수}}</span>회
+			</li>
+			{{endif(정기배송배송횟수)}}
+		</ul>
+		<h2 class="title">상품 & 가격정보</h2>
+		<table class="tbl_order">
+			<tbody>
+				<tr>
+					<td colspan="2" class="prd_info">
+						<div class="prd">{{$상품이미지}}</div>
+						<div class="info">
+							<p><strong>{{$상품명}}</strong></p>
+							<p class="sbscr_info_option opt">{{$정기배송선택옵션}}</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">수량</th>
+					<td>{{$정기배송수량}}개</td>
+				</tr>
+				<tr>
+					<th scope="row">상품 금액</th>
+					<td>{{$화폐단위전}}<span class="sbscr_sell_prc">{{$정기배송판매가격}}</span>{{$화폐단위후}}</td>
+				</tr>
+				<tr>
+					<th scope="row">배송비</th>
+					<td>{{$화폐단위전}}<span class="sbscr_dlv_prc">{{$정기배송배송비가격}}</span>{{$화폐단위후}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="tbl_order">
+			<tbody>
+				<tr>
+					<th scope="row">회당 결제금액</th>
+					<td>{{$화폐단위전}}<span class="sbscr_ea_sell_prc">{{$정기배송회당결제금액}}</span>{{$화폐단위후}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="total_prc">
+			<strong>총 주문 금액</strong>{{if(정기배송배송횟수)}}<span><br>(회당 결제금액 X 배송 횟수)</span>{{endif(정기배송배송횟수)}}
+			<p>{{$화폐단위전}}<span class="sbscr_total_prc">{{$정기배송총주문금액}}</span>{{$화폐단위후}}</p>
+		</div>
+	</div>
+	<div class="sbs_info">
+		<div class="last_chk">
+			<p class="icon_title"><span>나만의 정기배송</span></p>
+			<ul class="chk_list">
+				<li><span>첫 배송일</span><strong class="sbscr_info_first_date point_color"></strong></li>
+				<li><span>배송 주기</span><strong class="sbscr_info_Interval"></strong></li>
+				<li><span>배송 기간</span><strong class="sbscr_info_date"></strong></li>
+				{{if(정기배송배송횟수)}}
+				<li><span>배송 횟수</span><strong class="sbscr_dlv_cnt">{{$정기배송배송횟수}}</strong>회</li>
+				{{endif(정기배송배송횟수)}}
+				<li><span>배송 요일</span><strong class="sbscr_info_week"></strong></li>
+			</ul>
+		</div>
+		<div class="btn">
+			<span class="box_btn block large"><a href="javascript:addcartSbscr(1);">장바구니</a></span>
+			<span class="box_btn block large gray3"><a href="javascript:addcartSbscr(2);">바로구매</a></span>
+		</div>
+	</div>
+	<a class="close" onclick="window.subscribe.close(); return false;">닫기</a>
+</div>
+{{$폼끝}}

@@ -1,0 +1,16 @@
+<!-- 반복문시작 -->
+<dl class="time">
+	<dt class="title">영업시간</dt>
+	<dd>
+		<ul class="after">
+<!-- 반복구문시작 -->
+			<li class="{{$해당요일표시}}">
+				<div class="live"><span>{{$해당요일}}</span> {{$시간}}</div>
+				{{$브레이크타임}}
+			</li>
+<!-- 반복구문끝 -->
+		</ul>
+	<p>영업시간 전체보기</p>
+	</dd>
+</dl>
+<!-- 반복문끝 -->

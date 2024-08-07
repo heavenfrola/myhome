@@ -1,0 +1,11 @@
+<fieldset>
+	<legend>추천인 아이디</legend>
+	<div class="box">
+		<div>
+			<label for="join_recom">추천아이디</label>
+			<div class="input_area">
+				<input type="text" name="" value="{{$추천아이디}}" id="join_recom" class="form_input block readonly" readonly>
+			</div>
+		</div>
+	</div>
+</fieldset>

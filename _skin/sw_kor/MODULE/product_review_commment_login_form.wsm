@@ -1,0 +1,6 @@
+<div class="write_comment">
+	<div class="inputbox">
+		<textarea name="content" class="form_input block gray" placeholder="댓글을 작성해 주세요."></textarea>
+		<input type="submit" value="확인" class="btn_comment">
+	</div>
+</div>

@@ -1,0 +1,68 @@
+body {
+	text-align: center;
+	color: #000;
+
+	background: none;
+}
+
+body, th, td, span, div, h1 {
+	font-size: 11px;
+	color: blue;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.receipt_container {
+	text-align: center; 
+	margin: 0 auto;
+	font-family: dotum; 
+	width: 650px; 
+}
+
+.receipt {
+	clear: left; 
+	border: solid 3px blue; 
+}
+
+.receipt table{
+	width: 100%; 
+	border-collapse: collapse; 
+	table-layout: fixed; 
+}
+
+.receipt td, .receipt th {
+	padding: 4px 5px; 
+
+	border-left: solid 1px blue; 
+	border-bottom: solid 1px blue; 
+}
+
+.receipt h1 {
+	display: inline; 
+	font-size: 25px; 
+	font-family: gulim; 
+	line-height: 100%; 
+}
+
+.letter5 {
+	letter-spacing: 4px; 
+}
+
+.spacing2 {
+	width: 22px; 
+}
+
+.verysmall {
+	font-size: 8px; 
+	line-height: 100%; 
+}
+
+.ultrasmall {
+	font-size: 7px; 
+	line-height: 100%; 
+}
+
+.checktype {
+	font-weight: bold;
+	text-decoration: underline;
+}

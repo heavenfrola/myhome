@@ -1,0 +1,9 @@
+<div class="required">
+	<label for="join_name">이름</label>
+	<div class="input_area">
+		<input type="text" name="name" value="" id="join_name" class="form_input block">
+	</div>
+	<div class="msg">
+		<p class="form_result form_result_name warning"></p>
+	</div>
+</div>

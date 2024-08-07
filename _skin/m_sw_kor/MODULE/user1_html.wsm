@@ -1,0 +1,196 @@
+<!-- wstart:shop_cart.php -->
+<h2 class="subtitle">장바구니</h2>
+<!-- wend:shop_cart.php -->
+
+<!-- wstart:shop_cart_sbscr.php -->
+<h2 class="subtitle">장바구니</h2>
+<!-- wend:shop_cart_sbscr.php -->
+
+<!-- wstart:shop_order.php -->
+<h2 class="subtitle">주문서</h2>
+<!-- wend:shop_order.php -->
+
+<!-- wstart:shop_order_finish.php -->
+<h2 class="subtitle">주문완료</h2>
+<!-- wend:shop_order_finish.php -->
+
+<!-- wstart:shop_search_result.php -->
+<h2 class="subtitle">검색결과</h2>
+<!-- wend:shop_search_result.php -->
+
+<!-- wstart:shop_click_prd.php -->
+<h2 class="subtitle">최근 본 상품</h2>
+<!-- wend:shop_click_prd.php -->
+
+<!-- wstart:member_edit_step1.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:member_edit_step1.php -->
+
+<!-- wstart:member_edit_step3.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:member_edit_step3.php -->
+
+<!-- wstart:member_find_step1.php -->
+<h2 class="subtitle">아이디/비밀번호 찾기</h2>
+<!-- wend:member_find_step1.php -->
+
+<!-- wstart:member_join_frm.php -->
+<h2 class="subtitle">회원정보 입력</h2>
+<!-- wend:member_join_frm.php -->
+
+<!-- wstart:member_join_step1.php -->
+<h2 class="subtitle">회원가입 약관동의</h2>
+<!-- wend:member_join_step1.php -->
+
+<!-- wstart:member_join_step3.php -->
+{{if(만14세이상회원가입)}}<h2 class="subtitle">회원가입 완료</h2>{{endif(만14세이상회원가입)}}
+{{if(만14세미만회원가입)}}<h2 class="subtitle">만 14세 미만 회원가입 안내</h2>{{endif(만14세미만회원가입)}}
+<!-- wend:member_join_step3.php -->
+
+<!-- wstart:member_login.php -->
+<h2 class="subtitle">로그인</h2>
+<!-- wend:member_login.php -->
+
+<!-- wstart:mypage_mypage.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_mypage.php -->
+
+<!-- wstart:mypage_counsel_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_counsel_list.php -->
+
+<!-- wstart:mypage_counsel_step1.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_counsel_step1.php -->
+
+<!-- wstart:mypage_counsel_step2.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_counsel_step2.php -->
+
+<!-- wstart:mypage_coupon_down_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_coupon_down_list.php -->
+
+<!-- wstart:mypage_sccoupon.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_sccoupon.php -->
+
+<!-- wstart:mypage_sccoupon_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_sccoupon_list.php -->
+
+<!-- wstart:mypage_emoney.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_emoney.php -->
+
+<!-- wstart:mypage_milage.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_milage.php -->
+
+<!-- wstart:mypage_order_detail.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_order_detail.php -->
+
+<!-- wstart:mypage_order_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_order_list.php -->
+
+<!-- wstart:mypage_wish_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_wish_list.php -->
+
+<!-- wstart:mypage_attend_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_attend_list.php -->
+
+<!-- wstart:mypage_qna_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_qna_list.php -->
+
+<!-- wstart:mypage_review_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_review_list.php -->
+
+<!-- wstart:mypage_withdraw_step1.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_withdraw_step1.php -->
+
+<!-- wstart:mypage_withdraw_step2.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_withdraw_step2.php -->
+
+<!-- wstart:mypage_notify_restock.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_notify_restock.php -->
+
+<!-- wstart:mypage_order_sbscr_list.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_order_sbscr_list.php -->
+
+<!-- wstart:mypage_order_sbscr_detail.php -->
+<h2 class="subtitle">마이페이지</h2>
+<!-- wend:mypage_order_sbscr_detail.php -->
+
+<!-- wstart:shop_product_qna.php -->
+<h2 class="subtitle">Q&A</h2>
+<!-- wend:shop_product_qna.php -->
+
+<!-- wstart:shop_product_qna_list.php -->
+<h2 class="subtitle">Q&A</h2>
+<!-- wend:shop_product_qna_list.php -->
+
+<!-- wstart:shop_product_review.php -->
+<h2 class="subtitle">REVIEW</h2>
+<!-- wend:shop_product_review.php -->
+
+<!-- wstart:shop_product_review_list.php -->
+<h2 class="subtitle">REVIEW</h2>
+<!-- wend:shop_product_review_list.php -->
+
+<!-- wstart:content_content.php:company -->
+<h2 class="subtitle">회사소개</h2>
+<!-- wend:content_content.php:company -->
+
+<!-- wstart:content_content.php:guide -->
+<h2 class="subtitle">이용안내</h2>
+<!-- wend:content_content.php:guide -->
+	
+<!-- wstart:content_content.php:privacy -->
+<h2 class="subtitle">개인정보처리방침</h2>
+<!-- wend:content_content.php:privacy -->
+
+<!-- wstart:content_content.php:uselaw -->
+<h2 class="subtitle">이용 약관</h2>
+<!-- wend:content_content.php:uselaw -->
+
+<!-- wstart:member_apijoin.php -->
+<h2 class="subtitle">SNS 회원가입</h2>
+<!-- wend:member_apijoin.php -->
+
+<!-- wstart:shop_poll_list.php -->
+<h2 class="subtitle">설문조사</h2>
+<!-- wend:shop_poll_list.php -->
+
+<!-- wstart:member_modify_pwd.php -->
+<h2 class="subtitle">비밀번호 변경</h2>
+<!-- wend:member_modify_pwd.php -->
+
+<!-- wstart:shop_price_search.php -->
+<h2 class="subtitle">가격별 상품 리스트</h2>
+<!-- wend:shop_price_search.php -->
+
+<!-- wstart:shop_promotion.php -->
+<h2 class="subtitle">프로모션 기획전</h2>
+<!-- wend:shop_promotion.php -->
+
+<!-- wstart:content_customer.php -->
+<h2 class="subtitle">고객센터</h2>
+<!-- wend:content_customer.php -->
+
+<!-- wstart:member_apijoin_noterms.php -->
+<h2 class="subtitle">SNS 회원통합</h2>
+<!-- wend:member_apijoin_noterms.php -->
+
+<!-- wstart:shop_product_preview_list.php -->
+<h2 class="subtitle">REVIEW</h2>
+<!-- wend:shop_product_preview_list.php -->

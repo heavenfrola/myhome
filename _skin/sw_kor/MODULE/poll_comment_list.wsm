@@ -1,0 +1,18 @@
+<!-- 반복문시작 -->
+<div class="list_comment">
+	<ul>
+<!-- 반복구문시작 -->
+		<li>
+			<strong class="name">{{$댓글작성자}}</strong>
+			<div class="content">{{$댓글내용}}</div>
+			<div class="date">
+				<span>{{$댓글작성일시}}</span>
+				<a href="{{$댓글삭제}}"><img src="{{$이미지경로}}/button/delete_s.png" alt="삭제"></a></p>
+			</div>
+		</li>
+<!-- 반복구문끝 -->
+	</ul>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

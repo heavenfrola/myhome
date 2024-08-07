@@ -1,0 +1,51 @@
+{{if(신용카드선택)}}
+<div><label>{{$신용카드선택}} 신용카드</label></div>
+{{endif(신용카드선택)}}
+
+{{if(무통장입금선택)}}
+<div>
+	<label>{{$무통장입금선택}} 무통장 입금</label>
+	<div style="margin:2px 0 2px 20px;">
+		{{$입금계좌선택}}
+		입금자명<input type="text" name="bank_name" class="input" size="8" maxlength="30">
+	</div>
+	{{if(현금영수증사용)}}
+	<div style="margin:2px 0 2px 20px;">
+		현금영수증 신청 휴대전화번호/사업자번호 <input name="cash_reg_num" type="text" size="15" maxlength="20" class="input">
+	</div>
+	{{endif(현금영수증사용)}}
+</div>
+{{endif(무통장입금선택)}}
+
+{{if(가상계좌선택)}}
+<div><label>{{$가상계좌선택}} 가상계좌</label></div>
+{{endif(가상계좌선택)}}
+
+{{if(계좌이체선택)}}
+<div><label>{{$계좌이체선택}} 계좌이체</label></div>
+{{endif(계좌이체선택)}}
+
+{{if(휴대폰선택)}}
+<div><label>{{$휴대폰선택}} 휴대폰결제</label></div>
+{{endif(휴대폰선택)}}
+
+{{if(카카오페이선택)}}
+<div><label>{{$카카오페이선택}} 카카오페이</label></div>
+{{endif(카카오페이선택)}}
+
+{{if(Alipay선택)}}
+<div><label>{{$Alipay선택}} 알리페이</label></div>
+{{endif(Alipay선택)}}
+
+{{if(Paypal선택)}}
+<div><label>{{$Paypal선택}} Paypal</label></div>
+{{endif(Paypal선택)}}
+
+{{if(Cyrexpay선택)}}
+<div><label>{{$Cyrexpay선택}} Cyrexpay</label></div>
+{{endif(Cyrexpay선택)}}
+
+{{if(SBIAxes선택)}}
+<div><label>{{$SBIAxes선택}} SBI Axes</label></div>
+{{endif(SBIAxes선택)}}
+<input type="hidden" name="order_full_milage" value="0">

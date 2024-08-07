@@ -1,0 +1,44 @@
+<div class="qnarev_write">
+	{{$폼시작}}
+		<fieldset>
+			<legend class="hidden">상품문의 작성</legend>
+			<div class="name">
+				<label for="b_name">작성자</label>
+				{{$작성자}}
+				<span class="check">
+					{{$비밀글선택}}
+				</span>
+			</div>
+			{{if(분류선택)}}
+			<div>
+				<label>분류</label>
+				{{$분류선택}}
+			</div>
+			{{endif(분류선택)}}
+			<div>
+				<label for="b_category">제목</label>
+				{{$제한제목목록}}
+			</div>
+			<div class="contents">
+				<label for="qna_content">글내용</label>
+				<textarea name="content" rows="20" id="qna_content" class="form_input block"></textarea>
+			</div>
+			<div>
+				<label for="qna_file1">첨부파일 1</label>
+				<input type="file" name="upfile1" id="qna_file1" class="form_input block">
+				{{if(상품문의첨부파일1)}}<p class="file_del">첨부파일1 : {{$상품문의첨부파일1}} {{$상품문의첨부파일1삭제}} 삭제</p>{{endif(상품문의첨부파일1)}}
+			</div>
+			<div>
+				<label for="qna_file2">첨부파일 2</label>
+				<input type="file" name="upfile2" id="qna_file2" class="form_input block">
+				{{if(상품문의첨부파일2)}}<p class="file_del">첨부파일2 : {{$상품문의첨부파일2}} {{$상품문의첨부파일2삭제}} 삭제</p>{{endif(상품문의첨부파일2)}}
+			</div>
+			{{if(자동생성방지)}}
+			{{$자동생성방지}}
+			{{endif(자동생성방지)}}
+		</fieldset>
+		<div class="btn">
+			<span class="box_btn w150 large"><input type="submit" value="확인"></span>
+		</div>
+	{{$폼끝}}
+</div>

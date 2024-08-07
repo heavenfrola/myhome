@@ -1,0 +1,4 @@
+<div id="mypage_qna_list" class="qnarev_list wrap_inner">
+	{{$상품질답리스트}}
+	{{$하단스크립트}}
+</div>

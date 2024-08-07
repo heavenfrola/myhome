@@ -1,0 +1,126 @@
+<div id="login" class="box_member">
+	{{if(미성년자가입불가사용여부)}}
+	<p class="adult_msg">
+		본 정보 내용은 청소년 유해매체물로서 정보통신망 이용 촉진 및 정보 보호 등에 관한 법률 및 청소년 보호법의 규정에 의하여 <strong>만 19세 미만의 청소년은 이용할 수 없습니다.</strong>
+	</p>
+	{{endif(미성년자가입불가사용여부)}}
+	<ul class="tab_member">
+		<li><a onclick="tabover('member', 0);">회원 로그인</a></li>
+		<li><a onclick="tabover('member', 1);">비회원 주문조회</a></li>
+	</ul>
+	<div class="tabcnt_member tabcnt_member0">
+		{{$로그인실패구문}}
+		{{$로그인폼시작}}
+			<fieldset>
+				<legend class="hidden">회원 로그인</legend>
+				<div class="fld">
+					<label for="login_id">아이디</label>
+					<input type="text" name="member_id" value="{{$자동로그인아이디}}" maxlength="50" id="login_id" class="form_input member block" autocomplete="off">
+					<div class="auto_complete auto_complete_member_id"></div>
+				</div>
+				<div class="fld">
+					<label for="login_pwd">비밀번호</label>
+					<input type="password" name="pwd" value="{{$자동로그인비밀번호}}" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} id="login_pwd" class="form_input member block" autocomplete="new-password">
+					<span class="show_icon" onclick="pwdShow(this)"></span>
+				</div>
+				<div class="savessl">
+					<input type="checkbox" name="setOpenSSL" id="member_ssl" checked onclick="return false;"><label for="member_ssl">보안접속</label>
+					<input type="checkbox" name="id_save" value="Y" {{$자동로그인아이디체크}} id="member_id_save"><label for="member_id_save">아이디저장</label>
+					<input type="checkbox" name="pw_save" value="Y" {{$자동로그인비밀번호체크}} id="member_pwd_save"><label for="member_pwd_save">비밀번호저장</label>
+				</div>
+				<span class="box_btn block large strong"><input type="submit" value="로그인"></span>
+				{{$비회원주문하기구문}}
+			</fieldset>
+		{{$로그인폼끝}}
+	</div>
+	<div class="tabcnt_member tabcnt_member1">
+		{{$주문조회폼시작}}
+			<fieldset>
+				<legend class="hidden">비회원 주문조회</legend>
+				<div class="fld">
+					<label for="login_order_no">주문번호</label>
+					<input type="text" name="ono" id="login_order_no" class="form_input member block">
+				</div>
+				<div class="fld">
+					<label for="login_phone">전화번호</label>
+					<input type="text" name="phone" id="login_phone" class="form_input member block">
+				</div>
+				<div class="savessl">
+					<input type="checkbox" name="setOpenSSL" id="nonmember_ssl" checked onclick="return false;"> <label for="nonmember_ssl">보안접속</label>
+				</div>
+				<span class="box_btn block large white strong"><input type="submit" value="주문조회"></span>
+			</fieldset>
+		{{$주문조회폼끝}}
+	</div>
+	<ul class="joinfind">
+		<li><a href="/member/join_step1.php">회원가입</a></p>
+		<li class="tabcnt_member0"><a href="/member/find_step1.php">아이디/비밀번호 찾기</a></p>
+	</ul>
+	{{if(SNS로그인버튼사용)}}
+	<div class="simple">
+		{{if(네이버로그인버튼)}}<a href="#" onclick="naverLogin(); return false;" class="naver">네이버로 시작하기</a>{{endif(네이버로그인버튼)}}
+		{{if(카카오톡로그인버튼)}}<a href="#" onclick="loginWithKakao(); return false;" class="kakao">카카오로 시작하기</a>{{endif(카카오톡로그인버튼)}}
+		{{if(페이스북로그인버튼)}}<a href="#" onclick="facebookLogin(); return false;" class="facebook">페이스북으로 시작하기</a>{{endif(페이스북로그인버튼)}}
+		{{if(애플로그인버튼)}}<a href="#" onclick="appleLogin(); return false;" class="apple">Apple로 시작하기</a>{{endif(애플로그인버튼)}}
+		{{if(페이코로그인버튼)}}<a href="#" onclick="paycoLogin(); return false;" class="payco">페이코로 시작하기</a>{{endif(페이코로그인버튼)}}
+		{{if(위메프로그인버튼)}}<a href="#" onclick="wonderLogin(); return false;" class="wemake">위메프로 시작하기</a>{{endif(위메프로그인버튼)}}
+	</div>
+	{{end(SNS로그인버튼사용)}}
+	{{if(미성년자가입불가)}}
+	<div class="adult_certify">
+		<h5>비회원 성인인증</h5>
+		<p>아이핀 인증 또는 휴대폰 인증을 통해 본인인증을 하셔야 이용이 가능합니다.</p>
+		{{$실명인증방법선택}}
+	</div>
+	{{endif(미성년자가입불가)}}
+</div>
+{{$네이버로그인스크립트}}
+{{$카카오톡로그인스크립트}}
+{{$페이스북로그인스크립트}}
+{{$페이코로그인스크립트}}
+{{$위메프로그인스크립트}}
+<script type="text/javascript">
+	// 회원관련 인풋
+	var pwdblur = false;
+	$(window).ready(function(){
+		// 로그인 이벤트
+		$('.box_member fieldset .fld .form_input').each(function(idx){
+			if ($(this).val().length > 0){
+				$(this).closest('div').addClass('active');
+			}
+		})
+		$('.box_member fieldset .fld .form_input').focus(function(){
+			$(this).closest('div').addClass('active');
+		})
+		$('.box_member fieldset .fld .form_input').change(function(){
+			if ($(this).val().length > 0){
+				$(this).closest('div').addClass('active');
+			}
+		})
+		$('.box_member fieldset .fld .form_input').blur(function(){
+			if(pwdblur != true) return;
+
+			if ($(this).val().length == 0){
+				$(this).closest('div').removeClass('active');
+			}
+		})
+		pwdblur = true;
+	});
+
+	// 비밀번호 show hide
+	function pwdShow(obj) {
+		var obj = $(obj);
+		var pwdInput = document.getElementById('login_pwd');
+		if (pwdInput.type === 'password') {
+			pwdInput.type = 'text';
+			obj.addClass('active');
+		} else {
+			pwdInput.type = 'password';
+			obj.removeClass('active');
+		}
+	}
+
+	$(document).ready(function(){
+		tabover('member', 0);
+	});
+</script>

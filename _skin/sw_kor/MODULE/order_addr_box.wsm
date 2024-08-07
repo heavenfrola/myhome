@@ -1,0 +1,31 @@
+<tr>
+	<th scope="row"><label for="addressee_phone">전화번호</label></th>
+	<td>
+		<input type="text" name="addressee_phone" id="addressee_phone" class="form_input remove_dash">
+	</td>
+</tr>
+
+<tr>
+	<th scope="row"><label for="addressee_cell">휴대전화번호</label></th>
+	<td>
+			<input type="text" name="addressee_cell" id="addressee_cell" class="form_input remove_dash">
+			<br>
+			<span onclick="testAdd();">+++++</span>
+			<br>
+			<span onclick="testDelete();">--------</span>
+	</td>
+</tr>
+
+<tr id="addr_table">
+	<th scope="row"><label for="order_addressee_zip">주소</label></th>
+	<td class="address">
+		<p class="zip">
+			<input type="text" name="addressee_zip" value="" id="order_addressee_zip" class="form_input input_zipcode" readonly onClick="zipSearch('ordFrm','addressee_zip','addressee_addr1','addressee_addr2')">
+			<span class="box_btn white"><a href="javascript:;" onClick="zipSearch('ordFrm','addressee_zip','addressee_addr1','addressee_addr2')"> 우편번호 찾기</a></span>
+		</p>
+		<p>
+			<input type="text" name="addressee_addr1" value="" class="form_input" readonly onClick="zipSearch('ordFrm','addressee_zip','addressee_addr1','addressee_addr2')">
+			<input type="text" name="addressee_addr2" value="" class="form_input">
+		</p>
+	</td>
+</tr>

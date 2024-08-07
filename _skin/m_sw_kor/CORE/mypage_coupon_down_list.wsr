@@ -1,0 +1,9 @@
+<div id="coupon" class="wrap_inner">
+	{{$전체쿠폰리스트}}
+	<h3 class="title">쿠폰내역</h3>
+	<div class="box_mp">
+		<p class="have">총 사용가능한 쿠폰<span>{{$회원보유쿠폰개수}}</span></p>
+	</div>
+	{{$쿠폰리스트}}
+	{{$페이지선택}}
+</div>

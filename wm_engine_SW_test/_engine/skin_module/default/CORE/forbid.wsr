@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<head>
+	<title>정상적인 페이지 접근이 아닙니다.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+</head>
+
+<style type="text/css" title="">
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin:0; padding:0; border:0; outline:0; color:inherit; font-family:'돋움', Dotum, sans-serif; font-size:12px; line-height:normal; vertical-align:baseline;}
+
+body {background:#303742;}
+@-webkit-keyframes rotation {
+	from {-webkit-transform: scale(1);}
+	to {-webkit-transform: scale(1.1);}
+}
+@-moz-keyframes rotation {
+	from {-webkit-transform: scale(1);}
+	to {-webkit-transform: scale(1.1);}
+}
+@-ms-keyframes rotation {
+	from {-webkit-transform: scale(1);}
+	to {-webkit-transform: scale(1.1);}
+}
+@-o-keyframes rotation {
+	from {-webkit-transform: scale(1);}
+	to {-webkit-transform: scale(1.1);}
+}
+@keyframes rotation {
+	from {-webkit-transform: scale(1);}
+	to {-webkit-transform: scale(1.1);}
+}
+#forbid {position:absolute; left:50%; top:50%; width:660px; height:300px; margin:-150px 0 0 -330px; color:#fff; text-align:center;}
+#forbid .img {position:relative; width:109px; height:109px; margin:0 auto; background:url('{{$엔진이미지경로}}/forbid/warning.png') no-repeat center;}
+#forbid .img .hand {position:absolute; left:50%; top:50%; z-index:-1; margin:-29px 0 0 -28px; 
+	-webkit-animation: rotation 1s infinite linear alternate;
+	-moz-animation: rotation 1s infinite linear alternate;
+	-ms-animation: rotation 1s infinite linear alternate;
+	-o-animation: rotation 1s infinite linear alternate;
+	animation: rotation 1s infinite linear alternate;
+}
+#forbid .box {width:560px; height:132px; margin:40px auto 0; }
+#forbid .box h1 {font-size: 36px;  font-family: "맑은 고딕", "dotum"; margin-bottom: 50px;}
+#forbid .box p {font-family: "맑은 고딕", "dotum"; }
+</style>
+
+<body>
+<div id="forbid">
+	<div class="img"><img src="{{$엔진이미지경로}}/forbid/hand.png" alt="" class="hand"></div>
+	<div class="box">
+		<h1>정상적인 페이지 접근이 아닙니다.</h1>
+		<p>{{$차단메시지}}</p>
+	</div>
+</div>
+</body>
+</html>

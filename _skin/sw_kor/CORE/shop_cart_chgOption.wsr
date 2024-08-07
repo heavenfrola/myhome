@@ -1,0 +1,55 @@
+{{$폼시작}}
+<div class="cart_change_option">
+	<h3>옵션변경</h3>
+	<p class="opt">{{if(현재옵션)}}<span>{{$현재옵션}}</span>{{endif(현재옵션)}}</p>
+	<table>
+		<caption class="hidden">옵션 변경</caption>
+		<colgroup>
+			<col style="width:25%;">
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">옵션명</th>
+				<th scope="col">옵션</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{$옵션선택}}
+			<tr>
+				<th scope="row">수량</th>
+				<td>
+					<div class="box_qty">
+						<input type="text" name="buy_ea" value="{{$구매수량}}" class="form_input block">
+						<div class="btn_ea">
+							<a href="#" onclick="eaChg(1); return false;" class="ea_up"></a>
+							<a href="#" onclick="eaChg(-1); return false;" class="ea_down"></a>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p class="total">
+		<span>총금액</span>
+		<span class="price">{{$화폐단위전}}<strong class="sell_prc_str_total">{{$총판매가}}</strong>{{$화폐단위후}}</span>
+	</p>
+	<div class="btns">
+		<span class="box_btn large w100"><input type="submit" value="변경"></span>
+		<span class="box_btn large w100 white"><input type="button" value="닫기" onclick="self.close();"></span>
+	</div>
+</div>
+{{$폼끝}}
+<script type="text/javascript">
+	function eaChg(pm) {
+		var buy_ea = $('.cart_option_change_form').find('input[name=buy_ea]');
+		var new_ea = parseInt(buy_ea.val());
+		new_ea += pm;
+		if(new_ea < 1) new_ea = 1;
+		buy_ea.val(new_ea);
+		totalCal($('.cart_option_change_form')[0]);
+	}
+	$(window).ready(function() {
+		selfResize();
+	});
+</script>

@@ -1,0 +1,45 @@
+<!-- 반복문시작 -->
+<div class="title_qnarev">
+	<h3>전체후기 <span>{{$상품평개수}}</span>건</h3>
+	<ul class="sort">
+		<li><a onclick="{{$상품평최신순}}" class="{{$상품평최신순선택}}">최신순</a></li>
+		<li><a onclick="{{$상품평평점높은순}}" class="{{$상품평평점높은순선택}}">평점 높은순</a></li>
+		<li><a onclick="{{$상품평평점낮은순}}" class="{{$상품평평점낮은순선택}}">평점 낮은순</a></li>
+		<li><a onclick="{{$상품평추천순}}" class="{{$상품평추천순선택}}">추천순</a></li>
+	</ul>
+</div>
+<ul class="list">
+<!-- 반복구문시작 -->
+	<li>
+		<div class="info">
+			<div><span class="gradebox small point{{$상품평점수(텍스트)}}"></span> <span class="grade">{{$상품평점수(텍스트)}}</span></div>
+			<div class="name">{{$상품평작성자}} | {{$상품평등록일}}</div>
+			{{if(구성상품명)}}<div class="prd_name"><a href="{{$구성상품링크}}">{{$구성상품명}}</a></div>{{endif(구성상품명)}}
+			<div class="title">
+				{{$새글아이콘}}
+				{{if(상품평베스트)}}<img src="{{$이미지경로}}/shop/i_best.gif" alt="best">{{endif(상품평베스트)}}
+				{{if(상품평인기)}}<img src="{{$이미지경로}}/shop/i_hot.gif" alt="hot">{{endif(상품평인기)}}
+				{{$상품평파일아이콘}} 
+				{{if(상품평카테고리)}}[{{$상품평카테고리}}]{{endif(상품평카테고리)}}
+				<a onclick="{{$상품평보기링크}}">{{$상품평제목(링크없음)}}</a>
+				{{$상품평댓글수}}
+			</div>
+			<div class="content">{{$상품평요약내용}}</div>
+			<a onclick="{{$상품평보기링크}}" class="more">더보기 +</a>
+		</div>
+		{{if(상품평첨부파일1)}}
+		<div class="upfile">
+			<a onclick="{{$상품평보기링크}}">
+				<img src="{{$상품평첨부파일1}}" alt="첨부파일">
+				{{if(이미지개수)}}<span class="count">{{$이미지개수}}</span>{{endif(이미지개수)}}
+			</a>
+		</div>
+		{{endif(상품평첨부파일1)}}
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+{{$상품평페이지선택}}
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">등록된 상품 후기가 없습니다.</p>
+<!-- 데이터없음끝 -->

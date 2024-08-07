@@ -1,0 +1,18 @@
+<!-- 반복문시작 -->
+<!-- 반복구문시작 -->
+<div class="small_info" id="customoverlay">
+    <div class="img"><img src="{{$썸네일이미지링크}}"></div>
+    <div class="info">
+        <p class="name">{{$상호명}}</p>
+        <p class="addr">{{$주소1}} {{$주소2}}</p>
+        <p class="tel">{{$전화번호아이콘}}{{$전화번호}}</p>
+        {{if(운영시간)}}<p class="time">{{$운영시간아이콘}}{{$운영시간}}</p>{{end(운영시간)}}
+        {{if(브레이크타임)}}<p class="time">브레이크 타임 {{$브레이크타임}}</p>{{end(브레이크타임)}}
+        <a href="location_info.php?no={{$번호}}">매장 상세정보 보기</a>
+        <br>
+<!--        <a onclick="operateWish('{{$번호}}');" class="location_wish{{$담기여부}}">찜하기</a>-->
+    </div>
+    <div class="close" onclick="OverlaysClose();"></div>
+</div>
+<!-- 반복구문끝 -->
+<!-- 반복문끝 -->

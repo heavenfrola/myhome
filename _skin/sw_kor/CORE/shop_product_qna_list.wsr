@@ -1,0 +1,42 @@
+<div id="qnarev_list_all">
+	<table class="tbl_col board">
+		<caption class="hidden">상품문의</caption>
+		<colgroup>
+			<col style="width:8%;">
+			<col>
+			<col style="width:20%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col"></th>
+				<th scope="col">제목</th>
+				<th scope="col">답변여부</th>
+				<th scope="col">작성자</th>
+				<th scope="col">작성일</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{$질답공지리스트}}
+			{{$질답리스트}}
+		</tbody>
+	</table>
+	<div class="btn">
+		<div class="box_btn w100"><a href="{{$상품질답등록}}">글쓰기</a></div>
+	</div>
+	{{$페이지선택}}
+	{{$상품질답회원등록폼}}
+	{{$상품질답비회원등록폼}}
+	<div class="board_search">
+		<form name="" method="get" action="{{$현재페이지주소}}">
+			<select name="search_column">
+				<option value="1">작성자</option>
+				<option value="2">아이디</option>
+				<option value="3">제목</option>
+			</select>
+			<input type="text" name="rsearch_str" class="form_input search">
+			<input type="submit" value="검색" class="btn_search">
+		</form>
+	</div>
+</div>

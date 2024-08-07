@@ -1,0 +1,95 @@
+<div class="chg_paytype">
+	{{$결제수단변경폼시작}}
+		<h2>주문내역변경</h2>
+		<ul class="explain">
+			<li>미입금주문의 결제수단으로 변경하여 결제수단을 변경할 수 있습니다.</li>
+			<li>현재 설정 및 변경된 결제방식 기준으로 할인과 배송비, 쿠폰적용 등이 달라질 수 있습니다.</li>
+			<li>타임세일의 경우 현재설정 기준으로 재계산 됩니다.</li>
+		</ul>
+		<div class="sum">
+			<h3>이전 결제예정금액</h3>
+			<table>
+				<caption class="hidden">이전 결제예정금액</caption>
+				<colgroup>
+					<col style="width:40%;">
+					<col>
+				</colgroup>
+				<tr>
+					<th scope="row">이전 결제방식</th>
+					<td><strong>{{$결제방식}}</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">결제 예정금액</th>
+					<td>{{$화폐단위전}}<strong class="price">{{$결제금액}}</strong>{{$화폐단위후}}</td>
+				</tr>
+			</table>
+			<h3>결제정보</h3>
+			<table>
+				<caption class="hidden">결제정보</caption>
+				<colgroup>
+					<col style="width:40%;">
+					<col>
+				</colgroup>
+				<tr>
+					<th scope="row">상품합계금액</th>
+					<td>{{$화폐단위전}}<span class="chg_after_prd_prc"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr>
+					<th scope="row">배송료</th>
+					<td>{{$화폐단위전}}<span class="chg_after_dlv_prc"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr class="order_area_sale2">
+					<th scope="row">이벤트할인금액</th>
+					<td>-{{$화폐단위전}}<span class="chg_after_sale2"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr class="order_area_sale3">
+					<th scope="row">타임세일금액</th>
+					<td>-{{$화폐단위전}}<span class="chg_after_sale3"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr class="order_area_sale4">
+					<th scope="row">회원할인금액</th>
+					<td>-{{$화폐단위전}}<span class="chg_after_sale4"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr class="order_area_sale5">
+					<th scope="row">쿠폰할인금액</th>
+					<td>-{{$화폐단위전}}<span class="chg_after_sale5"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr class="order_area_sale7">
+					<th scope="row">쿠폰할인금액</th>
+					<td>-{{$화폐단위전}}<span class="chg_after_sale7"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr class="order_area_sale6">
+					<th scope="row">결제할인금액</th>
+					<td>-{{$화폐단위전}}<span class="chg_after_sale6"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr class="order_area_sale0">
+					<th scope="row">결제방식별할증금액</th>
+					<td>+{{$화폐단위전}}<span class="chg_after_sale0"></span>{{$화폐단위후}}</td>
+				</tr>
+				<tr>
+					<th scope="row">총 결제금액</th>
+					<td>{{$화폐단위전}}<strong class="price chg_after_pay_prc"></strong>{{$화폐단위후}}</td>
+				</tr>
+				<tr>
+					<th scope="row">지급 적립금</th>
+					<td>{{$화폐단위전}}<span class="chg_after_total_milage"></span>{{$화폐단위후}}</td>
+				</tr>
+			</table>
+		</div>
+		<div class="select">
+			<h3>결제수단 변경</h3>
+			{{$결제수단선택리스트}}
+			{{if(현금전용쿠폰명)}}
+			<ul class="msg">
+				<li>- 사용하셨던 '{{$현금전용쿠폰명}}'은 결제수단 변경으로 인하여 반환됩니다.</li>
+				<li>- 반환된 쿠폰이 사용기한이 지났을 경우 재사용이 어렵습니다.</li>
+			</ul>
+			{{endif(현금전용쿠폰명)}}
+			<div class="btn">
+				<span class="box_btn block large"><input type="submit" value="결제수단 변경하기"></span>
+				<span class="box_btn block large white"><a onclick="removeDimmed(); $('#chgPayType_area').remove();">결제수단 변경 취소하기</a></span>
+			</div>
+		</div>
+		<a onclick="removeDimmed(); $('#chgPayType_area').remove();" class="close">닫기</a>
+	{{$결제수단변경폼끝}}
+</div>

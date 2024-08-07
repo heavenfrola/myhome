@@ -1,0 +1,7 @@
+<div id="emoney" class="wrap_inner">
+	<div class="box_mp">
+		<p class="have">총 예치금<span>{{$회원보유예치금액}}</span></p>
+	</div>
+	{{$예치금리스트}}
+	{{$페이지선택}}
+</div>

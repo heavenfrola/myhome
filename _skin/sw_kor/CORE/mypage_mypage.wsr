@@ -1,0 +1,18 @@
+{{$비회원로그인}}
+<div id="mypage">
+	<div class="my_info">
+		<ul>
+			<li><a href="/member/edit_step1.php">회원등급<span>{{$회원등급}}</span></a></li>
+			<li class="dn{{$적립금사용유무}}"><a href="/mypage/milage.php">적립금<span>{{$회원보유적립금액}}</span></a></li>
+			<li class="dn{{$예치금사용유무}}"><a href="/mypage/emoney.php">예치금<span>{{$회원보유예치금액}}</span></a></li>
+			<li><a href="/mypage/coupon_down_list.php">쿠폰<span>{{$회원보유쿠폰개수}}</span></a></li>
+			<li><a href="/shop/cart.php">장바구니<span>{{$장바구니개수}}</span></a></li>
+			<li><a href="/mypage/wish_list.php">관심상품<span>{{$위시리스트개수}}</span></a></li>
+		</ul>
+	</div>
+	<h3 class="title first">최근 3개월 주문내역</h3>
+	{{$주문내역리스트}}
+	<h3 class="title">최근 본 상품</h3>
+	<p class="title_count tar"><a href="/shop/click_prd.php">전체보기</a></p>
+	{{$최근상품리스트}}
+</div>

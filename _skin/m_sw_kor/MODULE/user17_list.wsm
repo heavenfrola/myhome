@@ -1,0 +1,15 @@
+<!-- 반복문시작 -->
+<div class="instagram">
+	<div class="wrap_inner">
+		<h2 class="subtitle">instagram</h2>
+		<p class="link"><a href="https://www.instagram.com/wisa.co.kr/" target="_blank">@wisa</a></p>
+		<ul class="api">
+<!-- 반복구문시작 -->
+			<li class="no{{$순서}}"><a href="{{$링크}}" target="_blank">{{$미디어출력}}</a></li>
+<!-- 반복구문끝 -->
+		</ul>
+	</div>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

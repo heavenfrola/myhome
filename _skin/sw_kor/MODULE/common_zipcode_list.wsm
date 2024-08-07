@@ -1,0 +1,31 @@
+<!-- 반복문시작 -->
+<table>
+	<caption class="hidden">우편번호 리스트</caption>
+	<colgroup>
+		<col style="width:20%;">
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">우편번호</th>
+			<th scope="col">주소</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr class="p_cursor" onClick="{{$우편번호선택}}">
+			<td>{{$우편번호}}</td>
+			<td class="addr">
+				{{$주소}}
+				{{if(배송불가사유)}}
+					<p>{{$배송불가사유}}</p>
+				{{endif(배송불가사유)}}
+			</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">검색결과가 없습니다.</p>
+<!-- 데이터없음끝 -->

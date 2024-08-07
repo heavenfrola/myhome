@@ -1,0 +1,39 @@
+{{$재입고알림신청폼시작}}
+	<h2>재입고 알림 신청</h2>
+	<table class="tbl_row">
+		<caption class="hidden">재입고 상품 정보</caption>
+		<colgroup>
+			<col style="width:25%;">
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="row">상품명</th>
+				<td>{{$재입고알림신청_상품명}}</td>
+			</tr>
+		</thead>
+		<tbody>
+			{{$재입고알림신청_상품옵션리스트}}
+			<tr class="phone">
+				<th scope="row">휴대폰 번호</th>
+				<td><input type="text" name="buyer_cell" value="{{$회원휴대전화번호}}" class="form_input"></td>
+			</tr>
+			<tr>
+				<th scope="row">결제금액</th>
+				<td>{{$화폐단위전}}<span class="notify_restock_prc">{{$판매가격}}</span>{{$화폐단위후}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<label for="check_sms" class="agree"><input type="checkbox" name="buyer_cell_agree" value="Y" id="check_sms">SMS 수신에 동의합니다.</label>
+	<div class="btn btn_col">
+		<span class="box_btn large block"><input type="submit" value="신청하기"></span>
+		<span class="box_btn large block white"><a onclick="close_notify_restockPage(); return false;">취소</a></span>
+	</div>
+	<a class="close" onclick="close_notify_restockPage(); return false;">닫기</a>
+{{$재입고알림신청폼끝}}
+<script type="text/javascript">
+	$(window).ready(function(){
+		var nr_height = $('#notify_restock').height();
+		$('#notify_restock').css('margin-top','-'+nr_height/2+'px');
+	});
+</script>

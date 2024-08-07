@@ -1,0 +1,8 @@
+<div>
+	<label>주문번호</label>
+	<input type="text" name="" class="form_input block readonly" value="{{$주문번호}}" readonly>
+</div>
+<div>
+	<label>주문상품</label>
+	<input type="text" name="" class="form_input block readonly" value="{{$주문상품}}" readonly>
+</div>

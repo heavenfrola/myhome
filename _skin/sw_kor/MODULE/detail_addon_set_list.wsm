@@ -1,0 +1,45 @@
+<!-- 반복문시작 -->
+<table class="list set_table">
+	<colgroup>
+		<col style="width:30%;">
+		<col>
+	</colgroup>
+	<tbody>
+		<tr>
+			<th scope="row">수량</th>
+			<td>
+				<div class="box_qty">
+					<input type="text" name="buy_ea" value="{{$최소주문수량}}" class="form_input">
+					<div class="btn_ea">
+						<a href="javascript:eaChg(1);" class="ea_up"></a>
+						<a href="javascript:eaChg(2);" class="ea_down"></a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="list_set">
+	<h3>세트상품 선택</h3>
+	<div class="box">
+		<ul>
+<!-- 반복구문시작 -->
+			<li>
+				<div class="img"><a href="{{$상품링크}}" target="_blank"><img src="{{$상품이미지}}" alt=""></a></div>
+				<div class="info">
+					<p><a href="{{$상품링크}}" target="_blank">{{$상품명}}</a></p>
+					<p><strong>{{$화폐단위전}}{{$상품판매가}}{{$화폐단위후}}</strong></p>
+				</div>
+				<div class="opt">
+					{{$상품옵션}}
+				</div>
+			</li>
+<!-- 반복구문끝 -->
+		</ul>
+	</div>
+</div>
+<!-- 반복문끝 -->
+
+<!-- 데이터없음시작 -->
+
+<!-- 데이터없음끝 -->

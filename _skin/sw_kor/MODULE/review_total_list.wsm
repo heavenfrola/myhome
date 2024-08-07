@@ -1,0 +1,29 @@
+<!-- 반복문시작 -->
+<!-- 반복구문시작 -->
+<tr>
+	<td>{{$상품이미지}}</td>
+	<td class="subject tal">
+		<p class="prd">{{$상품명}}</p>
+		<p class="title">
+			{{$새글아이콘}}
+			{{if(상품평베스트)}}<img src="{{$이미지경로}}/shop/i_best.gif" alt="best">{{endif(상품평베스트)}}
+			{{if(상품평인기)}}<img src="{{$이미지경로}}/shop/i_hot.gif" alt="hot">{{endif(상품평인기)}}
+			{{$파일첨부아이콘}}
+			{{if(상품평카테고리)}}[{{$상품평카테고리}}]{{endif(상품평카테고리)}}
+			<a onclick="{{$상품평보기링크}}" class="p_cursor">{{$글제목(링크없음)}}</a>
+			{{$총댓글수}}
+		</p>
+		<div class="content">{{$상품평요약내용}}</div>
+		<a onclick="{{$상품평보기링크}}" class="more">더보기 +</a>
+	</td>
+	<td><span class="gradebox small point{{$상품평점수(텍스트)}}"></span> <span class="grade">{{$상품평점수(텍스트)}}</span></td>
+	<td class="name">{{$작성자}}</td>
+	<td>{{$등록일}}</td>
+</tr>
+<!-- 반복구문끝 -->
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<tr>
+	<td colspan="5" class="empty">등록된 상품 후기가 없습니다.</td>
+</tr>
+<!-- 데이터없음끝 -->

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*-----------------------------------------------------------------*/
+/* 상품검색어
+/*-----------------------------------------------------------------*/
+
+/* 검색 박스 - 단축검색 */
+.box_search .quick_search {padding-top: 0px;}
+.box_search .quick_search > li {margin: 3px;}
+.box_search .quick_search > li > a.link {background: #eee;}
+
+/* 검색어 선택 */
+.keywordlog.box_bottom {background-color:#F0F0F0; border-bottom:0; overflow:hidden;}
+.keywordlog.box_bottom .textSearch {font-weight:bold; margin-left:30px; vertical-align:middle; line-height:28px; flex-shrink: 0; width:80px;}
+.keywordlog.box_bottom .selectSearch {flex-grow: 5;}
+.keywordlog.box_bottom .selectSearch .selectSearchBtn {line-height: 0px; height:28px; width:59px;}
+.keywordlog.box_bottom .selectSearch .quick_search2 {display:inline; vertical-align:middle;}
+.keywordlog.box_bottom .selectSearch .quick_search2 > li {display: inline-block; position: relative; margin: 3px;}
+.keywordlog.box_bottom .selectSearch .quick_search2 > li > a.link {display: inline-block; position: relative; padding: 5px 10px; letter-spacing: -1px; text-align: left;}
+.keywordlog.box_bottom .selectSearch .quick_search2 li {background-color: #FFFFFF; border-radius: 4px;}
+.keywordlog.box_bottom .selectSearch .quick_search2 > li > a:hover {color:#000 !important; cursor:pointer;}
+.keywordlog.box_bottom .selectSearch .quick_search2 > li:hover > a.delete {display:block; cursor:pointer; color:#fff !important;}
+.keywordlog.box_bottom .selectSearch .quick_search2 > li > a.delete {display:none; position:absolute; right:-4px; top:-6px; z-index:5; width:16px; height:16px; border-radius:50%; background:url('../image/common/quicksearch_del.png') no-repeat center #b2b3b3; text-indent:-9999px; color:#fff !important;}
+.keywordlog a:hover, .keywordlog a i:hover {color: inherit !important;}
+.keywordlog.box_bottom .maxSearchCount {display:inline-block !important; vertical-align:middle; float:right; padding-top:5px; flex-shrink: 0; width:130px;}
+
+
+/*-----------------------------------------------------------------*/
+/* 회원분석
+/*-----------------------------------------------------------------*/
+
+.memanalysisBox {margin-top:15px; padding:0;}
+.memanalysisBox .memanalysis_row {overflow:hidden; border-bottom:1px solid #EFEFEF;}
+.memanalysisBox .memanalysis_row .memanalysis_row_box {width:28%; float:left; padding:2.6% 2.6%; border-right:1px solid #EFEFEF;}
+.memanalysisBox .memanalysis_row .memanalysis_row_box:last-child {border-right:0;}
+.memanalysisBox .memanalysis_row .memanalysis_row_box.nodatas {display: flex; justify-content:center; align-items: center; position:relative; background-color: rgba(205, 209, 216, .1);}
+.memanalysisBox .memanalysis_row .memanalysis_row_box.nodatas .nodataTextBox {display: block !important; position:absolute; height: 38px;background-color: #454A58; border-radius: 8px; color:#FFFFFF; letter-spacing: -0.65px; font: normal normal normal 13px/17px Malgun Gothic; line-height:38px; padding:0 10px 0 5px;}
+.memanalysisBox .memanalysis_row .memanalysis_row_box .nodataTextBox {display: none;}
+.memanalysisBox .memanalysis_row .memanalysis_row_box.nodatas .nodataTextBox span.icon {background: url('../image/icon/icon_warning_white.png') no-repeat 2px 4px; padding:4px 0 4px 20px;}
+.memanalysisBox .memanalysis_row .memanalysis_row_box canvas {width:100%; height:320px;}

@@ -1,0 +1,6 @@
+<!-- 설문조사 리스트 - 비회원 일때 -->
+<div class="user">
+	<span class="name"><input type="text" name="name" maxlength="6" class="form_input block gray" placeholder="이름"></span>
+	<span class="pw"><input type="password" name="pwd" maxlength="12" class="form_input block gray" placeholder="비밀번호"></span>
+</div>
+<!-- //설문조사 리스트 - 비회원 일때 -->

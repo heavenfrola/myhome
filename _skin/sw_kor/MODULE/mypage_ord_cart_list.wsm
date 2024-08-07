@@ -1,0 +1,81 @@
+<!-- 반복문시작 -->
+<table class="tbl_col prd">
+	<caption class="hidden">주문상품</caption>
+	<colgroup>
+		<col style="width:100px;">
+		<col>
+		<col style="width:15%;">
+		<col style="width:12%;">
+		<col style="width:5%;">
+		<col style="width:12%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col" colspan="2">상품명</th>
+			<th scope="col">옵션</th>
+			<th scope="col">가격</th>
+			<th scope="col">수량</th>
+			<th scope="col">총 금액</th>
+			<th scope="col">적립금</th>
+			<th scope="col">상태</th>
+			<th scope="col">후기작성</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td class="img">{{$상품이미지(링크포함)}}</td>
+			<td class="tal">{{$상품명}}</td>
+			<td>{{$옵션정보}} <div>{{$기타메세지}}</div></td>
+			<td>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</td>
+			<td>{{$구매수량}}</td>
+			<td>{{$화폐단위전}}{{$총합계금액}}{{$화폐단위후}}</td>
+			<td><img src="{{$이미지경로}}/shop/milage.gif" alt="적립금"> {{$화폐단위전}}{{$상품적립금}}{{$화폐단위후}}</td>
+			<td>
+				{{$주문상태}}
+				{{if(송장번호)}}
+					<br><span class="box_btn small white btn_delivery"><a href="{{$배송추적링크}}" target="_blank">배송조회</a></span><br><a href="{{$배송추적링크}}" target="_blank">{{$배송업체}}<br>{{$송장번호}}</a>
+				{{endif(송장번호)}}
+			</td>
+			<td>{{if(상품평작성권한)}}<span class="box_btn"><a href="{{$후기작성(레이어)}}" class="crema-new-review-link" data-product-code="{{$상품번호}}" data-sub-order-code="{{$주문상품번호}}" data-sub-order-validation="true">후기작성</a></span>{{endif(상품평작성권한)}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 반복구문2시작 -->
+		<tr>
+			<td class="img">{{$상품이미지(링크포함)}}</td>
+			<td class="tal">{{$상품명}}</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>{{$화폐단위전}}{{$총합계금액}}{{$화폐단위후}}</td>
+			<td><img src="{{$이미지경로}}/shop/milage.gif" alt="적립금"> {{$화폐단위전}}{{$상품적립금}}{{$화폐단위후}}</td>
+			<td></td>
+			<td></td>
+		</tr>
+<!-- 반복구문2끝 -->
+<!-- 반복구문3시작 -->
+		<tr class="set">
+			<td class="img prdimg">{{$상품이미지(링크포함)}}</td>
+			<td class="tal">{{$상품명}}</td>
+			<td>{{$옵션정보}} <div>{{$기타메세지}}</div></td>
+			<td>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</td>
+			<td>{{$구매수량}}</td>
+			<td>{{$화폐단위전}}{{$총합계금액}}{{$화폐단위후}}</td>
+			<td><img src="{{$이미지경로}}/shop/milage.gif" alt="적립금"> {{$화폐단위전}}{{$상품적립금}}{{$화폐단위후}}</td>
+			<td>
+				{{$주문상태}}
+				{{if(송장번호)}}
+					<br><span class="box_btn small white btn_delivery"><a href="{{$배송추적링크}}" target="_blank">배송조회</a></span><br><a href="{{$배송추적링크}}" target="_blank">{{$배송업체}}<br>{{$송장번호}}</a>
+				{{endif(송장번호)}}
+			</td>
+			<td>{{if(상품평작성권한)}}<span class="box_btn"><a href="{{$후기작성(레이어)}}" class="crema-new-review-link" data-product-code="{{$상품번호}}" data-sub-order-code="{{$주문상품번호}}" data-sub-order-validation="true">후기작성</a></span>{{endif(상품평작성권한)}}</td>
+		</tr>
+<!-- 반복구문3끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

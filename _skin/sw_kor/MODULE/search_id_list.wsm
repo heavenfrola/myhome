@@ -1,0 +1,16 @@
+<!-- 반복문시작 -->
+<div id="pop_id_list" class="pop_id_list">
+	<h2>고객님의 정보와 일치하는 아이디 목록입니다.</h2>
+	<ul class="list">
+<!-- 반복구문시작 -->
+		<li><label><input type="radio" name="member_no" value="{{$회원번호}}"> {{$아이디}} (가입일 : {{$가입일}})</label></li>
+<!-- 반복구문끝 -->
+	</ul>
+	<div class="btn">
+		<span class="box_btn w150 large"><a href="/member/login.php">로그인하기</a></span>
+		<span class="box_btn w150 large white"><a onclick="chkSearchpwd();">비밀번호 변경</a></span>
+	</div>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

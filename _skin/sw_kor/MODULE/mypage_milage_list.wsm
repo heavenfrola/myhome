@@ -1,0 +1,44 @@
+<!-- 반복문시작 -->
+<table class="tbl_col">
+	<caption class="hidden">적립금 내역</caption>
+	<colgroup>
+		<col style="width:12%">
+		<col style="width:10%">
+		<col style="width:10%">
+		<col style="width:10%">
+		{{if(적립금만료기한)}}
+		<col style="width:10%">
+		{{endif(적립금만료기한)}}
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">적립/사용일</th>
+			<th scope="col">적립금액</th>
+			<th scope="col">사용금액</th>
+			<th scope="col">소계</th>
+			{{if(적립금만료기한)}}
+			<th scope="col">만료일</th>
+			{{endif(적립금만료기한)}}
+			<th scope="col">내용</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$등록일}}</td>
+			<td><strong>&plus; {{$화폐단위전}}{{$적립금액}}{{$화폐단위후}}</strong></td>
+			<td><strong class="p_color">&minus; {{$화폐단위전}}{{$사용금액}}{{$화폐단위후}}</strong></td>
+			<td>{{$화폐단위전}}{{$소계}}{{$화폐단위후}}</td>
+			{{if(적립금만료기한)}}
+			<td>{{$만료일}}</td>
+			{{endif(적립금만료기한)}}
+			<td class="tal">{{$상세내역}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">적립금 내역이 존재하지 않습니다.</p>
+<!-- 데이터없음끝 -->

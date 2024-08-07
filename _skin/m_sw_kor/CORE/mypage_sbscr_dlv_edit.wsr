@@ -1,0 +1,46 @@
+{{$폼시작}}
+<div class="sbs_address">
+	<table class="tbl_row">
+		<caption>배송지 변경</caption>
+		<colgroup>
+			<col style="width:25%">
+			<col>
+		</colgroup>
+		<tr>
+			<th scope="row">기존 배송지</th>
+			<td>{{$기존배송지}}</td>
+		</tr>
+		<tr>
+			<th scope="row">받으시는 분</th>
+			<td><input type="text" name="addressee_name" value="{{$받으시는분}}" class="form_input block"></td>
+		</tr>
+		<tr>
+			<th scope="row">전화번호</th>
+			<td><input type="text" name="addressee_phone" value="{{$전화번호}}" class="form_input block"></td>
+		</tr>
+		<tr>
+			<th scope="row">휴대전화번호</th>
+			<td>
+				<input type="text" name="addressee_cell" value="{{$휴대폰}}" class="form_input block">
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">주소</th>
+			<td class="address_area">
+				<label><input type="radio" name="zip_mode" value="1" checked> 지번주소</label>
+				<label><input type="radio" name="zip_mode" value="2"> 도로명주소</label>
+				<div class="code">
+					<input type="text" name="addressee_dong" id="address_dong" class="form_input block" placeholder="읍,면,동,도로명 입력">
+					<span class="box_btn"><a href="javascript:;" onclick="zipSearch2('dlv_edit', dlv_edit.addressee_dong.value)">우편번호 검색</a></span>
+				</div>
+				<div><input type="text" name="addressee_zip" value="{{$우편번호}}" class="form_input block" placeholder="우편번호"></div>
+				<div><input type="text" name="addressee_addr1" value="{{$주소1}}" class="form_input block" readonly placeholder="기본주소"></div>
+				<div><input type="text" name="addressee_addr2" value="{{$주소2}}" class="form_input block" placeholder="나머지 주소"></div>
+			</td>
+		</tr>
+	</table>
+	<div class="btn">
+		<span class="box_btn w150 large"><input type="submit" value="확인"></span>
+	</div>
+</div>
+{{$폼끝}}

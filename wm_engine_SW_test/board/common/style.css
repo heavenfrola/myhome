@@ -1,0 +1,32 @@
+
+body,td,input,div,form,textarea,center,pre,blockquote,textfield,select {font-family:돋움,verdana;font-size:9pt;color:#5e5e5e;line-height:160%;}
+
+a {color:#5E5E5E;text-decoration:none;}
+a:hover {color:#3F6594}
+img {border:none}
+label {cursor:pointer;text-decoration:underline;}
+
+.input {border:solid 1px #4D4D4D;height:18px;} 
+
+
+.col001 {width:150;height:28;font-weight:bold;text-align:center;background-color:#F4F4F4}
+.col002 {width:550;height:28;padding-left:5px}
+
+.col003 {height:28;text-align:center;}
+.col004 {height:28;text-align:center;}
+
+.col005 {padding-left:13px}
+
+.txt001 {border:solid 1px #D1D1D1;height:18px;} 
+.txt002 {border:solid 1px #D1D1D1;height:18px;width:100%;} 
+
+.txtar001 {border:solid 1px #D1D1D1;width:100%;height:100px;overflow-y:visible}
+.txtar002 {border:solid 1px #D1D1D1;width:100%;height:50px}
+
+td.rcol1 {width:150;height:28;font-weight:bold;text-align:center;background-color:#F4F4F4}
+td.rcol2 {width:550;height:28;padding-left:5}
+.rtextarea {border:solid 1px #4D4D4D;width:100%;height:100px;overflow-y:visible}
+.input {border:solid 1px #D1D1D1;height:18px;} 
+
+.join_td01 {width:150px;height:25px;background-color:#F4F4F4;padding-left:20px}
+.join_td02 {background-color:#FFFFFF;height:25px;padding-left:12px}

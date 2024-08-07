@@ -1,0 +1,48 @@
+<!-- 반복문시작 -->
+<table class="tbl_col">
+	<caption>쪽지리스트 <span>new({{$새로운쪽지개수}})</span></caption>
+	<colgroup>
+		<col style="width:25%;">
+		<col>
+		<col style="width:25%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">작성자</th>
+			<th scope="col">내용</th>
+			<th scope="col">작성일</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$보낸회원명}} ({{$보낸회원아이디}})</td>
+			<td class="left">{{$쪽지제목}}</td>
+			<td>{{$발송일}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<table class="tbl_col">
+	<caption>쪽지리스트</caption>
+	<colgroup>
+		<col style="width:25%;">
+		<col>
+		<col style="width:25%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">작성자</th>
+			<th scope="col">내용</th>
+			<th scope="col">작성일</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="3">내용이 존재하지 않습니다</td>
+		</tr>
+	<tbody>
+</table>
+<!-- 데이터없음끝 -->

@@ -1,0 +1,38 @@
+<!-- 반복문시작 -->
+{{$폼시작}}
+<table class="tbl_col prd">
+	<caption class="hidden">개별상품 쿠폰</caption>
+	<colgroup>
+		<col style="width:60px;">
+		<col>
+		<col style="width:120px;">
+		<col style="width:40px;">
+		<col style="width:80px;">
+	</colgroup>
+	<thead>
+		<th colspan="2" scope="col">상품명</th>
+		<th scope="col">옵션</th>
+		<th scope="col">수량</th>
+		<th scope="col">총금액</th>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td class="img"><img src="{{$상품이미지}}" alt="{{$상품명}}"></td>
+			<td class="tal">{{$상품명}}</td>
+			<td class="tal">{{$옵션명}}</td>
+			<td>{{$주문수량}}</td>
+			<td>{{$화폐단위전}}{{$판매금액}}{{$화폐단위후}}</td>
+		</tr>
+		<tr>
+			<td colspan="5">
+				{{$적용가능쿠폰목록}}
+			</td>
+		</tr>
+	</tbody>
+<!-- 반복구문끝 -->
+</table>
+{{$폼끝}}
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

@@ -1,0 +1,28 @@
+<!-- 반복문시작 -->
+<script src="{{$이미지경로}}/../slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{$이미지경로}}/../slick.css">
+<div class="title_qnarev none">
+	<h3>포토후기 <span id="photo_count"></span>건</h3>
+</div>
+<div class="list_photo">
+<!-- 반복구문시작 -->
+	<div class="frame"><a onclick="{{$글링크(레이어)}}" class="box">{{$첨부이미지1}}</a></div>
+<!-- 반복구문끝 -->
+</div>
+<script type="text/javascript">
+	$('.list_photo').slick({
+		slidesToShow: 3.5,	// 한페이지의 부가이미지 수
+		slidesToScroll: 3,	// 슬라이드 되는 부가이미지 수
+		infinite: false,
+		dots: true,
+		arrows: false,
+	});
+
+	$(window).ready(function(){
+		var pr_count = $('.list_photo').find('.box').length;
+		$('#photo_count').html(pr_count);
+	});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

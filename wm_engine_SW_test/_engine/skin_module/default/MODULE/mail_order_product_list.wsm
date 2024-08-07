@@ -1,0 +1,22 @@
+<!-- 반복문시작 -->
+<table cellspacing="0" cellpadding="0" style="width:100%; table-layout:fixed;">
+    <colgroup>
+        <col style="width:20%">
+        <col style="width:80%">
+    </colgroup>
+    <tr>
+        <td colspan="2" style="margin:0; padding:10px 0;"></td>
+    </tr>
+<!-- 반복구문시작 -->
+    <tr>
+        <th scope="row" style="margin:0; padding:10px 0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%;"><a href="{{$상품링크}}" target="_blank"><img src="{{$상품사진}}" alt="" style="width:100%; height:auto; border:0;"></a></th>
+        <td style="margin:0; padding:10px; color:#000000; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-align:left; line-height:160%; vertical-align:middle;"><a href="" style="margin:0; padding:0; border:0; color:#666666; font-family:'NanumBarunGothic', dotum, gulim, sans-serif; font-size:16px; font-weight:normal; text-decoration:none; line-height:160%;"><strong>{{$상품명}}</strong><br>{{$상품옵션정보}}<br>{{$수량}}<br>{{$상품가격}}</a></td>
+    </tr>
+<!-- 반복구문끝 -->
+    <tr>
+        <td colspan="2" style="margin:0; padding:10px 0; border-bottom:1px solid #e1e1e1;"></td>
+    </tr>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

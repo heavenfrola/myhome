@@ -1,0 +1,29 @@
+<div class="box {{$상품품절}}">
+	<div class="img">
+		<div class="prdimg">{{$상품이미지(링크포함)}}</div>
+		<!-- 상품품절 영역 -->
+		<div class="soldout" onclick="location.href='{{$상품링크}}'">Sold out</div>
+		<!-- //상품품절 영역 -->
+		<span class="wish">{{$위시담기}}</a></span>
+	</div>
+	<div class="info">
+		<p class="name">{{if(단독배송여부)}}[단독배송] {{endif(단독배송여부)}}{{$상품명(링크포함)}}</p>
+		<div class="price">
+			{{if(상품소비자가격)}}
+			<p class="consumer consumer{{$할인적용여부}}">{{$화폐단위전}}{{$상품소비자가격}}{{$화폐단위후}}</p>
+			{{endif(상품소비자가격)}}
+			<p class="sell sell{{$할인적용여부}}"><strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}} {{if(참조상품가격)}}({{$참조화폐단위전}}{{$참조상품가격}}{{$참조화폐단위후}}){{endif(참조상품가격)}}</strong></p>
+			<p class="discount discount{{$할인적용여부}}"><strong>{{$화폐단위전}}{{$할인후실판매가}}{{$화폐단위후}} {{if(참조할인후실판매가)}}({{$참조화폐단위전}}{{$참조할인후실판매가}}{{$참조화폐단위후}}){{endif(참조할인후실판매가)}}</strong></p>
+		</div>
+		{{if(상품요약설명)}}
+		<div class="summary">{{$상품요약설명}}</div>
+		{{endif(상품요약설명)}}
+		<div class="icon">{{$상품아이콘}}</div>
+		{{if(오늘출발)}}
+		<p class="today"><strong>오늘출발</strong><span>평일 {{$오늘출발주문마감시간}} 주문마감</span></p>
+		{{endif(오늘출발)}}
+		{{if(타임세일타이머)}}
+		<div class="box_timer"><span class="title">타임세일</span>{{$타임세일타이머}}</div>
+		{{endif(타임세일타이머)}}
+	</div>
+</div>

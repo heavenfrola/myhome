@@ -1,0 +1,42 @@
+{{$api가입폼시작}}
+<div id="join_agree">
+	<div class="all_chk">
+		<p class="check check_chg">{{$가입페이지전체동의}}<label for="agree_all">전체동의</label></p>
+		<p class="msg">전체 동의는 필수 및 선택 정보에 대한 동의도 포함되어 있으며, 개별적으로도 동의를 선택할 수 있습니다.</p>
+	</div>
+	<p class="check check_chg">{{$이용약관동의}}<label for="ck_agree">이용약관 동의(필수)</label></p>
+	<iframe name="" src="/content/content.php?cont=join_rull&mode=1" frameborder="0"></iframe>
+	<p class="check check_chg">{{$개인정보취급방침동의}}<label for="ck_privacy">개인정보 수집·이용 동의(필수)</label></p>
+	<table class="tbl_row">
+		<caption class="hidden">개인정보 수집·이용 동의</caption>
+		<colgroup>
+			<col style="width:20%;">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">수집하는 개인정보 항목</th>
+				<td>이름 , 로그인ID , 비밀번호 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일</td>
+			</tr>
+			<tr>
+				<th scope="row">수집 및 이용목적</th>
+				<td>회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지와 비인가 사용 방지 , 가입 의사 확인 , 불만처리 등 민원처리 , 고지사항 전달</td>
+			</tr>
+			<tr>
+				<th scope="row">보유 및 이용기간</th>
+				<td>
+					회원탈퇴 단, 관계 법령에 따라 개인정보를 보존해야 하는 경우, 회사는 해당 법령에서 정한 기간동안 보관합니다.<br>
+					※ 동의를 거부할 수 있으나 거부 시 회원가입이 불가능합니다.
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	{{if(만14세이상가입동의)}}
+	<p class="check check_chg">{{$만14세이상가입동의}}<label for="14_up_agree">만 14세 이상입니다.(필수)</label></p>
+	{{endif(만14세이상가입동의)}}
+	<div class="btn">
+		<span class="box_btn w150 large strong radius"><input type="submit" value="확인"></span>
+		<span class="box_btn w150 large white strong radius"><a href="/">취소</a></span>
+	</div>
+</div>
+{{$api가입폼끝}}

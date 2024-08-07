@@ -1,0 +1,17 @@
+<div id="zipcode" class="zipcode">
+	<h1>우편번호 찾기</h1>
+	<ul class="tab">
+		<li><a href="{{$우편번호찾기}}" class="selected">지번 주소</a></li>
+		<li><a href="{{$도로명우편번호찾기}}">도로명 주소</a></li>
+	</ul>
+	{{$폼시작}}
+		<p class="ex">찾으시는 주소 (동/읍/면)을 입력하세요.<span>예) 역삼1동, 대치동, 방배동</span></p>
+		<div class="search">
+			<input type="text" name="search" value="{{$검색어}}" class="form_input block">
+			<span class="box_btn"><input type="submit" value="검색"></span>
+		</div>
+	{{$폼끝}}
+	{{$우편번호리스트}}
+	{{$페이지선택}}
+</div>
+{{$시도구군스크립트}}

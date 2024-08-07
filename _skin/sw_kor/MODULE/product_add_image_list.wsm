@@ -1,0 +1,21 @@
+<!-- 반복문시작 -->
+<div class="box_add_slide">
+	<div class="add_slide">
+		<div><img src="{{$상품중이미지}}" alt="상품중이미지 썸네일" onMouseOver="attatchAddImage(this, 500, 500)"></div>
+<!-- 반복구문시작 -->
+		<div><img src="{{$부가이미지주소}}" alt="부가이미지 썸네일" onMouseOver="attatchAddImage(this, 500, 500)"></div>
+<!-- 반복구문끝 -->
+	</div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$('.box_add_slide .add_slide').slick({
+		slidesToShow: 5,	// 한페이지의 부가이미지 수
+		slidesToScroll: 1,	// 슬라이드 되는 부가이미지 수
+		swipe: false,
+	});
+});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

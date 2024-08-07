@@ -1,0 +1,12 @@
+<tr>
+	<th scope="row">현금영수증</th>
+	<td>
+		{{$발급상태}}
+		{{if(국세청승인번호)}}
+		<strong>[{{$국세청승인번호}}]</strong> 
+		{{endif(국세청승인번호)}}
+		{{if(현금영수증링크)}}
+		<a href='#' onclick="{{$현금영수증링크}}; return false;">[영수증]</a>
+		{{endif(현금영수증링크)}}
+	</td>
+</tr>

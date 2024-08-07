@@ -1,0 +1,38 @@
+
+<div class="box">
+	<span class="close" onclick="toggle_view('shop_detail')"></span>
+	<div class="img">{{$매장이미지2}}</div>
+	 <div class="info">
+		<p class="name">{{$매장명}} <a href="{{$카카오길찾기}}" target="blank">길찾기</a></p>
+		<dl class="shop">
+			<dt class="title">매장정보</dt>
+			<dd>{{$아이콘}}</dd>
+		</dl>
+		<dl class="addr">
+			<dt class="title">주소</dt>
+			<dd>{{$주소1}} {{$주소2}}</dd>
+		</dl>
+		<dl class="tel">
+			<dt class="title">전화번호</dt>
+			<dd>{{$전화번호}}</dd>
+		</dl>
+		<dl class="time">
+			<dt class="title">영업시간</dt>
+			<dd>{{$영업시간}}</dd>
+		</dl>
+		<dl class="type2">
+			<dt class="title">시설안내</dt>
+			{{$시설안내리스트}}
+		</dl>
+		<dl class="type2">
+			<dt class="title">매장설명</dt>
+			<dd>
+				{{$기타내용}}
+			</dd>
+		</dl>
+		<div class="btn_col">
+			
+			<span class="box_btn gray large"><a href="/store/location.php">목록보기</a></span>
+		</div>
+	</div>
+</div>

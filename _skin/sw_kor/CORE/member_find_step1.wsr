@@ -1,0 +1,98 @@
+<div id="find" class="box_member">
+	<ul class="tab_member">
+		<li><a onclick="tabover('member', 0);">아이디 찾기</a></li>
+		<li><a onclick="tabover('member', 1);">비밀번호 찾기</a></li>
+	</ul>
+	<div class="tabcnt_member tabcnt_member0">
+		{{$아이디폼시작}}
+			<fieldset>
+				<legend>아이디 찾기</legend>
+				<div class="select">{{$아이디찾기선택구문}}</div>
+				<div class="fld">
+					<label for="find_id_name">이름</label>
+					<input type="text" name="name" id="find_id_name" class="form_input member block">
+				</div>
+				{{$이메일입력구문}}
+				<div class="fld find_id_item_3">
+					<label for="find_id_cell">휴대전화번호</label>
+					<input type="text" name="cell[]" maxlength="3" id="find_id_cell" class="form_input member number_first" onKeyUp="nextTab(this,this.form.find_id_cell2,3)">
+					<input type="text" name="cell[]" maxlength="4" id="find_id_cell2" class="form_input member number" onKeyUp="nextTab(this,this.form.find_id_cell3,4)">
+					<input type="text" name="cell[]"  maxlength="4" id="find_id_cell3" class="form_input member number">
+				</div>
+				<div class="savessl">
+					<input type="checkbox" name="setOpenSSL" id="find_id_ssl" checked onclick="return false;"><label for="find_id_ssl">보안접속</label>
+				</div>
+				<span class="box_btn block huge white strong"><input type="submit" value="확인"></span>
+			</fieldset>
+		{{$아이디폼끝}}
+	</div>
+	<div class="tabcnt_member tabcnt_member1">
+		{{$비밀번호폼시작}}
+			<fieldset>
+				<legend>비밀번호 찾기</legend>
+				<div class="select">{{$비밀번호찾기선택구문}}</div>
+				<div class="fld">
+					<label for="find_pwd_id">아이디</label>
+					<input type="text" name="member_id" id="find_pwd_id" class="form_input member block">
+				</div>
+				<div class="fld">
+					<label for="find_pwd_name">이름</label>
+					<input type="text" name="name" id="find_pwd_name" class="form_input member block">
+				</div>
+				<div class="fld find_pw_item_2">
+					<label for="find_pwd_email">이메일</label>
+					<input type="text" name="email" id="find_pwd_email" class="form_input member block">
+				</div>
+				<div class="fld find_pw_item_3">
+					<label for="find_pwd_cell">휴대전화번호</label>
+					<input type="text" name="cell[]" maxlength="3" id="find_pwd_cell" class="form_input member number_first" onKeyUp="nextTab(this,this.form.find_pwd_cell2,3)">
+					<input type="text" name="cell[]" maxlength="4" id="find_pwd_cell2" class="form_input member number" onKeyUp="nextTab(this,this.form.find_pwd_cell3,4)">
+					<input type="text" name="cell[]" maxlength="4" id="find_pwd_cell3" class="form_input member number"><br>
+				</div>
+				{{if(아이디비밀번호찾기설정확인)}}
+				<div class="fld find_pw_item_3">
+					<label for="find_pwd_auth_key">인증번호</label>
+					<input type="text" name="auth_key" id="find_pwd_auth_key" class="form_input member block">
+				</div>
+				<p class="find_pw_item_3 msg">전송받은 인증번호를 입력하신 후 '확인'을 눌러 주세요.</p>
+				{{endif(아이디비밀번호찾기설정확인)}}
+				<div class="savessl">
+					<input type="checkbox" name="setOpenSSL" id="find_pwd_ssl" checked onclick="return false;"><label for="find_pwd_ssl">보안접속</label>
+				</div>
+				<span class="box_btn block huge white strong"><input type="submit" value="확인"></span>
+			</fieldset>
+		{{$비밀번호폼끝}}
+	</div>
+</div>
+<script type="text/javascript">
+	// 회원관련 인풋
+	var pwdblur = false;
+	$(window).ready(function(){
+		// 로그인 이벤트
+		$('.box_member fieldset .fld .form_input').each(function(idx){
+			if ($(this).val().length > 0){
+				$(this).closest('div').addClass('active');
+			}
+		})
+		$('.box_member fieldset .fld .form_input').focus(function(){
+			$(this).closest('div').addClass('active');
+		})
+		$('.box_member fieldset .fld .form_input').change(function(){
+			if ($(this).val().length > 0){
+				$(this).closest('div').addClass('active');
+			}
+		})
+		$('.box_member fieldset .fld .form_input').blur(function(){
+			if(pwdblur != true) return;
+
+			if ($(this).val().length == 0){
+				$(this).closest('div').removeClass('active');
+			}
+		})
+		pwdblur = true;
+	});
+
+	$(document).ready(function(){
+		tabover('member', 0);
+	});
+</script>

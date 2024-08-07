@@ -1,0 +1,88 @@
+<script src="{{$이미지경로}}/../slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{$이미지경로}}/../slick.css">
+<i id="crema-login-username" style="display:none;">{{$회원아이디}}</i>
+<i id="crema-login-name" style="display:none;">{{$회원명}}</i>
+<div id="wrapper">
+	<!-- 상단 -->
+	<div id="header">
+		<div class="gnb fixed">
+			<div class="wrap_inner">
+				<ul class="menu">
+					{{$로그인전1}}{{$로그인후1}}
+					<li><a href="/mypage/order_list.php">주문내역</a></li>
+					<li class="viewsub">
+						<a href="/mypage/mypage.php">마이페이지</a>
+						<ul class="list">
+							<li><a href="/member/edit_step1.php">정보수정</a></li>
+							<li><a href="/mypage/wish_list.php">관심상품</a></li>
+							<li class="dn{{$적립금사용유무}}"><a href="/mypage/milage.php">적립금</a></li>
+							<li><a href="/mypage/coupon_down_list.php">쿠폰</a></li>
+							<li><a href="/mypage/counsel_list.php">1:1문의</a></li>
+						</ul>
+					</li>
+					<li class="viewsub">
+						<a href="/board?db=basic_1">고객센터</a>
+						<ul class="list">
+							<li><a href="/board?db=basic_1">NOTICE</a></li>
+							<li><a href="/board?db=basic_2">FAQ</a></li>
+							<li><a href="/shop/product_qna_list.php">Q&A</a></li>
+							<li><a href="/shop/product_review_list.php">REVIEW</a></li>
+							<li><a href="/board?db=gallery_1">EVENT</a></li>
+							<li><a href="/store/location.php">매장안내</a></li>
+						</ul>
+					</li>
+					<li><a href="/shop/cart.php">장바구니 (<strong class="ea_cart front_cart_rows quick_cart_cnt">{{$장바구니개수}}</strong>)</a></li>
+					<li><a href="/shop/promotion.php">프로모션</a></li>
+				</ul>
+				<ul class="favorite">
+					<li><a href="{{$즐겨찾기추가}}">즐겨찾기</a></li>
+					<li class="viewsub">
+						<a href="/shop/big_section.php?cno1=1001">카테고리</a>
+						<ul class="list">
+							<li><a href="/shop/big_section.php?cno1=1009">NEW 5%</a></li>
+							<li><a href="/shop/big_section.php?cno1=1010">BEST</a></li>
+							{{$사용자리스트5}}
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1><a href="/"><img src="{{$이미지경로}}/logo/logo.png" alt="{{$쇼핑몰명}}"></a></h1>
+		<div class="wrap_inner">
+			<div class="lnb">
+				<ul class="category">
+					<li><a href="/shop/big_section.php?cno1=1009">NEW 5%</a></li>
+					<li><a href="/shop/big_section.php?cno1=1010">BEST</a></li>
+					{{$사용자리스트5}}
+				</ul>
+				<!--
+				<ul class="category">
+					<li><a href="/store/location.php">1.매장안내</a></li>
+					
+				</ul>
+				-->
+				<span class="toggle_search" onclick="toggle_view('box_search',this)">검색</span>
+			</div>
+		</div>
+		<div id="box_search" class="search">
+			{{$상품검색폼시작}}
+			<div class="wrap_inner box">
+				<input type="text" name="search_str" value="" class="form_input block basic_search" placeholder="검색어를 입력해주세요">
+				<input type="image" src="{{$이미지경로}}/button/hd_search.png" alt="검색" class="btn">
+			</div>
+			{{$상품검색폼끝}}
+		</div>
+	</div>
+	<!-- //상단-->
+	<!-- 중앙 -->
+	<div id="cnt">
+		<div class="cntbody">
+		<!-- 서브 타이틀 텍스트(일반페이지) 사용자코드 -->
+		{{$사용자HTML1}}
+		<!-- //서브 타이틀 텍스트(일반페이지) 사용자코드 -->
+		<!-- 서브 타이틀 텍스트(게시판) 사용자코드 -->
+		{{$사용자HTML3}}
+		<!-- //서브 타이틀 텍스트(게시판) 사용자코드 -->
+		<!-- 마이페이지 메뉴 -->
+		{{$사용자HTML4}}
+		<!-- //마이페이지 메뉴 -->

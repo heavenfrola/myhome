@@ -1,0 +1,15 @@
+<tr>
+	<th scope="row">쿠폰 등록하기</th>
+	<td class="offcpn">
+		<div id="off_cpn_div1">
+			<input type="text" name="cpn_auth_code" placeholder="쿠폰 번호 입력란" class="form_input">
+			<div class="box_btn"><a href="javascript:;" onclick="cpnAuthCode();">확인</a></div>
+		</div>
+		<div id="off_cpn_div2">
+			<p id="off_cpn_msg"></p>
+			<p id="off_cpn_used"></p>
+			<p id="off_cpn_img1" class="offbtn"><span class="box_btn"><a href="javascript:;" onclick="useOffCpn();">쿠폰사용</a></span></p>
+			<p id="off_cpn_img2" class="offbtn"><span class="box_btn white"><a href="javascript:;" onclick="cancelOffCpn();">쿠폰사용취소</a></span></p>
+		</div>
+	</td>
+</tr>

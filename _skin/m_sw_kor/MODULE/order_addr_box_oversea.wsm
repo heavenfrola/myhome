@@ -1,0 +1,22 @@
+<div class="select_country">
+	<label>배송국가선택</label>
+	{{$배송국가선택}}
+</div>
+<div class="tel_area">
+	<label>전화번호</label>
+	{{$전화국가번호}} <input type="tel" name="addressee_phone" id="addressee_phone" class="form_input block remove_dash" placeholder="전화번호">
+</div>
+<div class="tel_area">
+	<label>휴대전화번호</label>
+	{{$휴대국가번호}} <input type="tel" name="addressee_cell" id="addressee_cell" class="form_input block remove_dash" maxlength="" placeholder="휴대전화번호">
+</div>
+<div class="address_area">
+	<div><input type="text" name="addressee_zip" value="" class="form_input block" placeholder="Zipcode"></div>
+	<div><input type="text" name="addressee_addr1" value="" class="form_input block" maxlength="50" placeholder="State/Province"></div>
+	<div><input type="text" name="addressee_addr3" value="" class="form_input block" maxlength="50" placeholder="City"></div>
+	<div><input type="text" name="addressee_addr4" value="" class="form_input block" maxlength="50" placeholder="Address Line 1"></div>
+	<div><input type="text" name="addressee_addr2" value="" class="form_input block" maxlength="100" placeholder="Address Line 2"></div>
+</div>
+<div {{$단일배송업체숨김처리}}>
+	{{$배송업체목록}}
+</div>

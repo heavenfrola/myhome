@@ -1,0 +1,20 @@
+<!-- 반복문시작 -->
+<!-- 반복구문시작 -->
+		<li id="map_list{{$번호}}">
+			<span class="detail" onclick="kakaoInfoLayer( {'no':'{{$번호}}'} );">상세보기</span>
+			<span class="km">{{$거리표시}}km</span>
+			<!-- <span class="detail"><a href="/store/location_info.php?no={{$번호}}">상세보기</a></span> -->
+			<div class="wrap" onclick="kakaoMapOpen( {'lat':'{{$위도}}', 'lng':'{{$경도}}','no':'{{$번호}}', 'title':'{{$매장명}}', 'seq':'{{$순번}}'} )">
+				<p class="name">{{$매장명}}</p>
+				<p class="addr">{{$주소1}} {{$주소2}}</p>
+				<p class="tel">{{$전화번호아이콘}}{{$전화번호}} <span class="stat type{{$영업상태표시}}">{{$영업상태}}</span></p>
+				<p class="icon">{{$아이콘}}</p>
+				<!--{{if(거리표시)}}<p class="icon"> km</p>{{end(거리표시)}}-->
+				<!--<a href="{{$길찾기}}"><p class="load">길찾기</p></a>-->
+			</div>
+		</li>
+<!-- 반복구문끝 -->
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+검색 된 매장이 없습니다.
+<!-- 데이터없음끝 -->

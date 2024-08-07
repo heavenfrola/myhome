@@ -1,0 +1,67 @@
+<!-- 반복문시작 -->
+<div class="frame">
+	<table>
+		<caption class="hidden">장바구니</caption>
+		<colgroup>
+			<col style="width:100px">
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">상품이미지</th>
+				<th scope="col">상품정보</th>
+			</tr>
+		</thead>
+		<tbody>
+<!-- 반복구문시작 -->
+			<tr>
+				<td>{{$상품이미지(링크포함)}}<span class="del">{{$상품삭제}}<img src="{{$이미지경로}}/button/delete_s.png" alt="삭제"></a></span></td>
+				<td class="info">
+					<p>{{$상품명(링크포함)}}</p>
+					<p>{{$상품옵션정보(추가가격포함)}}</p>
+					<p><strong>{{$화폐단위전}}{{$상품총가격}}{{$화폐단위후}}</strong><span>({{$구매수량}}개)</span></p>
+					{{if(입점업체명)}}<p class="mall">{{$입점업체명}} 배송상품</p>{{endif(입점업체명)}}
+				</td>
+			</tr>
+<!-- 반복구문끝 -->
+		</tbody>
+	</table>
+</div>
+<div class="box_price">
+	<table class="tbl_order2">
+		<caption class="hidden">총 주문 가격</caption>
+		<colgroup>
+			<col style="width:50%;">
+			<col style="width:50%;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">주문금액</th>
+				<td>{{$화폐단위전}}{{$장바구니합계금액}}{{$화폐단위후}}</td>
+			</tr>
+			<tr>
+				<th scope="row">배송비</th>
+				<td>{{$화폐단위전}}<span id="dlv_prc_cart">{{$장바구니배송비(단위없음)}}</span>{{$화폐단위후}}</td>
+			</tr>
+			{{if(적립금)}}
+			<tr>
+				<th scope="row">적립금</th>
+				<td>{{$화폐단위전}}{{$적립금}}{{$화폐단위후}}</td>
+			</tr>
+			{{endif(적립금)}}
+			<tr>
+				<th scope="row" class="total">결제금액</th>
+				<td>{{$화폐단위전}}<span class="price" id="total_order_price_cartlist">{{$장바구니결제금액}}</span>{{$화폐단위후}} {{if(참조장바구니결제금액)}}({{$참조화폐단위전}}{{$참조장바구니결제금액}}{{$참조화폐단위후}}){{endif(참조장바구니결제금액)}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="btn">
+	<span class="box_btn block"><a href="{{$주문하기}}">전체상품 주문하기</a></span>
+	<span class="box_btn block white"><a href="/shop/cart.php">장바구니 전체보기</a></span>
+</div>
+<!-- 반복문끝 -->
+
+<!-- 데이터없음시작 -->
+<div class="empty">장바구니가 비었습니다.</div>
+<!-- 데이터없음끝 -->

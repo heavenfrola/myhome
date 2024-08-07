@@ -1,0 +1,35 @@
+<!-- 반복문시작 -->
+<ul class="total_review_list">
+<!-- 반복구문시작 -->
+	<li>
+		<div class="box">
+			<div class="img_wrap" onclick="{{$상품평보기링크}}">
+				<img src="{{$상품평첨부파일1}}">
+			</div>
+			<div class="info_wrap">
+				<p class="title p_cursor" onclick="{{$상품평보기링크}}">
+					{{$새글아이콘}}
+					{{if(상품평베스트)}}<img src="{{$이미지경로}}/shop/i_best.gif" alt="best">{{endif(상품평베스트)}}
+					{{if(상품평인기)}}<img src="{{$이미지경로}}/shop/i_hot.gif" alt="hot">{{endif(상품평인기)}}
+					{{$파일첨부아이콘}}
+					{{if(상품평카테고리)}}[{{$상품평카테고리}}]{{endif(상품평카테고리)}}
+					{{$글제목(링크없음)}}
+				</p>
+				<div class="content">{{$상품평요약내용}}</div>
+				<p class="date">{{$등록일}}</p>
+				<div class="prd_info">
+					<div class="img">{{$상품이미지}}</div>
+					<div class="name_star">
+						<p class="name">{{$상품명}}</p>
+						<div class="star"><span class="gradebox small point{{$상품평점수(텍스트)}}"></span> <span class="grade">{{$상품평점수(텍스트)}}</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">등록된 상품 후기가 없습니다.</p>
+<!-- 데이터없음끝 -->

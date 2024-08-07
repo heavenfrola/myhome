@@ -1,0 +1,61 @@
+<!-- 마이페이지 메뉴 -->
+<table class="tbl_mypage">
+	<caption class="hidden">마이 페이지 메뉴</caption>
+	<colgroup>
+		<col style="width:20%;">
+		<col style="width:20%;">
+		<col style="width:20%;">
+		<col style="width:20%;">
+		<col style="width:20%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="row">쇼핑 통장</th>
+			<th scope="row">상품관리</th>
+			<th scope="row">주문관리</th>
+			<th scope="row">활동관리</th>
+			<th scope="row" class="last">정보 관리</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<ul>
+					<li class="dn{{$적립금사용유무}}"><a href="/mypage/milage.php" class="underline">적립금</a></li>
+					<li class="dn{{$예치금사용유무}}"><a href="/mypage/emoney.php" class="underline">예치금</a></li>
+					<li><a href="/mypage/coupon_down_list.php" class="underline">쿠폰</a></li>
+					<li><a href="/mypage/sccoupon.php" class="underline">소셜 쿠폰</a></li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li><a href="/shop/cart.php" class="underline">장바구니</a></li>
+					<li><a href="/mypage/wish_list.php" class="underline">관심상품</a></li>
+					<li><a href="/shop/click_prd.php" class="underline">최근 본 상품</a></li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li><a href="/mypage/order_list.php" class="underline">주문내역</a></li>
+					<li class="dn{{$정기배송적용여부}}"><a href="/mypage/order_list.php?sbscr=Y" class="underline">정기배송주문내역</a></li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li><a href="/mypage/counsel_list.php" class="underline">1:1문의</a></li>
+					<li><a href="/mypage/qna_list.php" class="underline">나의 상품문의</a></li>
+					<li><a href="/mypage/review_list.php" class="underline">나의 상품후기</a></li>
+					<li><a href="/mypage/attend_list.php" class="underline">출석체크</a></li>
+					<li class="dn{{$재입고알림사용유무}}"><a href="/mypage/notify_restock.php" class="underline">재입고 알림 신청 내역</a></li>
+				</ul>
+			</td>
+			<td class="last">
+				<ul>
+					<li><a href="/member/edit_step1.php" class="underline">나의 정보수정</a></li>
+					<li><a href="/mypage/withdraw_step1.php" class="underline">회원 탈퇴</a></li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- //마이페이지 메뉴 -->

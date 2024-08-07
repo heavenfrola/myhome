@@ -1,0 +1,38 @@
+<style type="text/css" title="">
+.okr {margin:30px 0; padding:0 4.16%;}
+.okr h3 {font-size:16px; text-align:left; margin-bottom:15px;}
+.okr .img img {width:100%; height:auto;}
+.okr .img > div {text-align:left;}
+.okr .img .title {font-size:18px;}
+.sply {}
+
+</style>
+<div id="main">
+	<ul class="sply">
+		<li><a href="/store/location.php">1.매장안내</a></li>
+		
+	</ul>
+	<div class="okr okr_0">
+		<h3>1. 매장안내 기능</h3>
+		<div class="img">
+			<div class="title">MOBILE</div>
+			<div class="mobile"><img src="https://ux2team.mywisa.com/_skin/sw_kor/img/ux2/map_info2.JPG" alt="mobile"></div>
+		</div>
+		<!-- <span class="box_btn block large"><a href="">가이드 보기</a></span> -->
+	</div>
+</div>
+<!-- crema.me / 팝업을 띄우는 코드 / 스크립트를 수정할 경우 연락주세요 (support@crema.me) -->
+<div class="crema-popup"></div>
+<script>
+	var swiper_visual = new Swiper('.swiper_visual', {
+		loop: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+</script>

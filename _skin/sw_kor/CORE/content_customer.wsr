@@ -1,0 +1,30 @@
+<div id="customer">
+	<ul class="quick">
+		<li><a href="/board?db=basic_1">공지사항</a></li>
+		<li><a href="/mypage/counsel_list.php">1:1 문의</a></li>
+		<li><a href="/shop/product_qna_list.php">상품문의</a></li>
+		<li><a href="/shop/product_review_list.php">상품후기</a></li>
+		<li><a href="/board?db=basic_2">FAQ</a></li>
+	</ul>
+	<div class="search_faq">
+		{{$사용자HTML9}}
+	</div>
+	<div class="latest faq">
+		<h3>FAQ <a href="/board?db=basic_2" class="more">전체보기</a></h3>
+		{{$사용자리스트10}}
+	</div>
+	<div class="latest notice">
+		<h3>NOTICE <a href="/board?db=basic_1" class="more">전체보기</a></h3>
+		{{$사용자리스트11}}
+	</div>
+	<div class="info">
+		<div class="box">
+			<p class="title">{{$회사전화번호}}</p>
+			<p class="content">10am~6pm (Lunch 12pm~1pm)<br>Sat, Sun, Holiday OFF</p>
+		</div>
+		<div class="box">
+			<p class="title">RETURNS</p>
+			<p class="content">반품주소<br>{{$반품지주소}}</p>
+		</div>
+	</div>
+</div>

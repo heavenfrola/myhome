@@ -1,0 +1,197 @@
+<!-- 반복문시작 -->
+<div class="enterprise headY">
+	<p class="msg_delivery">
+		<strong>장바구니 ({{$정기장바구니갯수}})</strong>
+		{{if(배송비무료적용)}}<span>/ {{$화폐단위전}}{{$배송비무료적용}}{{$화폐단위후}} 이상 구매 시 무료배송</span>{{endif(배송비무료적용)}}
+	</p>
+</div>
+<table class="tbl_col prd">
+	<caption class="hidden">장바구니</caption>
+	<colgroup>
+		<col style="width:5%;">
+		<col style="width:8%;">
+		<col>
+		<col style="width:10%;">
+		<col style="width:8%;">
+		<col style="width:8%;">
+		<col style="width:18%;">
+		{{if(개별배송비사용여부)}}<col style="width:8%;">{{endif(개별배송비사용여부)}}
+		<col style="width:8%;">
+		<col style="width:8%;">
+		<col style="width:8%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col"><input type="checkbox" onclick="cartCheckAll(this.checked)"></th>
+			<th scope="col" colspan="2">상품명</th>
+			<th scope="col">옵션</th>
+			<th scope="col">가격</th>
+			<th scope="col">수량</th>
+			<th scope="col">배송정보</th>
+			{{if(개별배송비사용여부)}}<th scope="col">개별배송비</th>{{endif(개별배송비사용여부)}}
+			<th scope="col">총금액</th>
+			<th scope="col">적립금</th>
+			<th scope="col">삭제/관심상품</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td><input type="checkbox" name="cno[]" id="cno" value="{{$장바구니번호}}" class="con_{{$장바구니번호}}"></td>
+			<td>{{$상품이미지(링크포함)}}</td>
+			<td class="tal">
+				{{if(단독배송여부)}}[단독배송] {{endif(단독배송여부)}}
+				{{$상품명(링크포함)}}
+				<!-- 정기배송 시에는 '오늘출발' 제외 -->
+			</td>
+			<td class="tal">
+				{{$상품옵션정보(추가가격포함)}}<div>{{$기타메세지}}</div>
+			</td>
+			<td>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</td>
+			<td class="qty">{{$구매수량}}</td>
+			<td class="tal">
+				<p>기간 : {{$배송기간}}</p>
+				<p>요일 : {{$배송요일}}</p>
+				<p>주기/횟수 : {{$배송주기}}</p>
+			</td>
+			{{if(개별배송비사용여부)}}<td>{{if(개별배송상품여부)}}{{$화폐단위전}}{{$개별배송비}}{{$화폐단위후}}{{endif(개별배송상품여부)}}</td>{{endif(개별배송비사용여부)}}
+			<td class="cart_prc {{if(총할인금액)}}is_sale{{endif(총할인금액)}}">
+				<p class="before">{{$화폐단위전}}{{$상품총가격}}{{$화폐단위후}}</p>
+				<p class="after">{{$화폐단위전}}{{$상품판매가격}}{{$화폐단위후}}</p>
+				{{if(개별상품쿠폰보유여부)}}
+				<span class="box_btn small" style="display:none;"><input type="button" value="쿠폰적용" onclick="showPrdCpnList(2, {{$장바구니번호}}); return false;"></span>
+				{{endif(개별상품쿠폰보유여부)}}
+			</td>
+			<td>{{$화폐단위전}}{{$상품총적립금}}{{$화폐단위후}}</td>
+			<td class="delete_wish">
+				<span class="delete">{{$상품삭제}}삭제</a></span>
+				<span class="wish">{{$위시담기}}관심상품</a></span>
+			</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+{{$오프라인쿠폰}}
+<div class="area_right">
+	<div class="box">
+		<table class="tbl_order2">
+			<caption class="hidden">총 주문 가격</caption>
+			<colgroup>
+				<col style="width:50%;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">주문금액</th>
+					<td>{{$화폐단위전}}<span class="total_prd_prc">{{$장바구니합계금액}}</span>{{$화폐단위후}}</td>
+				</tr>
+				<tr>
+					<th scope="row">배송비</th>
+					<td>
+						{{$화폐단위전}}<span id="dlv_prc_cart" class="dlv_prc_cart">{{$장바구니배송비(단위없음)}}</span>{{$화폐단위후}}
+						{{if(개별배송비사용여부)}}
+						<p>일반배송비 : {{$화폐단위전}}<span class="dlv_prc_basic">{{$일반배송비(단위없음)}}</span>{{$화폐단위후}}</p>
+						<p>개별배송비 : {{$화폐단위전}}<span class="dlv_prc_prd">{{$개별배송비(단위없음)}}</span>{{$화폐단위후}}</p>
+						{{endif(개별배송비사용여부)}}
+					</td>
+				</tr>
+				{{if(장바구니쿠폰사용)}}
+				<tr>
+					<th scope="row">쿠폰할인금액</th>
+					<td>- {{$화폐단위전}}{{$장바구니쿠폰금액}}{{$화폐단위후}}</td>
+				</tr>
+				{{endif(장바구니쿠폰사용)}}
+				{{if(상품별쿠폰금액)}}
+				<tr>
+					<th scope="row">상품별쿠폰 할인금액</th>
+					<td>- {{$화폐단위전}}<span class="total_sale7_prc">{{$상품별쿠폰금액}}</span>{{$화폐단위후}}</td>
+				</tr>
+				{{endif(상품별쿠폰금액)}}
+				{{if(이벤트할인금액)}}
+				<tr>
+					<th scope="row">이벤트 할인금액</th>
+					<td>- {{$화폐단위전}}<span class="total_sale2_prc">{{$이벤트할인금액}}</span>{{$화폐단위후}}</td>
+				</tr>
+				{{endif(이벤트할인금액)}}
+				{{if(회원할인금액)}}
+				<tr>
+					<th scope="row">회원 할인금액</th>
+					<td>- {{$화폐단위전}}<span class="total_sale4_prc">{{$회원할인금액}}</span>{{$화폐단위후}}</td>
+				</tr>
+				{{endif(회원할인금액)}}
+				{{if(구매금액별할인금액)}}
+				<tr>
+					<th scope="row">구매금액 별 할인금액</th>
+					<td>- {{$화폐단위전}}<span class="total_sale6_prc">{{$구매금액별할인금액}}</span>{{$화폐단위후}}</td>
+				</tr>
+				{{endif(구매금액별할인금액)}}
+				{{if(정기배송할인금액)}}
+				<tr>
+					<th scope="row">정기배송할인금액</th>
+					<td>- {{$화폐단위전}}<span class="total_sale8_prc">{{$정기배송할인금액}}</span>{{$화폐단위후}}</td>
+				</tr>
+				{{endif(정기배송할인금액)}}
+				{{if(적립금)}}
+				<tr>
+					<th scope="row">적립금</th>
+					<td>{{$화폐단위전}}<span class="total_total_milage">{{$적립금}}</span>{{$화폐단위후}}</td>
+				</tr>
+				{{endif(적립금)}}
+				{{if(이벤트적립금)}}
+				<tr>
+					<th scope="row">이벤트 추가 적립금</th>
+					<td>{{$화폐단위전}}{{$이벤트적립금}}{{$화폐단위후}}</td>
+				</tr>
+				{{endif(이벤트적립금)}}
+				<tr>
+					<th scope="row" class="total">결제금액</th>
+					<td><strong>{{$화폐단위전}}<span id="total_order_price_cartlist" class="price total_order_price_cartlist">{{$장바구니결제금액}}</span>{{$화폐단위후}} {{if(참조장바구니결제금액)}}({{$참조화폐단위전}}<span class="total_order_price_r_cartlist">{{$참조장바구니결제금액}}</span>{{$참조화폐단위후}}){{endif(참조장바구니결제금액)}}</strong></td>
+				</tr>
+				<tr>
+					<th scope="row">첫결제금액</th>
+					<td><strong>{{$화폐단위전}}<span class="order_info_firsttime_pay_prc">{{$첫결제금액}}</span>{{$화폐단위후}} {{if(참조첫결제금액)}}({{$참조화폐단위전}}{{$참조첫결제금액}}{{$참조화폐단위후}}){{end(참조첫결제금액)}}</strong></td>
+				</tr>
+			</tbody>
+		</table>
+		{{if(개별상품쿠폰보유여부)}}
+		<span class="box_btn white large block"><input type="button" value="쿠폰적용" onclick="showPrdCpnList(2); return false;"></span>
+		{{endif(개별상품쿠폰보유여부)}}
+		<span class="box_btn large block"><a href="{{$주문하기}}">전체상품 주문하기</a></span>
+	</div>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<table class="tbl_col prd">
+	<caption class="hidden">장바구니</caption>
+	<colgroup>
+		<col style="width:5%;">
+		<col style="width:8%;">
+		<col>
+		<col style="width:10%;">
+		<col style="width:8%;">
+		<col style="width:8%;">
+		<col style="width:18%;">
+		<col style="width:8%;">
+		<col style="width:8%;">
+		<col style="width:8%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col"></th>
+			<th scope="col" colspan="2">상품명</th>
+			<th scope="col">옵션</th>
+			<th scope="col">가격</th>
+			<th scope="col">수량</th>
+			<th scope="col">배송정보</th>
+			<th scope="col">총금액</th>
+			<th scope="col">적립금</th>
+			<th scope="col">삭제/관심상품</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="10" class="empty">장바구니가 비었습니다.</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 데이터없음끝 -->

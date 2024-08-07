@@ -1,0 +1,18 @@
+<select name="selectlink" onchange="window.open(value,'_self')" class="top_select_menu block">
+	<option value="">마이페이지 메뉴</option>
+	<option value="/mypage/order_list.php">주문내역</option>
+	<option value="/mypage/order_list.php?sbscr=Y" class="dn{{$정기배송적용여부}}">정기배송주문내역</option>
+	<option value="/mypage/wish_list.php">관심상품</option>
+	<option value="/shop/click_prd.php">최근 본 상품</option>
+	<option value="/mypage/milage.php" class="dn{{$적립금사용유무}}">적립금</option>
+	<option value="/mypage/emoney.php" class="dn{{$예치금사용유무}}">예치금</option>
+	<option value="/mypage/coupon_down_list.php">쿠폰</option>
+	<option value="/mypage/sccoupon.php">소셜 쿠폰</option>
+	<option value="/mypage/counsel_list.php">1:1문의</option>
+	<option value="/mypage/qna_list.php">나의 상품문의</option>
+	<option value="/mypage/review_list.php">나의 상품후기</option>
+	<option value="/mypage/attend_list.php">출석체크</option>
+	<option value="/mypage/notify_restock.php" class="dn{{$재입고알림사용유무}}">재입고 알림 신청 내역</option>
+	<option value="/member/edit_step1.php">나의 정보수정</option>
+	<option value="/mypage/withdraw_step1.php">회원 탈퇴</option>
+</select>

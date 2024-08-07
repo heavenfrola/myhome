@@ -1,0 +1,4 @@
+<div class="related_prd_write">
+	<span class="box_btn w100">{{$글관련상품추가링크}}상품선택</a></span>
+	{{$선택된상품리스트}}
+</div>

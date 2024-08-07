@@ -1,0 +1,31 @@
+<!-- 반복문시작 -->
+<table class="tbl_col">
+	<caption class="hidden">설문조사</caption>
+	<colgroup>
+		<col style="width:7%;">
+		<col>
+		<col style="width:22%;">
+		<col style="width:10%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">번호</th>
+			<th scope="col">제목</th>
+			<th scope="col">설문기간</th>
+			<th scope="col">총 참여수</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$번호}}</td>
+			<td class="tal">{{$설문조사주제}}</td>
+			<td>{{$설문조사시작일}} ~ {{$설문조사종료일}}</td>
+			<td>{{$총참여수}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

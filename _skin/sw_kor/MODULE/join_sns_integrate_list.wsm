@@ -1,0 +1,28 @@
+<!-- 반복문시작 -->
+<div class="box">
+	<div class="required sns">
+		<label>SNS 통합회원 인증</label>
+		<div class="input_area">
+			<ul class="integrate">
+<!-- 반복구문시작 -->
+				<li>
+					<p class="name name{{$SNS코드}}">{{$SNS이름}}</p>
+					{{if(해제됨)}}
+					<span class="box_btn small white"><a href="#" onclick="{{$연결링크}}; return false;">연결</a></span>
+					<p class="state"><span>연결 안 됨</span></p>
+					{{endif(해제됨)}}
+					{{if(연결상태)}}
+					<span class="box_btn small"><a href="#" onclick="{{$연결해제링크}}; return false;">해제</a></span>
+					<p class="state connect"><span>{{$연결상태}}</span></p>
+					{{endif(연결상태)}}
+				</li>
+<!-- 반복구문끝 -->
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 반복문끝 -->
+
+<!-- 데이터없음시작 -->
+
+<!-- 데이터없음끝 -->

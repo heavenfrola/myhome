@@ -1,0 +1,39 @@
+<!-- 반복문시작 -->
+<table class="tbl_col prd">
+	<caption class="hidden">상품선택</caption>
+	<colgroup>
+		<col style="width:40px;">
+		<col style="width:100px;">
+		<col>
+		<col style="width:5%;">
+		<col style="width:12%;">
+		<col style="width:12%;">
+		<col style="width:10%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th></th>
+			<th colspan="2">상품명</th>
+			<th>수량</th>
+			<th>주문금액</th>
+			<th>결제금액</th>
+			<th>상태</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$상품선택}}</td>
+			<td class="img"><img src="{{$상품이미지}}" alt="{{$상품명}}"></td>
+			<td class="tal">{{$상품명}}<br>{{$상품옵션}}</td>
+			<td>{{$주문수량}}</td>
+			<td>{{$화폐단위전}}{{$주문금액}}{{$화폐단위후}}</td>
+			<td>{{$화폐단위전}}{{$결제금액}}{{$화폐단위후}}</td>
+			<td>{{$주문상태}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

@@ -1,0 +1,34 @@
+<tr>
+	<th scope="row"><label for="nations">배송국가 선택</label></th>
+	<td>
+		{{$배송국가선택}}
+	</td>
+</tr>
+<tr>
+	<th scope="row"><label for="addressee_phone">전화번호</label></th>
+	<td>
+		{{$전화국가번호}}
+		<input type="text" name="addressee_phone" id="addressee_phone" class="form_input remove_dash">
+	</td>
+</tr>
+<tr>
+	<th scope="row"><label for="addressee_cell">휴대전화번호</label></th>
+	<td>
+		{{$휴대국가번호}}
+		<input type="text" name="addressee_cell" id="addressee_cell" class="form_input remove_dash">
+	</td>
+</tr>
+<tr>
+	<th scope="row"><label for="order_addressee_zip">주소</label></th>
+	<td class="address">
+		<p><input type="text" name="addressee_zip" value="" id="order_addressee_zip" class="form_input input_zipcode" placeholder="Zipcode"></p>
+		<p class="add_mid"><input type="text" name="addressee_addr1" value="" class="form_input input_address" placeholder="State/Province"></p>
+		<p><input type="text" name="addressee_addr3" value="" class="form_input input_address" placeholder="City"></p>
+		<p class="add_mid"><input type="text" name="addressee_addr4" value="" class="form_input input_address" placeholder="Address Line 1"></p>
+		<p><input type="text" name="addressee_addr2" value="" class="form_input input_address" placeholder="Address Line 2"></p>
+	</td>
+</tr>
+<tr {{$단일배송업체숨김처리}}>
+	<th scope="row"><label for="delivery_com">배송업체</label></th>
+	<td>{{$배송업체목록}}</td>
+</tr>

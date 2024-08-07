@@ -1,0 +1,6 @@
+<div id="wish_list" class="wrap_inner">
+	{{$폼시작}}
+		{{$위시리스트}}
+	{{$폼끝}}
+	{{$페이지선택}}
+</div>

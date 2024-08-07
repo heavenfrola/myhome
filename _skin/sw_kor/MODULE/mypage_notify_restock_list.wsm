@@ -1,0 +1,47 @@
+<!-- 반복문시작 -->
+<table class="tbl_col prd">
+	<caption class="hidden">재입고 알림 신청 내역</caption>
+	<colgroup>
+		<col style="width:60px;">
+		<col style="width:130px;">
+		<col>
+		<col style="width:200px;">
+		<col style="width:150px;">
+		<col style="width:150px;">
+		<col style="width:150px;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">번호</th>
+			<th scope="col" colspan="2">상품명</th>
+			<th scope="col">옵션</th>
+			<th scope="col">가격</th>
+			<th scope="col">신청일</th>
+			<th scope="col">상태</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$번호}}</td>
+			<td class="img"><a href="{{$상품링크}}"><img src="{{$상품이미지}}" alt="{{$상품명}}"></a></td>
+			<td class="tal">
+				<a href="{{$상품링크}}">{{$상품명}}</a>
+			</td>
+			<td>{{$상품옵션}}</td>
+			<td>{{$화폐단위전}}{{$상품금액}}{{$화폐단위후}}</td>
+			<td>{{$신청일}}</td>
+			<td>
+				{{$신청상태}}
+				{{if(신청완료상태)}}
+				<br><span class="box_btn small white mt"><a onClick="notify_restock_cancel('{{$재입고알림번호}}'); return false;">취소</a></span>
+				{{endif(신청완료상태)}}
+			</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">재입고 알림 신청 내역이 없습니다.</p>
+<!-- 데이터없음끝 -->

@@ -1,0 +1,7 @@
+<div>
+	<label>평생회원동의</label>
+	<div class="input_area radio_chg">
+		<input type="radio" name="whole_mem" value="Y" {{$동의함}} id="whole_y"><label for="whole_y">동의함</label>
+		<input type="radio" name="whole_mem" value="N" {{$동의안함}} id="whole_n"><label for="whole_n">동의안함</label>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<div class="speical_group">
+	{{$프로모션기획전목록}}
+	<div class="intro">
+		<div class="title">
+			<h3>{{$프로모션명}}</h3>
+			<span>{{$프로모션시작일}}{{if(프로모션종료일)}} ~ {{$프로모션종료일}}{{endif(프로모션종료일)}}</span>
+		</div>
+		{{if(프로모션내용)}}
+		<div class="summary">
+			{{$프로모션내용}}
+		</div>
+		{{endif(프로모션내용)}}
+	</div>
+	{{$프로모션상품그룹목록}}
+</div>

@@ -1,0 +1,9 @@
+<div>
+	<label>본인인증</label>
+	<div class="input_area radio_chg">
+		{{$개인확인방법}}
+	</div>
+	<div class="msg">
+		<p>이미 가입된 휴대전화나 이메일로는 가입하실 수 없습니다.</p>
+	</div>
+</div>

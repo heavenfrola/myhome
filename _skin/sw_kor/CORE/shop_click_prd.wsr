@@ -1,0 +1,11 @@
+<div id="click_prd">
+	{{$로그인후5}}
+	<div class="total_sort">
+		<p class="total">상품이 모두 <span>{{$총상품개수}}</span>개 있습니다.</p>
+		<div class="sort">
+			{{$상품정렬선택}}
+		</div>
+	</div>
+	{{$상품리스트}}
+	{{$페이지선택}}
+</div>

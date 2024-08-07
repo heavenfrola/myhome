@@ -1,0 +1,12 @@
+<div class="addr {{$주소필수여부}}">
+	<label for="join_address">주소</label>
+	<div class="input_area">
+		<input type="text" name="zip" value="{{$우편번호}}" id="join_address" class="form_input block" readonly placeholder="우편번호" onClick="{{$우편번호찾기}}">
+		<span class="box_btn gray2"><a href="{{$우편번호찾기}}" class="check">우편번호 찾기</a></span>
+		<input type="text" name="addr1" value="{{$주소1}}" maxlength="50" class="form_input block" readonly onClick="{{$우편번호찾기}}">
+		<input type="text" name="addr2" value="{{$주소2}}" maxlength="100" class="form_input block" placeholder="상세주소 입력">
+	</div>
+	<div class="msg">
+		<p class="form_result form_result_addr warning"></p>
+	</div>
+</div>

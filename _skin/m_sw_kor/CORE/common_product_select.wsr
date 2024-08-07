@@ -1,0 +1,6 @@
+{{$관련상품검색폼시작}}
+	<div class="frame">
+		<div class="search"><input type="text" name="search_str" class="form_input block" value="{{$검색어}}"><span class="box_btn"><input type="submit" value="검색"></span></div>
+		{{$선택상품리스트}}
+	</div>
+{{$관련상품검색폼끝}}

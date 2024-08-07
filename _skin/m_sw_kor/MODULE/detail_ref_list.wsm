@@ -1,0 +1,23 @@
+<!-- 반복문시작 -->
+<ul class="list_common prd">
+<!-- 반복구문시작 -->
+	<li>
+		<div class="left_area">
+			<span class="check">{{$체크박스}}</span>
+			{{$상품이미지(링크포함)}}
+		</div>
+		<div class="right_area">
+			<p>{{$상품명(링크포함)}}</p>
+			<p><strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</strong></p>
+			{{if(상품적립금)}}
+			<p>적립금 : {{$상품적립금}}</p>
+			{{endif(상품적립금)}}
+			<div><input type="number" name="{{$수량필드명}}" value="{{$최소주문수량}}" class="form_input block"></div>
+			<div>{{$상품옵션선택}}</div>
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

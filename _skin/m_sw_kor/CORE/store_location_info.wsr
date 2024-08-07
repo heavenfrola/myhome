@@ -1,0 +1,54 @@
+<style type="text/css">
+.root_daum_roughmap {width:100%; margin:6px 0 10px;}
+</style>
+<h2 class="subtitle">매장 안내</h2>
+<div id="sply_shop_info">
+	<div class="img">{{$커버이미지}}</div>
+    <div class="info wrap_inner">
+		<p class="name">{{$상호명}}</p>
+		<dl class="shop">
+			<dt class="title">매장정보</dt>
+			<dd>{{$아이콘}}</dd>
+		</dl>
+		<dl class="addr">
+			<dt class="title">주소</dt>
+			<dd>
+				{{$주소1}} {{$주소2}}
+				<!-- * 카카오맵 - 지도퍼가기 -->
+				<!-- 1. 지도 노드 -->
+				<div class="map-canvas" id="map" style="width: 100%; height:260px; margin:8px 0 10px;"></div>
+				{{$카카오지도}}
+				<span class="box_btn block large"><a href="{{$카카오길찾기}}" target="blank"><img src="{{$이미지경로}}/ux2/icon_location.png" alt="지도아이콘">길찾기</a></span>
+			</dd>
+		</dl>
+		<dl class="tel">
+			<dt class="title">전화번호</dt>
+			<dd>{{$전화번호}}</dd>
+		</dl>
+		{{$영업시간리스트}}
+		<dl class="type2">
+
+			<dt class="title">시설안내</dt>
+			{{$시설안내리스트}}
+		</dl>
+		<dl class="type2">
+			<dt class="title">매장설명</dt>
+			<dd>
+				{{$기타내용}}
+			</dd>
+		</dl>
+		<span class="box_btn gray block large"><a href="/store/location.php">목록보기</a></span>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('#sply_shop_info .info > .time p').click(function(){
+		if ($('#sply_shop_info .info > .time li').hasClass('on')){
+			$('#sply_shop_info .info > .time li').removeClass('on');
+			$('#sply_shop_info .info > .time p').html('영업시간 전체보기');
+		} else {
+			$('#sply_shop_info .info > .time li').addClass('on');
+			$('#sply_shop_info .info > .time p').html('닫기');
+		}
+	});
+</script>

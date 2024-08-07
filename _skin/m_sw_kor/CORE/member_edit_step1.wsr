@@ -1,0 +1,12 @@
+<div id="edit_pw" class="edit_info wrap_inner">
+	{{$폼시작}}
+		<div class="box">
+			<p class="msg">고객님의 안전한 정보보호를 위하여 비밀번호를 다시 한번 확인합니다.<br>비밀번호가 타인에게 노출되지 않도록 주의하여 주세요.</p>
+			<input type="password" id="edit_pwd" name="pwd" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} class="form_input block" placeholder="비밀번호">
+		</div>
+		<div class="btn btn_col">
+			<span class="box_btn block large"><input type="submit" value="확인"></span>
+			<span class="box_btn block large white"><a href="javascript:history.back();">취소</a></span>
+		</div>
+	{{$폼끝}}
+</div>

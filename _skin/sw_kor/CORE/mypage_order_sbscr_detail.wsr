@@ -1,0 +1,170 @@
+<div id="order_detail">
+	<!-- 정기주문내역 회차 -->
+	{{$회차리스트}}
+	<!-- //정기주문내역 회차 -->
+	<h3 class="title">주문번호 : {{$주문번호}}</h3>
+	<!-- 상품정보 -->
+	{{$주문상품리스트}}
+	<!-- //상품정보 -->
+	<!-- 주문자 정보 & 배송지 정보 -->
+	<div class="area_left">
+		<h3 class="title">주문자 정보</h3>
+		<table class="tbl_order">
+			<caption class="hidden">주문자 정보</caption>
+			<colgroup>
+				<col style="width:20%;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">주문일자</th>
+					<td>{{$주문일}}</td>
+				</tr>
+				<tr>
+					<th scope="row">주문하시는 분</th>
+					<td>{{$주문자}}</td>
+				</tr>
+				<tr>
+					<th scope="row">전화번호</th>
+					<td>{{$주문자전화번호}}</td>
+				</tr>
+				<tr>
+					<th scope="row">휴대전화번호</th>
+					<td>{{$주문자휴대전화}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="title">배송지 정보</h3>
+		<div class="chgdelivery">
+			<span class="box_btn white"><a href="{{$배송지변경}}">배송지 변경</a></span>
+		</div>
+		<table class="tbl_order">
+			<caption class="hidden">배송지 정보</caption>
+			<colgroup>
+				<col style="width:20%;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">받으시는 분</th>
+					<td>{{$수령자}}</td>
+				</tr>
+				<tr>
+					<th scope="row">전화번호</th>
+					<td>{{$수령자전화번호}}</td>
+				</tr>
+				<tr>
+					<th scope="row">휴대전화번호</th>
+					<td>{{$수령자휴대전화}}</td>
+				</tr>
+				{{if(배송국가)}}
+				<tr>
+					<th scope="row">배송국가</th>
+					<td class="break">{{$배송국가}}</td>
+				</tr>
+				{{endif(배송국가)}}
+				<tr>
+					<th scope="row">주소</th>
+					<td>[{{$배송지우편번호}}]<br>{{$배송지주소1}} {{$배송지주소2}}</td>
+				</tr>
+				{{if(배송메모)}}
+				<tr>
+					<th scope="row">배송시요청사항</th>
+					<td class="break">{{$배송메모}}</td>
+				</tr>
+				{{endif(배송메모)}}
+				{{$주문추가항목리스트}}
+			</tbody>
+		</table>
+	</div>
+	<!-- //주문자 정보 & 배송지 정보 -->
+	<!-- 결제정보 & 결제수단정보 -->
+	<div class="area_right">
+		<div class="box">
+			<h3 class="title first">결제 정보</h3>
+			<table class="tbl_order2">
+				<caption class="hidden">결제 정보</caption>
+				<colgroup>
+					<col style="width:50%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">상품합계금액</th>
+						<td>{{$화폐단위전}}{{$총상품구매금액}}{{$화폐단위후}}</td>
+					</tr>
+					<tr>
+						<th scope="row">배송료</th>
+						<td>{{$화폐단위전}}{{$배송비}}{{$화폐단위후}}</td>
+					</tr>
+					{{if(이벤트할인금액)}}
+					<tr>
+						<th scope="row">이벤트 할인 금액</th>
+						<td>- {{$화폐단위전}}{{$이벤트할인금액}}{{$화폐단위후}}</td>
+					</tr>
+					{{endif(이벤트할인금액)}}
+					{{if(회원할인금액)}}
+					<tr>
+						<th scope="row">회원할인 금액</th>
+						<td>- {{$화폐단위전}}{{$회원할인금액}}{{$화폐단위후}}</td>
+					</tr>
+					{{endif(회원할인금액)}}
+					{{if(정기배송할인금액)}}
+					<tr>
+						<th scope="row">정기배송할인 금액</th>
+						<td>- {{$화폐단위전}}{{$정기배송할인금액}}{{$화폐단위후}}</td>
+					</tr>
+					{{endif(정기배송할인금액)}}
+					<tr class="total_row">
+						<th scope="row" class="total">총 결제금액</th>
+						<td class="total">{{$화폐단위전}}<strong class="total_price">{{$총결제금액}}</strong>{{$화폐단위후}}</td>
+					</tr>
+					{{if(적립금)}}
+					<tr class="total_row">
+						<th scope="row">총 적립금</th>
+						<td>{{$화폐단위전}}{{$적립금}}{{$화폐단위후}}</td>
+					</tr>
+					{{endif(적립금)}}
+				</tbody>
+			</table>
+			<h3 class="title line">결제수단 정보</h3>
+			<table class="tbl_order2">
+				<caption class="hidden">결제수단 정보</caption>
+				<colgroup>
+					<col style="width:25%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">결제방법</th>
+						<td>{{$결제방식}}</td>
+					</tr>
+					{{$무통장입금정보}}
+					{{$카드정보}}
+					<tr>
+						<th scope="row">입금일자</th>
+						<td>{{$입금일}}</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="btn">
+				{{if(카드정보수정)}}
+				<span class="box_btn block large white">{{$카드정보수정}}</span>
+				{{end(카드정보수정)}}
+				<span class="box_btn block large"><a href="{{$배송일시정지}}">배송 일시 정지</a></span>
+				<span class="box_btn block large white"><a href="{{$정기결제취소}}">정기배송취소요청</a></span>
+			</div>
+		</div>
+	</div>
+	<!-- //결제정보 & 결제수단정보 -->
+	<!-- 주문 1:1문의 -->
+	<div id="counsel">
+		<h3 class="title">주문 1:1문의</h3>
+		{{$고객상담리스트}}
+		<div class="btn">
+			<span class="box_btn white"><a href="{{$주문문의}}">주문문의</a></span>
+			{{$목록보기}}
+		</div>
+	</div>
+	<!-- //주문 1:1문의 -->
+</div>

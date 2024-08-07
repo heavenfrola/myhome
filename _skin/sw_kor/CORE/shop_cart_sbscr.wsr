@@ -1,0 +1,27 @@
+<div id="cart">
+	<ul class="tab_sbs">
+		<li><a href="/shop/cart.php">일반배송 <span>{{$일반장바구니갯수}}</span></a></li>
+		<li class="active"><a href="/shop/cart.php?sbscr=Y">정기배송 <span>{{$정기장바구니갯수}}</span></a></li>
+	</ul>
+	{{$폼시작}}
+		{{$정기장바구니리스트}}
+		<!-- 장바구니 버튼 -->
+		<div class="area_left">
+			<div class="btn">
+				<span class="box_btn w125 white"><a href="{{$계속쇼핑하기}}">계속 쇼핑하기</a></span>
+				<span class="box_btn w125 white"><a href="{{$선택주문하기}}">선택상품 주문하기</a></span>
+				<span class="box_btn w125 white"><a href="{{$선택삭제}}">선택상품 삭제하기</a></span>
+				<span class="box_btn w125 white"><a href="{{$장바구니비우기}}">장바구니 비우기</a></span>
+				<span class="box_btn w125 white"><a href="{{$계산서출력}}">견적서출력</a></span>
+				<!-- <span class="box_btn white"><a href="{{$주문하기}}">전체상품 주문하기</a></span> -->
+			</div>
+			<dl class="msg">
+				<dt><span class="i_info"></span> 안내사항</dt>
+				<dd>- 상품 쿠폰 및 적립금 사용은 [주문서 작성/결제]에서 적용됩니다.</dd>
+				<dd>- {{$회원상품보관기간}} 더 오래 보관 하시려면 관심상품에 담아주세요</dd>
+			</dl>
+		</div>
+		<!-- //장바구니 버튼 -->
+	{{$폼끝}}
+	{{$사은품리스트}}
+</div>

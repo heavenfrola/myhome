@@ -1,0 +1,27 @@
+<!-- 반복문시작 -->
+<div id="pop_coupon" class="pop_coupon">
+	<h2>쿠폰 다운로드</h2>
+	<p class="count">이 상품에 발급된 쿠폰은 총 <strong>{{$상품쿠폰개수}}</strong>장 입니다.</p>
+	<ul class="list">
+<!-- 반복구문시작 -->
+		<li>
+			<div class="name">{{$쿠폰명}}</div>
+			<div class="price">{{$화폐단위전}}{{$쿠폰최소구매금액}}{{$화폐단위후}} 이상 결제 시 사용 가능</div>
+			<div class="btn">
+				{{if(쿠폰다운전)}}<span class="box_btn small"><a onclick="location.href='{{$쿠폰주소링크}}';">쿠폰다운</a></span>{{endif(쿠폰다운전)}}
+				{{if(쿠폰다운후)}}<span class="fin">다운완료</span>{{endif(쿠폰다운후)}}
+			</div>
+		</li>
+<!-- 반복구문끝 -->
+	</ul>
+	<a onclick="toggle_view('pop_coupon');removeDimmed();" class="close">닫기</a>
+</div>
+<script type="text/javascript">
+$(window).ready(function(){
+	var ch = $('#pop_coupon').height();
+	$('#pop_coupon').css('margin-top','-'+ch/2+'px');
+});
+</script>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

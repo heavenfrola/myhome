@@ -1,0 +1,86 @@
+<div class="qnarev_write_popup">
+<div class="qnarev_write">
+	{{$폼시작}}
+		<fieldset>
+			<legend>상품후기 작성</legend>
+			<div class="grade">
+				<p class="msg">평점을 선택해주세요!</p>
+				<span class="gradebox write">
+					<label class="rev_point1"><input type="radio" name="rev_pt" value="1"></label>
+					<label class="rev_point2"><input type="radio" name="rev_pt" value="2"></label>
+					<label class="rev_point3"><input type="radio" name="rev_pt" value="3"></label>
+					<label class="rev_point4"><input type="radio" name="rev_pt" value="4"></label>
+					<label class="rev_point5"><input type="radio" name="rev_pt" value="5"></label>
+				</span>
+			</div>
+			<div>
+				<label for="b_name">작성자</label>
+				{{$작성자}}
+			</div>
+			{{if(분류선택)}}
+			<div>
+				<label>분류</label>
+				{{$분류선택}}
+			</div>
+			{{endif(분류선택)}}
+			<div>
+				<label for="b_category">제목</label>
+				{{$제한제목목록}}
+			</div>
+			<div class="contents">
+				<label for="review_content">글내용</label>
+				<textarea name="content" id="review_content" class="form_input block">{{$상품평본문내용}}</textarea>
+			</div>
+			{{if(상품평총적립금)}}
+			<div class="msg_milage">
+				{{if(상품평적립금)}}<img src="{{$이미지경로}}/shop/i_text.png" alt="text"> <strong>{{$화폐단위전}}{{$상품평적립금}}{{$화폐단위후}}</strong>{{if(상품평이미지추가적립금)}} + {{endif(상품평이미지추가적립금)}}{{endif(상품평적립금)}}
+				{{if(상품평이미지추가적립금)}}<img src="{{$이미지경로}}/shop/i_photo.png" alt="photo"> <strong>{{$화폐단위전}}{{$상품평이미지추가적립금}}{{$화폐단위후}}</strong>{{endif(상품평이미지추가적립금)}} 적립금
+			</div>
+			{{endif(상품평총적립금)}}
+			<div>
+				<label for="review_file1">첨부파일 1</label>
+				<input type="file" name="upfile1" id="review_file1" class="form_input block">
+				{{if(상품후기첨부파일1)}}<p class="file_del">첨부파일1 : {{$상품후기첨부파일1}} {{$상품후기첨부파일1삭제}} 삭제</p>{{endif(상품후기첨부파일1)}}
+			</div>
+			<div>
+				<label for="review_file2">첨부파일 2</label>
+				<input type="file" name="upfile2" id="review_file2" class="form_input block">
+				{{if(상품후기첨부파일2)}}<p class="file_del">첨부파일2 : {{$상품후기첨부파일2}} {{$상품후기첨부파일2삭제}} 삭제</p>{{endif(상품후기첨부파일2)}}
+			</div>
+			<div>
+				<ul id="preview_attach_files">
+					<li class="upfile1"></li>
+					<li class="upfile2"></li>
+				</ul>
+			</div>
+			{{if(자동생성방지)}}
+			{{$자동생성방지}}
+			{{endif(자동생성방지)}}
+		</fieldset>
+		<div class="btn">
+			<span class="box_btn w150 large"><input type="submit" value="확인"></span>
+			<span class="box_btn w150 large white"><a onclick="{{$상품평등록폼닫기링크}}">취소</a></span>
+		</div>
+	{{$폼끝}}
+</div>
+<a onclick="{{$상품평등록폼닫기링크}}" class="close">닫기</a>
+</div>
+<script type="text/javascript">
+	function setRevPts(pts) {
+		if(!pts) return false;
+		if(typeof pts == 'object')  pts = parseInt(pts.value);
+		for(var i = 1; i <= 5; i++) {
+			if(pts == i) {
+				$('.gradebox.write'+i+'>:radio').attrprop('checked', true);
+			} else {
+				$('.gradebox.write').removeClass('point'+i);
+			}
+		}
+		$('.gradebox.write').addClass('point'+pts);
+		$('[name=rev_pt]').filter('[value='+pts+']').prop('checked', true);
+	}
+	$('.gradebox.write').find(':radio').change(function() {
+		setRevPts(this);
+	});
+	setRevPts('{{$상품평점}}');
+</script>

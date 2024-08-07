@@ -1,0 +1,34 @@
+{{$폼시작}}
+<div class="cart_change_option">
+	<div id="mimg_div" class="img"><img id="mainImg" src="{{$상품이미지}}" alt="{{$상품명}}"></div>
+	<div class="info">
+		<h3 class="name">{{$상품명}}</h3>
+		<p class="opt">{{$현재옵션}}</p>
+		<p class="price">{{$화폐단위전}}<strong id="sell_prc_str">{{$판매가}}</strong>{{$화폐단위후}}</p>
+		{{$옵션선택}}
+		<div class="box_qty block">
+			<a href="#" onclick="eaChg(-1); return false;" class="minus"></a>
+			<input type="number" name="buy_ea" id="buy_ea" class="form_input block tac" value="{{$구매수량}}">
+			<a href="#" onclick="eaChg(1); return false;" class="plus"></a>
+		</div>
+		<p class="total_prc">총금액 <span>{{$화폐단위전}}<strong class="sell_prc_str_total">{{$총판매가}}</strong>{{$화폐단위후}}</span></p>
+		<div class="btn_col">
+			<span class="box_btn block"><input type="submit" value="변경"></span>
+			<span class="box_btn block white"><input type="button" value="닫기" onclick="closecartChgOption();"></span>
+		</div>
+	<div>
+</div>
+{{$폼끝}}
+<script type="text/javascript">
+	function eaChg(pm) {
+		var buy_ea = $('.cart_option_change_form').find('input[name=buy_ea]');
+		var new_ea = parseInt(buy_ea.val());
+		new_ea += pm;
+		if(new_ea < 1) new_ea = 1;
+		buy_ea.val(new_ea);
+		totalCal($('.cart_option_change_form')[0]);
+	}
+	$(window).ready(function() {
+		selfResize();
+	});
+</script>

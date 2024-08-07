@@ -1,0 +1,44 @@
+<!-- 반복문시작 -->
+<table class="tbl_col">
+	<caption class="hidden">쿠폰내역</caption>
+	<colgroup>
+		<col style="width:8%;">
+		<col>
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+		<col style="width:10%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">번호</th>
+			<th scope="col">쿠폰명</th>
+			<th scope="col">할인금액(%)</th>
+			<th scope="col">제한금액</th>
+			<th scope="col">최대할인</th>
+			<th scope="col">발급일</th>
+			<th scope="col">제한일</th>
+			<th scope="col">사용일</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$쿠폰번호}}</td>
+			<td class="tal">{{$쿠폰명}}</td>
+			<td>{{$할인금액}}</td>
+			<td>{{$사용제한}}</td>
+			<td>{{$최대할인}}</td>
+			<td>{{$발급날짜}}</td>
+			<td>{{$제한날짜}}</td>
+			<td>{{$사용날짜}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</body>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">쿠폰이 존재하지 않습니다.</p>
+<!-- 데이터없음끝 -->

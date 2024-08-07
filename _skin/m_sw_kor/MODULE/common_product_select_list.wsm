@@ -1,0 +1,64 @@
+<!-- 반복문시작 -->
+<table class="tbl_col">
+	<caption class="hidden">상품 선택 리스트</caption>
+	<colgroup>
+		<col style="width:10%;">
+		<col style="width:30%;">
+		<col style="width:55px;">
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">분류</th>
+			<th scope="col" colspan="2">상품</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td>{{$체크박스}}</td>
+			<td>{{$대분류명}}</td>
+			<td><a href="{{$상품링크}}" target="_blank">{{$상품이미지}}</a></td>
+			<td class="tal">
+				<a href="{{$상품링크}}" target="_blank"><strong>{{$상품명}}</strong></a><br>
+				{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}
+			</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+{{$페이징}}
+<div class="btn btn_col">
+	<span class="box_btn block">{{$상품선택완료링크}}확인</a></span>
+	<span class="box_btn block white"><a href="javascript:;" onclick="removeDimmed(); $('#product_search_frm').remove();">닫기</a></span>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<table class="tbl_col">
+	<caption class="hidden">상품 선택 리스트</caption>
+	<colgroup>
+		<col style="width:10%;">
+		<col style="width:30%;">
+		<col style="width:55px;">
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">분류</th>
+			<th scope="col" colspan="2">상품</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4" class="empty">검색된 상품이 없습니다.</td>
+		</tr>
+	</tbody>
+</table>
+{{$페이징}}
+<div class="btn btn_col">
+	<span class="box_btn block">{{$상품선택완료링크}}확인</a></span>
+	<span class="box_btn block white"><a href="javascript:;" onclick="removeDimmed(); $('#product_search_frm').remove();">닫기</a></span>
+</div>
+<!-- 데이터없음끝 -->

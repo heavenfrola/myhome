@@ -1,0 +1,57 @@
+<div id="modify_pwd" class="box_member">
+	{{$폼시작}}
+		<fieldset>
+			<legend>비밀번호 변경</legend>
+			{{if(비밀번호변경)}}
+			<p class="modify_id">{{$변경회원아이디}} ({{$변경회원이름}})</p>
+			{{end(비밀번호변경)}}
+			{{if(비밀번호변경주기)}}
+			<p class="msg_chgpw">회원님께서는 장기간 비밀번호를 변경하지 않고,<br>동일한 비밀번호를 사용 중이십니다.<br><br>정기적인 비밀번호 변경을 통해 개인정보를 보호해 주세요.</p>
+			<div class="fld">
+				<label for="ori_pwd">기존 비밀번호</label>
+				<input type="password" name="ori_pwd" id="ori_pwd" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} class="form_input member block">
+			</div>
+			{{end(비밀번호변경주기)}}
+			<div class="fld">
+				<label for="pwd1">변경할 비밀번호</label>
+				<input type="password" name="pwd[]" id="pwd1" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} class="form_input member block">
+			</div>
+			<div class="fld">
+				<label for="pwd2">변경할 비밀번호 확인</label>
+				<input type="password" name="pwd[]" id="pwd2" {{if(비밀번호최대길이)}}maxlength="{{$비밀번호최대길이}}"{{endif(비밀번호최대길이)}} class="form_input member block">
+			</div>
+			<span class="box_btn block huge strong"><input type="submit" value="변경하기"></span>
+			{{if(비밀번호변경주기)}}
+			<a href="{{$다음에변경하기}}">다음에변경하기</a>
+			{{end(비밀번호변경주기)}}
+		</fieldset>
+	{{$폼끝}}
+</div>
+<script type="text/javascript">
+	// 회원관련 인풋
+	var pwdblur = false;
+	$(window).ready(function(){
+		// 로그인 이벤트
+		$('.box_member fieldset .fld .form_input').each(function(idx){
+			if ($(this).val().length > 0){
+				$(this).closest('div').addClass('active');
+			}
+		})
+		$('.box_member fieldset .fld .form_input').focus(function(){
+			$(this).closest('div').addClass('active');
+		})
+		$('.box_member fieldset .fld .form_input').change(function(){
+			if ($(this).val().length > 0){
+				$(this).closest('div').addClass('active');
+			}
+		})
+		$('.box_member fieldset .fld .form_input').blur(function(){
+			if(pwdblur != true) return;
+
+			if ($(this).val().length == 0){
+				$(this).closest('div').removeClass('active');
+			}
+		})
+		pwdblur = true;
+	});
+</script>

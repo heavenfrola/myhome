@@ -1,0 +1,49 @@
+<!-- 반복문시작 -->
+<table class="prd_related">
+	<caption class="hidden">관련상품</caption>
+	<colgroup>
+		<col style="width:120px;">
+		<col>
+		<col style="width:15%;">
+		<col style="width:30%;">
+		<col style="width:100px;">
+		<col style="width:20px;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">상품명</th>
+			<th scope="col">가격</th>
+			<th scope="col">옵션</th>
+			<th scope="col">수량</th>
+			<th scope="col">선택</th>
+		</tr>
+	</thead>
+	<tbody>
+<!-- 반복구문시작 -->
+		<tr>
+			<td class="img">{{$상품이미지(링크포함)}}</td>
+			<td class="tal">
+				{{$상품명(링크포함)}} <span class="soldout {{$상품품절}}">[품절]</span>
+				{{if(상품요약설명)}}
+				<div class="summary">{{$상품요약설명}}</div>
+				{{endif(상품요약설명)}}
+			</td>
+			<td><strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</strong></td>
+			<td class="opt">{{$상품옵션선택}}</td>
+			<td>
+				<div class="box_qty">
+					<input type="text" name="{{$수량필드명}}" value="{{$최소주문수량}}" id="buy_ea{{$상품번호}}" class="form_input">
+					<div class="btn_ea">
+						<a href="#" onclick="cartEaChg(this, 1, '{{$상품번호}}'); return false;" class="ea_up"></a>
+						<a href="#" onclick="cartEaChg(this, -1, '{{$상품번호}}'); return false;" class="ea_down"></a>
+					</div>
+				</div>
+			</td>
+			<td>{{$체크박스}}</td>
+		</tr>
+<!-- 반복구문끝 -->
+	</tbody>
+</table>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<!-- 데이터없음끝 -->

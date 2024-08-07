@@ -1,0 +1,12 @@
+<div>
+	<label for="counsel_name">이름</label>
+	<input type="text" name="name" value="{{$주문자명}}" id="counsel_name" class="form_input block" placeholder="이름">
+</div>
+<div>
+	<label for="counsel_phone">연락처</label>
+	<input type="text" name="phone" value="{{$주문자연락처}}" id="counsel_phone" class="form_input block" placeholder="연락처">
+</div>
+<div>
+	<label for="counsel_email">이메일</label>
+	<input type="text" name="email" value="{{$주문자이메일}}" id="counsel_email" class="form_input block" placeholder="이메일">
+</div>

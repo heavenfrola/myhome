@@ -1,0 +1,23 @@
+<!-- 반복문시작 -->
+<ul class="prd_basic col3">
+<!-- 반복구문시작 -->
+	<li>
+		<div class="box">
+			<div class="img">
+				<div class="prdimg"><a href="{{$상품링크}}" target="_blank">{{$상품이미지}}</a></div>
+			</div>
+			<div class="info">
+				<p class="name"><a href="{{$상품링크}}" target="_blank">{{$상품명}}</a></p>
+				<div class="price">
+					<p class="sell"><strong>{{$화폐단위전}}{{$상품가격}}{{$화폐단위후}}</strong></p>
+				</div>
+				<span class="box_btn">{{$관련상품제거링크}}삭제</a></span>
+			</div>
+		</div>
+	</li>
+<!-- 반복구문끝 -->
+</ul>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<p class="empty">선택된 관련상품이 없습니다.</p>
+<!-- 데이터없음끝 -->

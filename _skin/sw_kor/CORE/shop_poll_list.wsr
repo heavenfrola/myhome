@@ -1,0 +1,27 @@
+<div id="poll">
+	{{$설문상세숨김시작}}
+		{{$설문조사폼}}
+			<p class="subject">제목<strong>{{$설문조사주제}}</strong></p>
+			<div class="box">
+				{{$설문조사내용}}
+				<div class="vote">{{$설문항목리스트}}</div>
+			</div>
+			<div class="btn">
+				<span class="box_btn w100">{{$설문완료링크태그}}설문참여</a></span>
+			</div>
+			{{$설문댓글리스트}}
+			{{$설문댓글삭제확인}}
+			{{$설문댓글폼시작}}
+				<div class="write_comment">
+					{{$로그인전4}}
+					<div class="inputbox">
+						<textarea name="content" class="form_input block gray" placeholder="댓글을 작성해 주세요."></textarea>
+						<input type="submit" value="등록" class="btn_comment">
+					</div>
+				</div>
+			{{$설문댓글폼끝}}
+		{{$설문조사폼끝}}
+	{{$설문상세숨김끝}}
+	{{$설문조사리스트}}
+	{{$페이지선택}}
+</div>

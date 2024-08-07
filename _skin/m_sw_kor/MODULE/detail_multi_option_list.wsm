@@ -1,0 +1,42 @@
+<!-- 반복문시작 -->
+<div class="multi_opt">
+	<ul id="detail_multi_option" class="selected_list">
+<!-- 반복구문시작 -->
+		<li>
+			<span class="name">{{$옵션명(간략)}}{{$옵션데이터}}<br>({{$화폐단위전}}{{$옵션별가격}}{{$화폐단위후}})</span>
+			<div class="box_qty">
+				<a href="#" onclick="{{$수량더하기}}" class="plus"></a>
+				<input type="number" name="m_buy_ea[{{$옵션세트번호}}]" value="{{$주문수량}}" onchange="multiTotalPrc();" class="form_input block tac">
+				<a href="#" onclick="{{$수량빼기}}" class="minus"></a>
+			</div>
+			<span class="del"><a href="#" onclick='{{$옵션삭제}}'><img src="{{$이미지경로}}/button/delete_s.png" alt="삭제"></a></span>
+		</li>
+<!-- 반복구문끝 -->
+	</ul>
+	<div class="opt_total">
+		<span class="title">총금액</span>
+		{{if(쿠폰적용대상상품목록)}}
+		<span class="coupon none_sbscr" onclick="showPrdCpnList(1);">쿠폰적용</span>
+		{{endif(쿠폰적용대상상품목록)}}
+		<strong>{{$화폐단위전}}<span id="detail_multi_option_prc">{{$총멀티옵션금액}}</span>{{$화폐단위후}}</strong>
+		{{if(참조화폐사용)}}({{$참조화폐단위전}}<span id="detail_multi_r_option_prc">{{$참조총멀티옵션금액}}</span>{{$참조화폐단위후}}){{endif(참조화폐사용)}}
+	</div>
+</div>
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<div class="multi_opt">
+	<ul id="detail_multi_option" class="selected_list">
+	</ul>
+	<div class="opt_total">
+		<span class="title">총금액</span>
+		{{if(쿠폰적용대상상품목록)}}
+		<span class="coupon none_sbscr" onclick="showPrdCpnList(1);">쿠폰적용</span>
+		{{endif(쿠폰적용대상상품목록)}}
+		<strong>{{$화폐단위전}}<span class="sell_prc_str_total"></span>{{$화폐단위후}}</strong>
+		{{if(참조화폐사용)}}({{$참조화폐단위전}}<span id="sell_r_prc_str"></span>{{$참조화폐단위후}}){{endif(참조화폐사용)}}
+	</div>
+</div>
+<script type="text/javascript">
+totalCal(document.prdFrm);
+</script>
+<!-- 데이터없음끝 -->

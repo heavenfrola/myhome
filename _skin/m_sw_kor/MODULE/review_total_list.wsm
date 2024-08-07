@@ -1,0 +1,25 @@
+<!-- 반복문시작 -->
+<!-- 반복구문시작 -->
+<li>
+	{{if(상품이미지)}}
+	<div class="prdimg">{{$상품이미지}}</div>
+	{{endif(상품이미지)}}
+	<div class="subject prd" onClick="{{$상품평보기링크}}">
+		<p class="prdname">{{$상품명}}</p>
+		<p class="title">
+			{{$새글아이콘}}
+			{{if(상품평베스트)}}<img src="{{$이미지경로}}/shop/i_best.gif" alt="best">{{endif(상품평베스트)}}
+			{{if(상품평인기)}}<img src="{{$이미지경로}}/shop/i_hot.gif" alt="hot">{{endif(상품평인기)}}
+			{{$파일첨부아이콘}}
+			{{if(상품평카테고리)}}[{{$상품평카테고리}}]{{endif(상품평카테고리)}} 
+			{{$글제목(링크없음)}}
+		</p>
+		<p class="stat"><span class="gradebox small point{{$상품평점수(텍스트)}}"></span> <span class="grade">{{$상품평점수(텍스트)}}</span></p>
+		<p class="stat">{{$작성자}} | {{$등록일}} {{if(총댓글수)}}| 댓글 : {{$총댓글수}}{{endif(총댓글수)}}</p>
+	</div>
+</li>
+<!-- 반복구문끝 -->
+<!-- 반복문끝 -->
+<!-- 데이터없음시작 -->
+<li class="empty">등록된 상품 후기가 없습니다.</li>
+<!-- 데이터없음끝 -->

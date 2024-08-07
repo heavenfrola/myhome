@@ -1,0 +1,10 @@
+<div class="{{$성별필수여부}}">
+	<label>성별</label>
+	<div class="input_area radio_chg">
+		<input type="radio" name="sex" value="남" {{$성별남체크}} id="sex_male"><label for="sex_male">남</label>
+		<input type="radio" name="sex" value="여" {{$성별여체크}} id="sex_female"><label for="sex_female">여</label>
+	</div>
+	<div class="msg">
+		<p class="form_result form_result_sex warning"></p>
+	</div>
+</div>

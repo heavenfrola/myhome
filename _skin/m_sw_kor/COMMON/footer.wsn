@@ -1,0 +1,57 @@
+</section>
+<footer>
+	<div class="wrap_inner">
+		<ul class="share">
+			<li><a href="https://www.instagram.com/wisa.co.kr" target="_blank"><img src="{{$이미지경로}}/common/icon_instagram.png" alt="instagram"></a></li>
+			<li><a href="https://www.facebook.com/wisa.co.kr" target="_blank"><img src="{{$이미지경로}}/common/icon_facebook.png" alt="facebook"></a></li>
+			<li><a href="http://twitter.com" target="_blank"><img src="{{$이미지경로}}/common/icon_twitter.png" alt="twitter"></a></li>
+			<li><a href="http://blog.naver.com/wisacorp/" target="_blank"><img src="{{$이미지경로}}/common/icon_blog.png" alt="blog"></a></li>
+		</ul>
+		<div class="quick">
+			<div class="box">
+				<h3 onclick="toggle_view('quick_cs',this)">Customer Center</h3>
+				<p id="quick_cs" class="quick_cnt">
+					<strong>{{$회사전화번호}}</strong>
+					10am~6pm (Lunch 12pm~1pm)<br>Sat, Sun, Holiday OFF
+				</p>
+			</div>
+			<div class="box">
+				<h3 onclick="toggle_view('quick_return',this)">Returns</h3>
+				<dl id="quick_return" class="quick_cnt">
+					<dt>반품주소</dt>
+					<dd>{{$반품지주소}}</dd>
+				</dl>
+			</div>
+			<div class="box">
+				<h3 onclick="toggle_view('quick_bank',this)">Banking</h3>
+				<div id="quick_bank" class="quick_cnt">
+				{{$공통입금계좌정보}}
+				</div>
+			</div>
+		</div>
+		<ul class="menu">
+			<li><a href="/content/content.php?cont=company">회사소개</a></li>
+			<li><a href="/content/content.php?cont=guide">이용안내</a></li>
+			<li><a href="/content/content.php?cont=uselaw">이용약관</a></li>
+			<li><a href="/content/content.php?cont=privacy">개인정보처리방침</a></li>
+			<li><a href="/?browser_type=pc">pc버전</a></li>
+		</ul>
+		<address class="info">
+			<span class="bar">상호 : {{$회사명}}</span>
+			<span>대표 : {{$대표자성명}}</span><br>
+			<span class="bar">이메일 : <a href="mailto:{{$회사이메일}}">{{$회사이메일}}</a></span>
+			<span>전화 : {{$회사전화번호}}</span><br>
+			<span>주소 : {{$사업장주소}}</span><br>
+			<span>사업자등록번호 : {{$사업자등록번호}} {{$사업자등록확인링크}}[사업자정보확인]</a></span><br>
+			<span>통신판매신고 : {{$통신판매신고번호}}</span><br>
+			<span>개인정보보호책임자 : {{$보호관리책임자}}</span><br>
+			<span>호스팅 제공자 : (주)위사</span><br>
+			<span>고객님은 안전거래를 위해 현금으로 결제 시 저희 쇼핑몰에 가입한 구매안전서비스를 이용하실 수 있습니다. <a href="{{$에스크로가입확인}}">[서비스 가입사실확인]</a></span>
+		</address>
+		<p class="copyright">(c) <strong>{{$회사명}}</strong>. all rights reserved. <a href="https://by.wisa.co.kr/{{$사이트기본도메인}}" target="_blank" alt="위사 디자인&호스팅" title="위사 디자인&호스팅">designed & managed by <strong>WISA.</strong></a></p>
+		<div class="btn_scroll">
+			<a class="up" onclick="scrollup()">up</a>
+		</div>
+	</div>
+</footer>
+<div id="dimmed"></div>
